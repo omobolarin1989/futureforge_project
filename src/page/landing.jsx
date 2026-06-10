@@ -29,7 +29,7 @@ function Landing() {
         <div>
           <Link to="/" className="">
             <img
-              src="\src\images\image 8.png"
+              src="images\image 8.png"
               alt="logo"
               className="lg:w-[245%] w-[244px]"
             />
