@@ -8,7 +8,7 @@ function Hero() {
     <section className="lg:h-screen min-h-screen hero-section flex flex-col lg:flex-row w-full lg:w-full justify-between mt-10 lg:mb-0">
       <div className="hero-text flex flex-col justify-center w-full lg:w-[40%]">
         <div className="text-content flex flex-col  lg:items-start items-center w-full">
-          <div className="lg:full  lg:w-[40%] w-[60%] rounded-2xl p-px bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] mb-5">
+          <div className="lg:full  lg:w-[40%] w-[75%] rounded-2xl p-px bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] mb-5">
             <p className="rounded-2xl bg-black px-4 py-2 text-center text-[12px]  lg:font-[700] font-[400] tracking-[1%] leading-[145%] flex justify-center">
               <span className="inline-block bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
                 COMMUNITY-FIRST TECH LEARNING
@@ -33,7 +33,7 @@ function Hero() {
         </div>
 
         <div className="lg:w-[466px] lg:gap-[20px] gap-[10px] w-full hero-button flex flex-col lg:flex-row items-center justify-around mt-6">
-          <Link to="/registration-form">
+          <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
             <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border border-[#404040] hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] flex items-center gap-[12px] justify-center">
               Join Next Cohort <CgArrowLongRight />
             </button>
