@@ -27,7 +27,7 @@ function RegistrationForm() {
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15">
         <div>
           <img
-            src="\src\images\image 8.png"
+            src="./src/images/image 8.png"
             alt="logo"
             className="lg:w-[245%] w-[244px]"
           />
