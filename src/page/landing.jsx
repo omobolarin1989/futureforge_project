@@ -29,7 +29,7 @@ function Landing() {
         <div>
           <Link to="/" className="">
             <img
-              src="images/image 8.png"
+              src="images\image 8.png"
               alt="logo"
               className="lg:w-[245%] w-[244px]"
             />
@@ -39,7 +39,7 @@ function Landing() {
         <navbar className="">
           <a href="" className="lg:hidden md:hidden sm:block">
             <img
-              src="images/Frame 2147226499.png"
+              src="images\Frame 2147226499.png"
               className="lg:w-[80%] w-[100%]"
             />
           </a>
