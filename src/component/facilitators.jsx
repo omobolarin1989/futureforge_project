@@ -17,7 +17,7 @@ function Facilitators() {
                 <div className=" place-items-center lg:grid flex flex-col lg:grid-cols-3 lg:grid-rows-3  lg:gap-y-[20px] lg:gap-x-[20px] gap-y-[12px] lg:w-[1280px] w-full">
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -32,7 +32,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -47,7 +47,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -62,7 +62,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -77,7 +77,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -92,7 +92,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -107,7 +107,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -122,7 +122,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>
@@ -137,7 +137,7 @@ function Facilitators() {
                 
                     <div className="flex justify-between profile lg:w-[413.33px] w-full h-[96px] border-[1px] border-[#404040] bg-[#171717] rounded-[24px] p-[16px]">
                         <div className="photo flex items-center gap-3">
-                            <img src="src\images\Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
+                            <img src="images/Invisible.png" className="lg:w-[64px] lg:h-[64px] rounded-[8px]" alt="" />
                              <div className="name-track">
                                 <p className="text-[16px] font-[500] leading-[24px] tracking-[-1.1%] mb-[2px]">Annette Black</p>
                                 <p className="text-[#A3A3A3] text-[14px] font-[400] leading-[155%] tracking-[0.5%]">Frontend Development</p>

@@ -20,24 +20,24 @@ function Tracks() {
             <div className="track-grid lg:w-[610px] w-full grid lg:grid-cols-2 lg:grid-rows-3 gap-[20px]">
 
                 <div className="rounded-[24px] lg:px-4 lg:py-5 pt-10 pl-3 bg-[#171717] border border-[#404040] lg:w-[294px] w-full h-[176px]">
-                    <img src="src\images\Frame 2147226501.png" className="mb-5" alt="product design logo" />
+                    <img src="images/Frame 2147226501.png" className="mb-5" alt="product design logo" />
                     <p className="text-[24px] font-[700]">Product Design</p>
                 </div>
 
                 <div className="rounded-[24px] bg-[#171717] lg:px-3.5 lg:py-5 pt-10 pl-3 bg-[#171717 border border-[#404040] lg:w-[294px] w-full h-[176px]">
-                    <img src="src\images\Frame 2147226501 (1).png" className="mb-5" alt="frontend logo" />
+                    <img src="images/Frame 2147226501 (1).png" className="mb-5" alt="frontend logo" />
                     <p className="text-[24px] font-[700]">Frontend Development</p>
                 </div>
                 <div className="rounded-[24px] bg-[#171717] lg:px-4 lg:py-5 pt-10 pl-3 bg-[#171717 border border-[#404040] lg:w-[294px] w-full h-[176px]">
-                    <img src="src\images\Frame 2147226501 (2).png" className="mb-5" alt="backend logo" />
+                    <img src="images/Frame 2147226501 (2).png" className="mb-5" alt="backend logo" />
                     <p className="text-[24px] font-[700]">Backend Development</p>
                 </div>
                 <div className="rounded-[24px] bg-[#171717] lg:px-4 lg:py-5 pt-10 pl-3 bg-[#171717 border border-[#404040] lg:w-[294px] w-full h-[176px]">
-                    <img src="src\images\Frame 2147226501 (4).png" className="mb-5" alt="QA logo" />
+                    <img src="images/Frame 2147226501 (4).png" className="mb-5" alt="QA logo" />
                     <p className="text-[24px] font-[700]">Quality Assurance</p>
                 </div>
                 <div className="rounded-[24px] bg-[#171717] lg:px-4 lg:py-5 pt-10 pl-3 bg-[#171717 border border-[#404040] lg:w-[294px] w-full h-[176px]">
-                    <img src="src\images\Frame 2147226501 (5).png" className="mb-5" alt="Product management logo" />
+                    <img src="images/Frame 2147226501 (5).png" className="mb-5" alt="Product management logo" />
                     <p className="text-[24px] font-[700]">Product Management</p>
                 </div>
             </div>

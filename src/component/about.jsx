@@ -23,7 +23,7 @@ function About() {
         />
       </div>
 
-      <div className="flex lg:flex-row flex-col lg:gap-[60px] gap-[32px] w-full">
+      <div className="flex lg:flex-row flex-col gap-[32px] w-full lg:w-full lg:justify-between">
         <div className="our-mission lg:w-[380px] lg:full gap-[8px]">
           <h3 className="text-[24px] font-[700] leading-[135%] mb-3">
             Our Mission
@@ -48,7 +48,7 @@ function About() {
           <h3 className="text-[24px] font-[700] leading-[135%] mb-3">
             Our Values
           </h3>
-          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-full w-[367px]">
+          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-[97%] w-[367px]">
             We believe meaningful growth comes from accessible learning,
             supportive communities, practical experience, mentorship, and
             consistent effort.

@@ -96,9 +96,9 @@ function Landing() {
       <Community />
       <Footer />
 
-      <section className="footer">
-        <div className="flex lg:flex-row flex-col w-full justify-between lg:mt-[80px] mt-[80px] mb-[20px]  lg:h-[280px] gap-[10px] lg:gap-[64px]">
-          <div className="futureforge-contact flex flex-col lg:justify-between lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[16px] ">
+      <section className="footer flex flex-col gap-[30px] lg:gap-y-[20px] gap-[40px] ">
+        <div className="flex lg:flex-row flex-col w-full justify-between lg:mt-[80px] mt-[80px] mb-[20px] gap-y-[32px]  lg:h-[280px] gap-[10px] lg:gap-[64px]">
+          <div className="futureforge-contact flex flex-col lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[32px] ">
             <div className="contact-text lg:gap-y-[32px] gap-y-[16px]">
               <img
                 src="/images/image 8.png"
@@ -185,7 +185,7 @@ function Landing() {
           <div className="futureforge-community justify-between flex flex-col">
             <div>
               <p className="text-[16px] font-[700] leading-[100%] tracking-[0.5%] mb-5.5">
-                Community
+                Contact us
               </p>
               <ul className="flex flex-col gap-4 text-[16px] font-[400] leading-[155%] tracking-[0.2%] text-[#A3A3A3]">
                 <li>
@@ -199,7 +199,7 @@ function Landing() {
           </div>
         </div>
 
-        <div className="copyright-pricacy">
+        <div className="copyright-pricacy flex lg:flex-row flex-col lg:justify-between">
           <p className="text-[#A3A3A3] lg:text-[14px] font-[400] leading-[150%]  tracking-[0.5%] ">
             © 2026 FutureForge. All rights reserved.
           </p>
