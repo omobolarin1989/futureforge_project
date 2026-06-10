@@ -39,7 +39,7 @@ function Landing() {
         <navbar className="">
           <a href="" className="lg:hidden md:hidden sm:block">
             <img
-              src="\src\images\Frame 2147226499.png"
+              src="images\Frame 2147226499.png"
               className="lg:w-[80%] w-[100%]"
             />
           </a>
@@ -101,7 +101,7 @@ function Landing() {
           <div className="futureforge-contact flex flex-col lg:justify-between lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[16px] ">
             <div className="contact-text lg:gap-y-[32px] gap-y-[16px]">
               <img
-                src="src\images\image 8.png"
+                src="images\image 8.png"
                 className="lg:w-[245px] w-[245px]"
                 alt="futureforge logo"
               />
@@ -114,28 +114,28 @@ function Landing() {
             <div className="socials flex justify-between lg:w-[188px] w-[220px]">
               <a href="">
                 <img
-                  src="src\images\facebook.png"
+                  src="images\facebook.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="facebook icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="src\images\twitter.png"
+                  src="images\twitter.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="twitter icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="src\images\instagram.png"
+                  src="images\instagram.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="instagram icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="src\images\linkedin.png"
+                  src="images\linkedin.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="linkedin icon"
                 />
@@ -212,7 +212,7 @@ function Landing() {
 
       <section className="footer-logo w-full lg:pt-35">
         <img
-          src="\src\images\image 9.png"
+          src="images\image 9.png"
           className="w-full lg:h-[209.11px] pt-8"
           alt=""
         />
