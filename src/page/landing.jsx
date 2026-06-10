@@ -1,3 +1,4 @@
+import { useState } from "react";
 import About from "../component/about";
 import Hero from "../component/hero";
 import Tracks from "../component/track";
@@ -5,15 +6,16 @@ import Testimonials from "../component/testimony";
 import Facilitators from "../component/facilitators";
 import Footer from "../component/footer";
 import NextCohort from "../component/next-cohort";
-import RegistrationForm from "./registration-form";
-import Header from "../component/header";
+// import RegistrationForm from "./registration-form";
+// import Header from "../component/header";
 import Community from "../component/community";
 import { Link } from "react-router-dom";
+
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function Landing() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-
-
     <div className="p-[20px] text-white  lg:min-h-screen bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] border-blue-600 lg:px-[150px] lg:py-[16px]">
       {/* <BrowserRouter>
       <Routes>
@@ -36,14 +38,7 @@ function Landing() {
           </Link>
         </div>
 
-        <navbar className="">
-          <a href="" className="lg:hidden md:hidden sm:block">
-            <img
-              src="images/Frame 2147226499.png"
-              className="lg:w-[80%] w-[100%]"
-            />
-          </a>
-
+        <nav className="">
           <ul className="flex hidden lg:flex lg:justify-center text-white lg:w-[420px] gap-[70px] lg:px-[4px]">
             <li>
               <a
@@ -72,7 +67,63 @@ function Landing() {
               </a>
             </li>
           </ul>
-        </navbar>
+
+          <button
+            type="button"
+            className="cursor-pointer block lg:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              "✕"
+            ) : (
+              <img
+                src="/images/Frame 2147226499.png"
+                alt="Menu"
+                className="w-8 h-8"
+              />
+            )}
+          </button>
+
+          <div className="">
+            <ul
+              className={`
+    ${isOpen ? "flex" : "hidden"}
+    flex-col
+    md:hidden
+    mt-4
+    text-white
+    gap-4
+  `}
+            >
+              <li>
+                <a
+                  href=""
+                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="./"
+                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  Tracks
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="./"
+                  className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
+                >
+                  Facilitators
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <div className="header-button text-white  lg:flex hidden gap-[16px] ">
           <Link to="/registration-form">
