@@ -27,7 +27,7 @@ function RegistrationForm() {
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15">
         <div>
           <img
-            src="/src/images/image 8.png"
+            src="images/image 8.png"
             alt="logo"
             className="lg:w-[245%] w-[244px]"
           />
@@ -36,7 +36,7 @@ function RegistrationForm() {
         <navbar className="">
           <a href="" className="lg:hidden md:hidden sm:block">
             <img
-              src="/src/images/Frame 2147226499.png"
+              src="images/Frame 2147226499.png"
               className="lg:w-[80%] w-[100%]"
             />
           </a>

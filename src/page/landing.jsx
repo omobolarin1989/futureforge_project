@@ -114,28 +114,28 @@ function Landing() {
             <div className="socials flex justify-between lg:w-[188px] w-[220px]">
               <a href="">
                 <img
-                  src="/images\facebook.png"
+                  src="/images/facebook.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="facebook icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="images\twitter.png"
+                  src="images/twitter.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="twitter icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="images\instagram.png"
+                  src="images/instagram.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="instagram icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="images\linkedin.png"
+                  src="images/linkedin.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="linkedin icon"
                 />
@@ -212,7 +212,7 @@ function Landing() {
 
       <section className="footer-logo w-full lg:pt-35">
         <img
-          src="images\image 9.png"
+          src="images/image 9.png"
           className="w-full lg:h-[209.11px] pt-8"
           alt=""
         />

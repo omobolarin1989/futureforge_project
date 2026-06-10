@@ -13,8 +13,8 @@ function NextCohort() {
              <div className="registration-tab w-full lg:w-full lg:pb-[80px] lg:pt-[120px] pt-[80px] lg:px-[20px] flex lg:flex-row flex-col lg:justify-evenly lg:items-center lg:gap-y-[444px] gap-y-[24px]">
 
                     <div className="reg-image lg:w-[50%]">
-                        <img src="src\images\Rectangle 8.png"  className=" lg:block hidden lg:w-[500px]" alt="" />
-                        <img src="src\images\Rectangle 8 (1).png" className="lg:hidden" block alt="" />
+                        <img src="images/Rectangle 8.png"  className=" lg:block hidden lg:w-[500px]" alt="" />
+                        <img src="images/Rectangle 8 (1).png" className="lg:hidden" block alt="" />
                     </div>
 
                     <div className="reg-pub lg:w-[50%] flex flex-col lg:justify-start lg:mt-0 mt-3 gap-[24px]">
