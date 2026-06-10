@@ -101,7 +101,7 @@ function Landing() {
           <div className="futureforge-contact flex flex-col lg:justify-between lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[16px] ">
             <div className="contact-text lg:gap-y-[32px] gap-y-[16px]">
               <img
-                src="images/image 8.png"
+                src="./images/image 8.png"
                 className="lg:w-[245px] w-[245px]"
                 alt="futureforge logo"
               />
