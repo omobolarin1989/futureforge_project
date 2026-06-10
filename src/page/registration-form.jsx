@@ -36,7 +36,7 @@ function RegistrationForm() {
         <navbar className="">
           <a href="" className="lg:hidden md:hidden sm:block">
             <img
-              src="\src\images\Frame 2147226499.png"
+              src="/src/images/Frame 2147226499.png"
               className="lg:w-[80%] w-[100%]"
             />
           </a>
