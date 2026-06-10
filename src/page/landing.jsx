@@ -115,7 +115,7 @@ function Landing() {
 
               <li>
                 <a
-                  href="#futureforge.facilitators cohort-tracks"
+                  href="#futureforge.facilitators"
                   className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
                 >
                   Facilitators
