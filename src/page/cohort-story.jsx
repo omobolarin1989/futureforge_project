@@ -80,7 +80,7 @@ function CohortStory() {
           <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between  lg:w-[369px] border border-red-500">
             <Link to="/#about-us">Back to About</Link>
 
-            <Link to="/#cohort-tracks">Tracks</Link>
+            <Link to="/#cohort-tracks">Tracks.</Link>
 
             <Link to="/#futureforge-facilitators">Facilitators</Link>
           </div>
