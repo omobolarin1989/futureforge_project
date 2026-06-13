@@ -4,6 +4,16 @@ import { MdOutlineCalendarMonth } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import { MdError } from "react-icons/md";
 import { useState } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+import { CgArrowLongRight } from "react-icons/cg";
+
+// import RegistrationForm from "./registration-form";
+// import Header from "../component/header";
+import Footer from "../component/footer";
+import { Link } from "react-router-dom";
+
 
 function RegistrationForm() {
   const [email, setEmail] = useState("");
@@ -22,9 +32,33 @@ function RegistrationForm() {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
+  
+
+
+const [isOpen, setIsOpen] = useState(false);
+
+  //for smooth scroll and hash scrollon
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
+
   return (
-    <section className=" text-[#ffffff] form-action bg-[#000000] min-h-screen bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201]">
-      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15">
+    
+
+
+
+    <section className=" text-[#ffffff] form-action bg-[#000000] min-h-screen bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-[80px]">
+      
+      {/* <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15">
         <div>
           <img
             src="images/image 8.png"
@@ -70,6 +104,145 @@ function RegistrationForm() {
             </li>
           </ul>
         </navbar>
+      </div> */}
+
+     <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
+        <div>
+          <Link to="/" className="lg:w-[245px] w-[244px]">
+            <img
+              src="images/image 8.png"
+              alt="logo"
+              className="lg:w-[245%] w-[244px]"
+            />
+          </Link>
+        </div>
+
+        <nav className="">
+
+           <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between items-center  lg:w-[369px]">
+          <Link to="/#about-us" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">About</Link>
+
+          <Link to="/#cohort-tracks" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Tracks</Link>
+
+          <Link to="/#futureforge-facilitators" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Facilitators</Link>
+        </div>
+          
+
+
+          <button
+            type="button"
+            className="cursor-pointer block lg:hidden "
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              "✕"
+            ) : (
+              <img
+                src="/images/Frame 2147226499.png" 
+                alt="Menu"
+                className="w-15 h-10 "
+              />
+            )}
+          </button>
+
+          
+             <div className={`
+    ${isOpen ? "flex" : "hidden"}
+    flex-col
+    justify-center
+    items-center
+    md:hidden
+    mt-4
+    text-white
+    font-[700]
+    gap-6
+    bg-black
+    bg-transparent
+    w-[355px]
+    border-4 border-amber-500
+  `}>
+          <Link to="/#about-us" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">About</Link>
+
+          <Link to="/#cohort-tracks" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Tracks</Link>
+
+          <Link to="/#futureforge-facilitators" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Facilitators</Link>
+
+           <Link><button className=" text-[16px]  next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
+            Join Next Cohort
+          </button></Link>
+
+           <Link to="/registration-form">
+            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
+              Access LMS
+            </button>
+          </Link>
+
+          
+        </div>
+          {/* <div className="">
+            <ul
+              className={`
+    ${isOpen ? "flex" : "hidden"}
+    flex-col
+    md:hidden
+    mt-4
+    text-white
+    gap-4
+  `}
+            >
+              <li>
+                <a
+                  href="#about-us"
+                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#cohort-tracks"
+                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  Tracks
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#futureforge.facilitator"
+                  className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
+                >
+                  Facilitators
+                </a>
+              </li>
+
+              <li><Link to="/registration-form">
+            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
+              Access LMS
+            </button>
+          </Link></li>
+
+          <li> <button className=" text-[16px] px-[24px] next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
+            Join Next Cohort
+          </button></li>
+            </ul>
+            
+          </div>*/}
+        </nav> 
+
+        <div className="header-button text-white  lg:flex hidden gap-[16px] ">
+            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626]">
+              Access LMS
+            </button>
+          
+
+          <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
+                     <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
+                       Join Next Cohort <CgArrowLongRight />
+                     </button>
+                   </Link>
+        </div>
       </div>
 
       <div className="form-container w-[100%] flex flex-col justify-center items-center lg:mt-50 mt-[144px] lg:gap-[64px] gap-[32px]">
@@ -527,6 +700,7 @@ function RegistrationForm() {
           </form>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
