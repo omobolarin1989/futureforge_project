@@ -4,6 +4,7 @@ import RegistrationForm from "./page/registration-form";
 import { useState } from 'react'
 
 import './App.css'
+import CohortStory from './page/cohort-story';
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/registration-form" element={<RegistrationForm />} />
+        <Route path="/cohort-story" element={<CohortStory />} />
       </Routes>
     </BrowserRouter>
   )

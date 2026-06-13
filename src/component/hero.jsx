@@ -39,9 +39,11 @@ function Hero() {
             </button>
           </Link>
 
+          <Link to="/cohort-story" className="w-[100%] lg:w-[50%]">
           <button className="lg:w-[236px] w-full rounded-3xl py-2 text-[16px] font-bold cursor-pointer border border-[#404040] hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
             Explore Graduate Stories
           </button>
+          </Link>
         </div>
       </div>
 
