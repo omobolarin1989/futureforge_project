@@ -7,7 +7,7 @@ function Tracks() {
     return (
         <section className="track-list w-full justify-center flex lg:flex-row flex-col lg:pt-[120px] lg:pb-[80px] pt-[80px] lg:gap-[280px] gap-[32px] lg:w-full ">
 
-            <div className="track-intro lg:w-[559px] w-full lg:gap-y-[32px] gap-y-[24px]  lg:bg-[radial-gradient(circle_at_left_center,rgba(190,60,15,0.50),transparent_50%)]">
+            <div className="track-intros lg:w-[559px] w-full lg:gap-y-[32px] gap-y-[24px]  lg:bg-[radial-gradient(circle_at_left_center,rgba(190,60,15,0.50),transparent_50%)]">
                 <p className="text-[#F43F5D] lg:text-[14px] text-16px font-[700] leading-[150%] tracking-[0.5%]">Tracks</p>
                 <h3 className="lg:text-[50px] text-[38px] font-[700] lg:w-[580px] w-full leading-[120%] tracking-[-1%]">Explore career paths designed for real-world tech growth.</h3>
                 <p className="lg:text-[#D4D4D4] text-[16px] font-[400] leading-[155%] leading-[0.2%] w-full pt-[24px]">Choose from beginner-friendly tracks built around practical learning, mentorship, and collaborative growth.</p>
