@@ -2,7 +2,6 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { useState } from "react";
 import Footer from "../component/footer";
 import { useParams, NavLink, Link } from "react-router-dom";
-import 
 
 // 1. DATA ARRAY (8 Graduates)
 const graduatesData = [
@@ -323,13 +322,22 @@ function Cohort1() {
             <NavLink to="/cohort1/track/backend" className={navBtnStyles}>
               Product Management
             </NavLink>
-            <NavLink to="/cohort1/track/product-design" className={navBtnStyles}>
+            <NavLink
+              to="/cohort1/track/product-design"
+              className={navBtnStyles}
+            >
               Backend development
             </NavLink>
-            <NavLink to="/cohort1/track/product-management" className={navBtnStyles}>
+            <NavLink
+              to="/cohort1/track/product-management"
+              className={navBtnStyles}
+            >
               Frontend Management
             </NavLink>
-            <NavLink to="/cohort1/track/quality-assurance" className={navBtnStyles}>
+            <NavLink
+              to="/cohort1/track/quality-assurance"
+              className={navBtnStyles}
+            >
               Quality Assurance
             </NavLink>
           </nav>
@@ -366,15 +374,15 @@ function Cohort1() {
 
                   {/* Arrow Button Container (The Last Item on the Card) */}
                   <div className="pt-2 flex justify-between items-center">
-                     <p className=" text-center text-[14px] font-[700] leading-0[150%] tracking-[0.5%] bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">Read Story</p>
+                    <p className=" text-center text-[14px] font-[700] leading-0[150%] tracking-[0.5%] bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
+                      Read Story
+                    </p>
                     <button
                       onClick={() => setSelectedGrad(grad)}
                       className="cursor-pointer p-1  rounded-full bg-slate-100 text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] transition-colors duration-200 shadow-sm"
-                      
                       title="Open Full Profile"
                     >
-
-                     {/* hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] */}
+                      {/* hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] */}
                       {/* SVG Right Arrow icon */}
                       <svg
                         xmlns="http://w3.org"
@@ -438,16 +446,13 @@ function Cohort1() {
                     {selectedGrad.name}
                   </h2>
                   <div className="mt-5 flex flex-col justify-between">
-                      <p className="text-[#A3A3A3] lg:text-[14px] text-[12px] font-[400] leading-[155%] ">
-                     {selectedGrad.designation}
+                    <p className="text-[#A3A3A3] lg:text-[14px] text-[12px] font-[400] leading-[155%] ">
+                      {selectedGrad.designation}
                     </p>
 
-                    <p
-                      className="pt-4 lg:text-[16px] text-[13px] font-[400] leading-[160%]"
-                    >
+                    <p className="pt-4 lg:text-[16px] text-[13px] font-[400] leading-[160%]">
                       {selectedGrad.testimony}
                     </p>
-                   
                   </div>
                 </div>
               </div>
