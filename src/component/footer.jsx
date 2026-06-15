@@ -1,16 +1,12 @@
-
-
-
 function Footer() {
-
-    return (
-        <section className="">
-            <div className="footer flex flex-col gap-[30px] lg:gap-y-[20px] gap-[40px] ">
-        <div className="flex lg:flex-row flex-col w-full justify-between lg:mt-[80px] mt-[80px] mb-[20px] gap-y-[32px]  lg:h-[280px] gap-[10px] lg:gap-[64px]">
+  return (
+    <section className="h-fit">
+      <div className="footer flex flex-col gap-[30px] lg:gap-y-[20px] gap-[40px] ">
+        <div className="flex lg:flex-row flex-col w-full justify-between lg:mt-[80px] mt-[80px] mb-[20px] gap-y-[32px] lg:h-[280px] gap-[10px] lg:gap-[64px]">
           <div className="futureforge-contact flex flex-col lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[32px] ">
             <div className="contact-text lg:gap-y-[32px] gap-y-[16px]">
               <img
-                src="/images/image 8.png"
+                src="images/image 8.png"
                 className="lg:w-[245px] w-[245px]"
                 alt="futureforge logo"
               />
@@ -30,21 +26,21 @@ function Footer() {
               </a>
               <a href="">
                 <img
-                  src="images/twitter.png"
+                  src="/images/twitter.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="twitter icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="images/instagram.png"
+                  src="/images/instagram.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="instagram icon"
                 />
               </a>
               <a href="">
                 <img
-                  src="images/linkedin.png"
+                  src="/images/linkedin.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="linkedin icon"
                 />
@@ -106,7 +102,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-      </div>
+        </div>
 
         <div className="copyright-pricacy flex lg:flex-row flex-col lg:justify-between">
           <p className="text-[#A3A3A3] lg:text-[14px] font-[400] leading-[150%]  tracking-[0.5%] ">
@@ -117,17 +113,17 @@ function Footer() {
             Privacy Policy . Terms of use
           </p>
         </div>
-            </div>
+      </div>
 
-            <div className="footer-logo w-full lg:pt-35">
+      <div className="footer-logo w-full lg:pt-35">
         <img
-          src="images/image 9.png"
+          src="/images/image 9.png"
           className="w-full lg:h-[209.11px] pt-8"
           alt=""
         />
-            </div>
-        </section>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default Footer
+export default Footer;

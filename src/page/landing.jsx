@@ -9,6 +9,7 @@ import Facilitators from "../component/facilitators";
 import Footer from "../component/footer";
 import NextCohort from "../component/next-cohort";
 
+
 import { CgArrowLongRight } from "react-icons/cg";
 
 // import RegistrationForm from "./registration-form";
@@ -172,10 +173,10 @@ function Landing() {
           
 
           <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
-                     <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
+                  <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
                        Join Next Cohort <CgArrowLongRight />
-                     </button>
-                   </Link>
+                  </button>
+          </Link>
         </div>
       </div>
 
@@ -197,6 +198,7 @@ function Landing() {
         <Facilitators />
       </section>
       <Community />
+      
       <Footer />
 
       {/* <section className="footer flex flex-col gap-[30px] lg:gap-y-[20px] gap-[40px] ">

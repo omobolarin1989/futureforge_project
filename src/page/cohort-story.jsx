@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+
 import { CgArrowLongRight } from "react-icons/cg";
 
 // import RegistrationForm from "./registration-form";
@@ -32,6 +33,8 @@ function CohortStory() {
   }, [location]); //This line reruns whenever the URL changes
 
   return (
+
+    
     <section className="bg-[#000000] min-h-screen text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] ">
       {/* <div className="header-sect flex lg:w-full justify-between lg:py-[16px] items-center">
         <div className="header-logo">
@@ -261,9 +264,9 @@ function CohortStory() {
           </div>
         </div>
 
-        <div className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-center lg:grid-rows-3 lg:w-full lg:place-items-center lg:gap-y-[20px] gap-y-[20px]">
+        <div className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-center lg:grid-rows-3 lg:w-full lg:gap-y-[20px] gap-y-[20px]">
          
-          <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+          <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -304,12 +307,18 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+
+                <Link to="/Cohort1">
+                  <button>
+                    <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                  </button>
+                </Link>
+
               </div>
             </div>
           </div>
 
-          <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+          <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -355,7 +364,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -401,7 +410,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -447,7 +456,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -493,7 +502,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -539,7 +548,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -585,7 +594,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -631,7 +640,7 @@ function CohortStory() {
             </div>
           </div>
 
-           <div className="bg-[#171717] content-grid lg:w-[550px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px]   lg-gap-x-0">
+           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">

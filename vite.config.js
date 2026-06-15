@@ -9,6 +9,4 @@ export default defineConfig({
     tailwindcss(),
 
   ],
-  
-  base: '/futureforge-final/',
 })
