@@ -303,13 +303,10 @@ function Cohort1() {
         <div className="">
           {/* Header */}
           <header className="mb-12">
-            <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
+            <h1 className="lg:text-[40px] text-[30px] font-[700] leading-[125%] tracking-[-0.5%]">
               Graduation Yearbook
             </h1>
-            <p className="mt-2 text-lg text-slate-500">
-              Click the arrow button at the bottom of any card to focus the
-              profile.
-            </p>
+           
           </header>
 
           {/* Navigation Track Filters */}
@@ -460,6 +457,10 @@ function Cohort1() {
             </div>
           )}
         </div>
+      </div>
+
+      <div>
+         <Community />
       </div>
 
       <div className="">
