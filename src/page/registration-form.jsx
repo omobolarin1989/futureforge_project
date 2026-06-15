@@ -495,7 +495,7 @@ const [isOpen, setIsOpen] = useState(false);
                         className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
                         id="experience"
                       >
-                        <option value="beginner selected">Beginer</option>
+                        <option value="beginner selected">Beginner</option>
                         <option value="intermediate">intermediate</option>
                         <option value="expert">Expert</option>
                       </select>
