@@ -2,6 +2,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { useState } from "react";
 import Footer from "../component/footer";
 import { useParams, NavLink, Link } from "react-router-dom";
+import Community from "../component/community";
 
 // 1. DATA ARRAY (8 Graduates)
 const graduatesData = [
@@ -317,22 +318,22 @@ function Cohort1() {
               All
             </NavLink>
             <NavLink to="/cohort1/track/frontend" className={navBtnStyles}>
-              Product Design
+              Frontend Development
             </NavLink>
             <NavLink to="/cohort1/track/backend" className={navBtnStyles}>
-              Product Management
+              Backend Development
             </NavLink>
             <NavLink
               to="/cohort1/track/product-design"
               className={navBtnStyles}
             >
-              Backend development
+              Product Design
             </NavLink>
             <NavLink
               to="/cohort1/track/product-management"
               className={navBtnStyles}
             >
-              Frontend Management
+              Product Management
             </NavLink>
             <NavLink
               to="/cohort1/track/quality-assurance"
@@ -432,9 +433,9 @@ function Cohort1() {
                 </button>
 
                 {/* Large View Profile Image */}
-                <div className=" bg-[#171717] lg:h-[100%] h-[20%] w-[47%] lg:flex lg:flex-col justify-center items-center">
+                <div className=" bg-[#171717] lg:h-[100%] h-[100%] w-[49%] lg:flex lg:flex-col justify-center items-center">
                   <img
-                    className=" lg:h-screen h-[100%] w-full bg-[#171717] flex flex-col justify-center items-center"
+                    className=" lg:h-screen h-[80%] h-[100%] w-full bg-[#171717] flex flex-col justify-center items-center"
                     src={selectedGrad.image}
                     alt={selectedGrad.name}
                   />
