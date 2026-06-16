@@ -1,12 +1,16 @@
 import { CgArrowLongRight } from "react-icons/cg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-function Header () {
+
+
+
+
+function TermsCondition () {
 const [isOpen, setIsOpen] = useState(false);
    return (
-      <section>
+      <section className="bg-[#000000] min-h-screen text-[white] flex flex-col items-center gap-y-[15px] w-full lg:px-[0] px-[16px]">
          
-         <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
+         <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 w-full ">
                  <div>
                    <Link to="/" className="">
                      <img
@@ -18,7 +22,7 @@ const [isOpen, setIsOpen] = useState(false);
                  </div>
          
                  <nav className="">
-                   <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between  lg:w-[369px] border border-red-500">
+                   <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between  lg:w-[369px]">
                      <Link to="/#about-us">Back to About</Link>
          
                      <Link to="/#cohort-tracks">Tracks.</Link>
@@ -164,11 +168,80 @@ const [isOpen, setIsOpen] = useState(false);
                      </button>
                    </Link>
                  </div>
+         </div>
+
+        <div className="terms-section lg:w-[882px] flex flex-col lg:gap-[100px]">
+               <div className="terms-header mb-[100px]">
+                  <h2 className="text-center text-[24px] lg:text-[72px] lg:font-[700] lg:leading-[110%] leading-[130%] tracking-[0..2%] lg:tracking-[-2%]">Terms & Condition</h2>
                </div>
+               <div className="terms-content flex flex-col">
+                  <ol className="flex flex-col list-decimal pl-8 lg:space-y-[64px] space-y-[20px] lg:marker:text-[24px] lg:marker:font-[700]">
+                     <li className="">
+                        <h2 className="lg:text-left text-center text-[24px] lg:text-[32px] lg:font-[700]  leading-[130%] tracking-[-0.25%]">Program Commitment & Acceptance</h2>
+                        <p className="lg:text-[20px] lg:font-[400] leading-[160%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0] ">By enrolling in FutureForge Cohort 1, you (“Forger”) agree to follow all terms, conditions, rules, and policies outlined in this document. Since the program is completely free, your participation is your investment. Your commitment, consistency and accountability keep the space valuable for everyone.</p>
+                     </li>
+
+                     <li className="">
+                        <h2 className="lg:text-left text-center text-[24px] lg:text-[32px] lg:font-[700]  leading-[130%] tracking-[-0.25%]">Commitment & Participation Policy</h2>
+                        <div className="part-policy flex flex-col gap-y-[20px]">
+                           <div className="focus">
+                              <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Program Focus</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">The FutureForge program runs on commitment. Your dedication is the required contribution for your continued participation.</p>
+                           </div>
+                           <div className="requirements">
+                               <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Participation Requirements</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Your enrollment and continuation depend on meeting the mandatory attendance, weekly visibility requirements and task submissions.</p>
+                           </div>
+                           <div className="removal">
+                               <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Program Removal & Re-enrollment</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">If you are removed from the program for any reason (withdrawal, strikes, or lack of commitment), your spot is forfeited immediately.</p>
+
+                              <p className="mt-3 text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Removed Forgers may be barred from joining the next cohort to protect the space for serious learners.</p>
+                           </div>
+                        </div>
+                     </li>
+                     <li className="space-y-[24px]">
+                        <div>
+                           <h2 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Strike System & Accountability</h2>
+                        </div>
+                        <div>
+                           <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">FutureForge uses a clear strike system to maintain fairness, discipline and commitment.</p>
+                        </div>
+                        <div>
+                            <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Program Focus</h3>
+
+                            <ul>
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">8 strikes = Immediate removal </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> 4 strikes = Mandatory commitment review meeting</p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> 3.2 Strike-Worthy Infractions</p></li>
+                              
+                            </ul>
+                        </div>
+                        <div>
+                           <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Program Focus</h3>
+                           <ul className="list-disc px-15 marker:font-[0.3px]">
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Missing learning sessions without valid reason  </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Missing scheduled Pod-Mentor Session</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Missing pod meetings (weekly Sunday gatherings) </p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Missing the Weekly Visibility Post</p></li>
+
+                           </ul>
+                        </div>
+                     </li>
+
+                  </ol>
+               </div>
+        </div>
+
 
 
       </section>
    )
 }
 
-export default Header
+export default TermsCondition

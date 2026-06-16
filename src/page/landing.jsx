@@ -38,7 +38,7 @@ function Landing() {
 
 
   return (
-    <div className="p-[20px] text-white  lg:min-h-screen bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] border-blue-600 lg:px-[150px] lg:py-[16px]">
+    <div className="p-[20px] text-white  lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(140%_25%_at_40%_0%,_rgba(39,15,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat">
    
 
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
@@ -103,12 +103,12 @@ function Landing() {
           <Link to="/#futureforge-facilitators" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Facilitators</Link>
 
            <Link><button className=" text-[16px]  next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
-            Join Next Cohort
+            Access LMS
           </button></Link>
 
            <Link to="/registration-form">
             <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-              Access LMS
+              Join Next Cohort
             </button>
           </Link>
 

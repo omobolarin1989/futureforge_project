@@ -101,7 +101,7 @@ function Cohort1() {
     `text-white px-4 py-2 rounded-xl text-[16px] font-[400] tracking-wide ${isActive ? "bg-gradient-to-r from-[#F43F5E] to-[#F59E0B] text-white font-[700]" : "bg-[#171717] text-gray-600 border border-[#262626] hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] "}`;
 
   return (
-    <section className="min-h-screen bg-[#000000] text-[white] py-[20px] lg:px-[150px] px-[16px] flex flex-col gap-20px lg:gap-y-[80px]">
+    <section className="min-h-screen text-[white] py-[20px] lg:px-[150px] px-[16px] flex flex-col gap-20px lg:gap-y-[80px] bg-[#0A0705] bg-[radial-gradient(140%_45%_at_50%_0%,_rgba(245,158,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat">
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
         <div>
           <Link to="/" className="">

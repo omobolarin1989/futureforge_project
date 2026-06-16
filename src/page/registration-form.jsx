@@ -6,6 +6,7 @@ import { MdError } from "react-icons/md";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import TermsCondition from "./terms";
 
 import { CgArrowLongRight } from "react-icons/cg";
 
@@ -653,9 +654,11 @@ const [isOpen, setIsOpen] = useState(false);
 
                   <span>
                     I agree to the{" "}
+                     <Link to ="/terms">
                     <a className="cursor-pointer">
                       <u>Terms and Conditions</u>
                     </a>
+                    </Link>
                   </span>
                 </label>
 
@@ -687,9 +690,11 @@ const [isOpen, setIsOpen] = useState(false);
 
                   <span>
                     I agree to the{" "}
+                   <Link to="/privacy">
                     <a className="cursor-pointer">
-                      <u>Terms and Conditions</u>
+                      <u>Privacy Policy and Data Protection</u>
                     </a>
+                    </Link>
                   </span>
                 </label>
                
