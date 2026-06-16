@@ -200,6 +200,7 @@ const [isOpen, setIsOpen] = useState(false);
                            </div>
                         </div>
                      </li>
+
                      <li className="space-y-[24px]">
                         <div>
                            <h2 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Strike System & Accountability</h2>
@@ -233,6 +234,143 @@ const [isOpen, setIsOpen] = useState(false);
                            </ul>
                         </div>
                      </li>
+
+                     <li className="space-y-[24px]">
+                        <div>
+                           <h2 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Attendance & Participation Requirement</h2>
+                        </div>
+                       
+                        <div>
+                            <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Mandatory Sessions</h3>
+
+                            <ul>
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">All Forgers must attend:  </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Learning Sessions </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Pod Meetings (weekly Sundays) </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Pod-Mentor Sessions (bi-weekly Sundays)</p></li>
+                              
+                            </ul>
+                        </div>
+                        <div>
+                           <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Weekly Visibility Requirement</h3>
+                           <p>Each Forger must complete and upload a structured weekly visibility post highlighting: </p>
+                           <ul className="list-disc px-15 marker:font-[0.3px]">
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> What you learned that week</p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Facilitators who taught the sessions</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Your personal reflection</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">One challenge you encountered and how you handled it</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Tagging FutureForge </p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Missing this requirement counts as 1 strike.</p></li>
+
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li className="space-y-[24px]">
+                        <div>
+                           <h2 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Valid Reason For Absence & Excuse Limit</h2>
+                        </div>
+
+                        <div>
+                           <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Valid Reasons</h3>
+                           <p>The following may be accepted as excused absences:   </p>
+                           <ul className="list-disc px-15 marker:font-[0.3px]">
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Medical emergencies</p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Family emergencies</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Technical issues</p></li>
+
+                           </ul>
+
+                           <div className="notice">
+                              <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Advance Notice Required</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">You must inform the leadership team before a session whenever possible. Retroactive excuses may not be accepted unless communication was impossible.</p>
+                           </div>
+                           
+
+                           <div className="notice">
+                              <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Maximum Excuse Limit</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Each Forger has 5 excused absences total for the full cohort. After this limit, every absence results in a strike, regardless of the reason.</p>
+                              
+                              <p  className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0] mt-3"> Excuses cannot be recycled repeatedly to avoid accountability.</p>
+                           </div>
+
+                        </div>
+                     </li>
+
+                      <li className="space-y-[24px]">
+                        <div>
+                           <h2 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Pod Mentorship Structure</h2>
+                        </div>
+                        
+                        <div>
+                            <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Pod Meeting</h3>
+
+                            <ul>
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Pods meet every Sunday. Meetings alternate between: </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Pod-only sessions </p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Pod-Mentor sessions  Infractions</p></li>
+                              
+                            </ul>
+                        </div>
+
+                        <div>
+                           <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Pod Mentor</h3>
+
+                           <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Each pod has a facilitator serving as mentor. Missing a Pod-Mentor session counts as 1 full strike. </p>
+                        </div>
+                        <div>
+                           <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Visibility Challenge</h3>
+                           <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> All pods participate in a weekly visibility challenge:</p>
+                           <ul className="list-disc px-15 marker:font-[0.3px]">
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Each Forger must create their weekly visibility post</p></li>
+
+                              <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">All pods participate in a Pods support each other in structuring and completing this</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Posts must be completed before the pod meeting ends </p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Missing a weekly visibility post results in 1 strike</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Missing a weekly visibility post results in 1 strike</p></li>
+
+                               <li><p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">This strengthens consistency, teamwork, and long-term professional growth.</p></li>
+
+                           </ul>
+                        </div>
+                     </li>
+
+                      <li className="">
+                        <h2 className="lg:text-left text-center text-[24px] lg:text-[32px] lg:font-[700]  leading-[130%] tracking-[-0.25%]">Program Structure</h2>
+                        <div className="part-policy flex flex-col gap-y-[20px]">
+                           <div className="learning-phases">
+                              <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Learning Phases</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Weeks 1–7: Structured learning </p>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Weeks 8–12: Structured learning</p>
+                           </div>
+                           <div className="requirements">
+                               <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Participation Requirements</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Your enrollment and continuation depend on meeting the mandatory attendance, weekly visibility requirements and task submissions.</p>
+                           </div>
+                           <div className="removal">
+                               <h3 className="text-[20px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Program Removal & Re-enrollment</h3>
+                              <p className="text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">If you are removed from the program for any reason (withdrawal, strikes, or lack of commitment), your spot is forfeited immediately.</p>
+
+                              <p className="mt-3 text-[16px] lg:text-[20px] lg:font-[400] leading-[155%]   lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Removed Forgers may be barred from joining the next cohort to protect the space for serious learners.</p>
+                           </div>
+                        </div>
+                     </li>
+
 
                   </ol>
                </div>
