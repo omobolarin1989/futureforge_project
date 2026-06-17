@@ -6,7 +6,7 @@ import { MdError } from "react-icons/md";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import TermsCondition from "./terms";
+
 
 import { CgArrowLongRight } from "react-icons/cg";
 
@@ -59,54 +59,7 @@ const [isOpen, setIsOpen] = useState(false);
 
     <section className=" text-[#ffffff] form-action bg-[#000000] min-h-screen bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-[80px]">
       
-      {/* <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15">
-        <div>
-          <img
-            src="images/image 8.png"
-            alt="logo"
-            className="lg:w-[245%] w-[244px]"
-          />
-        </div>
-
-        <navbar className="">
-          <a href="" className="lg:hidden md:hidden sm:block">
-            <img
-              src="images/Frame 2147226499.png"
-              className="lg:w-[80%] w-[100%]"
-            />
-          </a>
-
-          <ul className="flex hidden lg:flex lg:justify-center text-white lg:w-[420px] gap-[70px] lg:px-[4px]">
-            <li>
-              <a
-                href=""
-                className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-              >
-                About
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="./"
-                className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-              >
-                Tracks
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="./"
-                className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
-              >
-                Facilitators
-              </a>
-            </li>
-          </ul>
-        </navbar>
-      </div> */}
-
+      
      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
         <div>
           <Link to="/" className="lg:w-[245px] w-[244px]">
@@ -180,70 +133,10 @@ const [isOpen, setIsOpen] = useState(false);
 
           
         </div>
-          {/* <div className="">
-            <ul
-              className={`
-    ${isOpen ? "flex" : "hidden"}
-    flex-col
-    md:hidden
-    mt-4
-    text-white
-    gap-4
-  `}
-            >
-              <li>
-                <a
-                  href="#about-us"
-                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                >
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#cohort-tracks"
-                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                >
-                  Tracks
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#futureforge.facilitator"
-                  className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
-                >
-                  Facilitators
-                </a>
-              </li>
-
-              <li><Link to="/registration-form">
-            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-              Access LMS
-            </button>
-          </Link></li>
-
-          <li> <button className=" text-[16px] px-[24px] next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-            Join Next Cohort
-          </button></li>
-            </ul>
-            
-          </div>*/}
+         
         </nav> 
 
-        <div className="header-button text-white  lg:flex hidden gap-[16px] ">
-            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626]">
-              Access LMS
-            </button>
-          
-
-          <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
-                     <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
-                       Join Next Cohort <CgArrowLongRight />
-                     </button>
-                   </Link>
-        </div>
+        
       </div>
 
       <div className="form-container w-[100%] flex flex-col justify-center items-center lg:mt-50 mt-[144px] lg:gap-[64px] gap-[32px]">

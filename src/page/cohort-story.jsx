@@ -4,9 +4,7 @@ import { TbArrowRight } from "react-icons/tb";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-
-import { CgArrowLongRight } from "react-icons/cg";
+import Header from "../component/header";
 
 // import RegistrationForm from "./registration-form";
 // import Header from "../component/header";
@@ -15,8 +13,6 @@ import Footer from "../component/footer";
 import { Link } from "react-router-dom";
 
 function CohortStory() {
-  //For responsive navbar
-  const [isOpen, setIsOpen] = useState(false);
 
   //for smooth scroll and hash scrollon
   const location = useLocation();
@@ -36,197 +32,7 @@ function CohortStory() {
 
     
     <section className="bg-[#000000] min-h-screen text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] ">
-      {/* <div className="header-sect flex lg:w-full justify-between lg:py-[16px] items-center">
-        <div className="header-logo">
-          <Link to="/">
-            <img
-              src="images/image 8.png"
-              alt="futureforge logo"
-              className="lg:w-[245px] w-[244px]"
-            />
-          </Link>
-        </div>
-
-        <div className="nav-bar lg:flex sm:hidden lg:flex-row lg:justify-between  lg:w-[369px] border border-red-500">
-          <Link to="/#about-us">Back to About</Link>
-
-          <Link to="/#cohort-tracks">Tracks</Link>
-
-          <Link to="/#futureforge-facilitators">Facilitators</Link>
-        </div>
-
-        <div className="header-button text-white  lg:flex hidden gap-[16px] ">
-          <Link to="/registration-form">
-            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-              Access LMS
-            </button>
-          </Link>
-
-          <button className=" text-[16px] px-[24px] next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-            Join Next Cohort
-          </button>
-        </div>
-      </div> */}
-
-      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
-        <div>
-          <Link to="/" className="">
-            <img
-              src="images/image 8.png"
-              alt="logo"
-              className="lg:w-[245%] w-[244px]"
-            />
-          </Link>
-        </div>
-
-        <nav className="">
-          <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between  lg:w-[369px] border border-red-500">
-            <Link to="/#about-us">Back to About</Link>
-
-            <Link to="/#cohort-tracks">Tracks.</Link>
-
-            <Link to="/#futureforge-facilitators">Facilitators</Link>
-          </div>
-          {/* <ul className="flex hidden lg:flex lg:justify-center text-white lg:w-[420px] gap-[70px] lg:px-[4px]">
-                  <li>
-                    <a
-                      href="#about-us"
-                      className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                    >
-                      About
-                    </a>
-                  </li>
-      
-                  <li>
-                    <a
-                      href="#cohort-tracks"
-                      className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                    >
-                      Tracks
-                    </a>
-                  </li>
-      
-                  <li>
-                    <a
-                      href="#futureforge-facilitators"
-                      className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
-                    >
-                      Facilitators
-                    </a>
-                  </li>
-                </ul> */}
-
-          <button
-            type="button"
-            className="cursor-pointer block lg:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? (
-              "✕"
-            ) : (
-              <img
-                src="/images/Frame 2147226499.png"
-                alt="Menu"
-                className="w-8 h-8"
-              />
-            )}
-          </button>
-
-          <div
-            className={`
-          ${isOpen ? "flex" : "hidden"}
-          flex-col
-          md:hidden
-          mt-4
-          text-white
-          gap-4
-        `}
-          >
-            <Link to="/#about-us">Back to About</Link>
-
-            <Link to="/#cohort-tracks">Tracks</Link>
-
-            <Link to="/#futureforge-facilitators">Facilitators</Link>
-
-            <li>
-              {" "}
-              <button className=" text-[16px] px-[24px] next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-                Join Next Cohort
-              </button>
-            </li>
-
-            <li>
-              <Link to="/registration-form">
-                <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-                  Access LMS
-                </button>
-              </Link>
-            </li>
-          </div>
-          {/* <div className="">
-                  <ul
-                    className={`
-          ${isOpen ? "flex" : "hidden"}
-          flex-col
-          md:hidden
-          mt-4
-          text-white
-          gap-4
-        `}
-                  >
-                    <li>
-                      <a
-                        href="#about-us"
-                        className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                      >
-                        About
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a
-                        href="#cohort-tracks"
-                        className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                      >
-                        Tracks
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a
-                        href="#futureforge.facilitator"
-                        className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
-                      >
-                        Facilitators
-                      </a>
-                    </li>
-      
-                    <li><Link to="/registration-form">
-                  <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-                    Access LMS
-                  </button>
-                </Link></li>
-      
-                <li> <button className=" text-[16px] px-[24px] next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-                  Join Next Cohort
-                </button></li>
-                  </ul>
-                  
-                </div>*/}
-        </nav>
-
-        <div className="header-button text-white  lg:flex hidden gap-[16px] ">
-          <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-            Access LMS
-          </button>
-
-          <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
-            <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border border-[#404040] hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] flex items-center gap-[12px] justify-center">
-              Join Next Cohort <CgArrowLongRight />
-            </button>
-          </Link>
-        </div>
-      </div>
+      <Header />
 
       <div className="main w-full lg:gap-y-[150px] gap-y-[70px] flex flex-col">
         <div className="w-full flex justify-center">
