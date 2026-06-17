@@ -38,7 +38,7 @@ function Landing() {
 
 
   return (
-    <div className="p-[20px] text-white  lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(140%_25%_at_40%_0%,_rgba(39,15,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat">
+    <section className=" text-white  lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(140%_25%_at_40%_0%,_rgba(39,15,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat lg:px-[120px] px-[8px] flex flex-col lg:gap-y-[80px] gap-y-[70px]">
    
 
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
@@ -114,56 +114,7 @@ function Landing() {
 
           
         </div>
-          {/* <div className="">
-            <ul
-              className={`
-    ${isOpen ? "flex" : "hidden"}
-    flex-col
-    md:hidden
-    mt-4
-    text-white
-    gap-4
-  `}
-            >
-              <li>
-                <a
-                  href="#about-us"
-                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                >
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#cohort-tracks"
-                  className="lg:text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-                >
-                  Tracks
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#futureforge.facilitator"
-                  className="lg:text-[15px] lg:font-[400] leading-[100%] tracking-[1%] lg:hover:font-[700]"
-                >
-                  Facilitators
-                </a>
-              </li>
-
-              <li><Link to="/registration-form">
-            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-              Access LMS
-            </button>
-          </Link></li>
-
-          <li> <button className=" text-[16px] px-[24px] next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-            Join Next Cohort
-          </button></li>
-            </ul>
-            
-          </div>*/}
+         
         </nav> 
 
         <div className="header-button text-white  lg:flex hidden gap-[16px] ">
@@ -192,7 +143,9 @@ function Landing() {
         <section id="cohort-tracks">        
          <Tracks />
        </section>
+       <section id="testimonial">
       <Testimonials />
+      </section>
 
       <section id="futureforge-facilitators">
         <Facilitators />
@@ -322,7 +275,7 @@ function Landing() {
           alt=""
         />
       </section> */}
-    </div>
+    </section>
   );
 }
 

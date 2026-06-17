@@ -3,7 +3,7 @@
 function Testimonials() {
 
     return (
-        <section className="testimony-area lg:mt-[120px] lg:mb-5 mb-4 mt-[80px] lg:pb-[80px] lg:gap-[60px]">
+        <section className="testimony-area lg:gap-[60px]">
             <div className="testimony-intro flex flex-col items-center">
                 <p className=" text-[var(--primary-color)] lg:text-[14px] text-[16px] font-[700] leading-[120%] tracking-[0.5%]">Testimonials</p>
                 <h3 className="lg:text-[48px] text-[36px]  lg:text-center text-center font-[700] leading-[120%] tracking-[1%] mb-2">From uncertainty to confidence in tech.</h3>

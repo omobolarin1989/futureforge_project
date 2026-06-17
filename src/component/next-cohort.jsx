@@ -1,4 +1,5 @@
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,11 +14,11 @@ function NextCohort() {
              <div className="registration-tab w-full lg:w-full lg:pb-[80px] lg:pt-[120px] pt-[80px] lg:px-[20px] flex lg:flex-row flex-col lg:justify-evenly lg:items-center lg:gap-y-[444px] gap-y-[24px]">
 
                     <div className="reg-image lg:w-[50%]">
-                        <img src="images/Rectangle 8.png"  className=" lg:block hidden lg:w-[500px]" alt="" />
-                        <img src="images/Rectangle 8 (1).png" className="lg:hidden" block alt="" />
+                        <img src="images/Rectangle 8.png"  className=" lg:block hidden lg:w-[500px]" alt="student learning with laptop" />
+                        <img src="images/Rectangle 8 (1).png" className="lg:hidden" block alt="student learning with laptop" />
                     </div>
 
-                    <div className="reg-pub lg:w-[50%] flex flex-col lg:justify-start lg:mt-0 mt-3 gap-[24px]">
+                    <div className="reg-pub lg:w-[50%] w-full flex flex-col lg:justify-start lg:mt-0 mt-3 gap-y-[24px]">
 
                         <h2 className="text-left lg:text-[60px] text-[32px] font-[700] lg:w-[83%] lg:text-left text-left lg:leading-[119.9999%] leading-[130%] lg:tracking-[-1.5%] tracking-[-0.25]">Cohort 2 registration is <span className="bg-gradient-to-r from-[#F4405E] to-[#F56A39] bg-clip-text text-transparent">now open!</span></h2>
 
@@ -26,7 +27,9 @@ function NextCohort() {
                         </p>
 
                         <div className="waitlist-button justify-items-start flex lg:w-[100%] w-[100%]">
-                            <button className="lg:w-[207px] w-full py-[9px] py- rounded-3xl lg:text-[16px] h-[50px] text-[18px] font-[700] tracking-[0.5%] leading-[100%] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer flex items-center gap-[12px] justify-center">Join the Waitlist<CgArrowLongRight className="lg:block hidden" /></button>
+                             <Link to="/registration-form" className="w-[100%]">
+                            <button className="lg:w-[207px] w-full lg:h-[50px] h-[46px] rounded-3xl lg:text-[16px] h-[50px] text-[18px] font-[700] tracking-[0.5%] leading-[100%] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer flex items-center gap-[12px] justify-center">Join the Waitlist<CgArrowLongRight className="lg:block hidden" /></button>
+                            </Link>
                         </div>
                     </div>
              </div>

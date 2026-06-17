@@ -1,6 +1,8 @@
 import { CgArrowLongRight } from "react-icons/cg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Community from "../component/community";
+import Footer from "../component/footer";
 
 
 
@@ -489,8 +491,9 @@ const [isOpen, setIsOpen] = useState(false);
                </div>
         </div>
 
+         <Community />
          
-
+         <Footer />
 
       </section>
    )

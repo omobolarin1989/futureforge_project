@@ -5,7 +5,7 @@ import { TbArrowRight } from "react-icons/tb";
 function Facilitators() {
 
     return (
-        <section className="Facilitator-section lg:pt-[120px] lg:pb-[80px] py-[80px] w-full lg:gap-[60px] gap-[24px ]">
+        <section className="Facilitator-section flex flex-col w-full lg:gap-y-[60px] gap-[24px ]">
            <div className="facilitator-intro flex flex-col items-center w-full lg:gap-3 gap-4 text-center">
                 <p className="text-[var(--primary-color)] text-[14px] font-[700] leading-[150%] tracking-[0.5%]">Facilitators</p>
                 <h3 className="lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[-1%]">Meet the Facilitators</h3>

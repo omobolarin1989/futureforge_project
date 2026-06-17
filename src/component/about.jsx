@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="about-us lg:mt-[120px] mt-[80px] lg:mb-[80px] lg:gap-y-[60px] gap-y-[60px]">
+    <section className="about-us   lg:gap-y-[60px] gap-y-[60px]">
       <div className="about-intro text-center flex flex-col items-center lg:mb-3 gap-y-[4px]">
         <p className=" text-center text-[14px] font-[700] leading-0[150%] tracking-[0.5%] bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
           About us
@@ -48,7 +48,7 @@ function About() {
           <h3 className="text-[24px] font-[700] leading-[135%] mb-3">
             Our Values
           </h3>
-          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-[97%] w-[367px]">
+          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-[100%] w-[367px]">
             We believe meaningful growth comes from accessible learning,
             supportive communities, practical experience, mentorship, and
             consistent effort.
