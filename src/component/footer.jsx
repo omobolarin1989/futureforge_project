@@ -111,7 +111,7 @@ const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text
                 </li>
                 <li>
                   <Link to="/cohort-story">
-                  <a href="">Grduate stories</a>
+                  Grduate stories
                    </Link>
                 </li>
               </ul>
