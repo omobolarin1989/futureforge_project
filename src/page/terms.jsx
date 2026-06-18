@@ -7,6 +7,7 @@ import Footer from "../component/footer";
 
 
 
+
 function TermsCondition () {
 const [isOpen, setIsOpen] = useState(false);
    return (
@@ -171,6 +172,7 @@ const [isOpen, setIsOpen] = useState(false);
                    </Link>
                  </div>
          </div>
+
 
         <div className="terms-section lg:w-[882px] w-full flex flex-col lg:gap-[70px]">
                <div className="terms-header mb-[100px]">
