@@ -7,7 +7,7 @@ import CohortStory from "./page/cohort-story";
 import Cohort1 from "./page/cohort1";
 import TermsCondition from "./page/terms";
 import PrivacyData from "./page/privacy";
-import RegistrationForm from "./page/Registration-form";
+import RegistrationForm from "./page/registration-form";
 import "./App.css";
 
 function App() {
