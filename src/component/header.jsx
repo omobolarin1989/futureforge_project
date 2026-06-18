@@ -101,7 +101,7 @@ function Header() {
               </button>
             </Link>
 
-            <Link to="/pages/registration-form">
+            <Link to="/registration-form">
               <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
                 Join Next Cohort
               </button>

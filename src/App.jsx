@@ -1,6 +1,6 @@
 import Landing from './page/landing'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RegistrationForm from "./page/registration-form";
+import RegistrationForm from "./page/Registration-form";
 import Scroll from './page/scroll';
 import { useState } from 'react'
 
