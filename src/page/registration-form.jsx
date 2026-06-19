@@ -11,8 +11,6 @@ import Select from "react-select";
 import { options } from "../page/country-flag";
 import "react-international-phone/style.css";
 
-
-
 import { CgArrowLongRight } from "react-icons/cg";
 
 // import RegistrationForm from "./registration-form";
@@ -28,66 +26,67 @@ function RegistrationForm() {
   const [focused, setFocused] = useState(false);
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [gender, setGender] = useState("");
-  const [local, setLocal] = useState("")
-
+  const [local, setLocal] = useState("");
 
   const [namefocused, setNameFocused] = useState(false);
   const [linkedin, setLinkedin] = useState("");
   const [linkedinFocused, setLinkedinFocused] = useState(false);
-  const linkedinValid = linkedin === "" || /^https?:\/\/(www\.)?linkedin\.com\/.*$/i.test(linkedin);
-  const [paymentConsent, setPaymentConsent] = useState("");
+  const linkedinValid =
+    linkedin === "" || /^https?:\/\/(www\.)?linkedin\.com\/.*$/i.test(linkedin);
 
+  const [paymentConsent, setPaymentConsent] = useState(null);
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
-  const [country, setCountry] = useState(null)
-    const [phone, setPhone] = useState("");
+  const [country, setCountry] = useState(null);
+  const [phone, setPhone] = useState("");
 
-    const [education, setEducation] = useState("")
+  const [education, setEducation] = useState("");
 
-   const selectStyles = {
+  const [interest, setInterest] = useState("");
+  const [experience, setExperience] = useState("");
+  const [motivation, setMotivation] = useState("");
+
+  const selectStyles = {
     control: (base, state) => ({
-    ...base,
-    backgroundColor: "#111111",
-    borderRadius: "22px",
-     height: "48px",
-    minHeight: "48px",
+      ...base,
+      backgroundColor: "#111111",
+      borderRadius: "22px",
+      height: "48px",
+      minHeight: "48px",
 
-    // remove react-select default blue
-    borderColor: state.isFocused 
-      ? "transparent" 
-      : "#3A3A3A",
+      // remove react-select default blue
+      borderColor: state.isFocused ? "transparent" : "#3A3A3A",
 
-    boxShadow: "none",
+      boxShadow: "none",
 
-    "&:hover": {
-      borderColor: "transparent",
-    },
+      "&:hover": {
+        borderColor: "transparent",
+      },
 
-    // your gradient will be handled by wrapper
-  }),
+      // your gradient will be handled by wrapper
+    }),
 
-  menu: (base) => ({
-    ...base,
-    backgroundColor: "#111111",
-  }),
+    menu: (base) => ({
+      ...base,
+      backgroundColor: "#111111",
+    }),
 
-  option: (base, state) => ({
-    ...base,
-    backgroundColor: state.isFocused ? "#333333" : "#111111",
-    color: "white",
-  }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isFocused ? "#333333" : "#111111",
+      color: "white",
+    }),
 
-  singleValue: (base) => ({
-    ...base,
-    color: "white",
-  }),
+    singleValue: (base) => ({
+      ...base,
+      color: "white",
+    }),
 
-  placeholder: (base) => ({
-    ...base,
-    color: "#888788",
-  }),
-
+    placeholder: (base) => ({
+      ...base,
+      color: "#888788",
+    }),
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -106,7 +105,21 @@ function RegistrationForm() {
     }
   }, [location]);
 
-  
+ const canSubmit =
+  paymentConsent === "yes" &&
+  termsAccepted &&
+  privacyAccepted &&
+  isValid &&
+  textValid &&
+  dateOfBirth &&
+  gender &&
+  local &&
+  phone &&
+  country &&
+  education &&
+  interest &&
+  experience &&
+  motivation;
 
   return (
     <section className="text-white form-action min-h-screen w-full bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-5 lg:px-[80px]">
@@ -232,9 +245,57 @@ function RegistrationForm() {
 
         <div className="main-form w-[100%] lg:w-[753px] ">
           <form
-            action=""
-            method="post"
-            _blank
+  action=""
+  method="post"
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+    if (!canSubmit) {
+      alert("Please complete the form correctly.");
+      return;
+    }
+
+    const formData = {
+      fullName,
+      email,
+      dateOfBirth,
+      gender,
+      state: local,
+      phone,
+      country: country?.label,
+      education,
+      learningTrack: interest,
+      experience,
+      motivation,
+      linkedin,
+      paymentConsent,
+    };
+
+    try {
+      const response = await fetch(
+        "api/applicants/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.paymentLink) {
+        window.location.href = response.data.paymentLink
+      } else {
+        alert("Payment link was not generated.");
+      }
+
+    } catch (error) {
+      console.log(error);
+      alert("Something went wrong.");
+    }
+  }}
             className="flex flex-col gap-y-[38px] lg:gap-y-[32px]"
           >
             <fieldset className="flex flex-col lg:flex-row w-full lg:w-[full] gap-x-[16px] lg:gap-x-[20px]">
@@ -276,27 +337,26 @@ function RegistrationForm() {
                   </div>
                 </div>
 
+                <div className="flex flex-col gap-y-[8px]">
+                  <label
+                    htmlFor="dob"
+                    className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
+                  >
+                    Date of Birth
+                  </label>
 
-                 <div className="flex flex-col gap-y-[8px]">
-                                      <label
-                                        htmlFor="dob"
-                                        className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
-                                      >
-                                        Date of Birth
-                                      </label>
-                    
-                                      <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                                        <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                                        <input
-                                        required
-                                          type="date"
-                                          className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
-                                          id="dob" 
-                                          value={dateOfBirth}
-                                          onChange={(e) => setDateOfBirth(e.target.value)}
-                                        />
-                                      </div>
-                       </div>
+                  <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                    <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                    <input
+                      required
+                      type="date"
+                      className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
+                      id="dob"
+                      value={dateOfBirth}
+                      onChange={(e) => setDateOfBirth(e.target.value)}
+                    />
+                  </div>
+                </div>
 
                 <div className="flex flex-col gap-y-[8px]">
                   <label
@@ -313,15 +373,15 @@ function RegistrationForm() {
                       id="gender"
                       onChange={(e) => setGender(e.target.value)}
                       required
-                      
                     >
+                      <option value="disabled">Select Gender</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                     </select>
                   </div>
                 </div>
 
-                 <div className="flex flex-col gap-y-[8px]">
+                <div className="flex flex-col gap-y-[8px]">
                   <label
                     htmlFor="state"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
@@ -330,14 +390,12 @@ function RegistrationForm() {
                   </label>
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                     <input
-                    
-                    value = {local}
-                    id="state"
-                     type="text"
+                      value={local}
+                      id="state"
+                      type="text"
                       className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
                       onChange={(e) => setLocal(e.target.value)}
                       required
-                      
                     />
                   </div>
                 </div>
@@ -371,9 +429,9 @@ function RegistrationForm() {
                       ))}
 
                     <input
-                    required
-                    id="email"
-                      type="text"
+                      required
+                      id="email"
+                      type="email"
                       onChange={(e) => setEmail(e.target.value)}
                       onFocus={() => setFocused(true)}
                       onBlur={() => setFocused(false)}
@@ -392,25 +450,16 @@ function RegistrationForm() {
                     Whatsapp Number
                   </label>
                   <div className="relative z-50 w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-
-                   
-                   <PhoneInput className="w-full"
-                           defaultCountry={country?.value?.toLowerCase() || "ng"}
-                           id = "phoneInput"
-                           value={phone}
-                           onChange={setPhone} 
-                          
-
-                           inputStyle={{
-    width: "100%",
-  }}
-
-   
-
- 
-
-                         />
-                         
+                    <PhoneInput
+                      className="w-full"
+                      defaultCountry={country?.value?.toLowerCase() || "ng"}
+                      id="phoneInput"
+                      value={phone}
+                      onChange={setPhone}
+                      inputStyle={{
+                        width: "100%",
+                      }}
+                    />
                   </div>
                 </div>
 
@@ -422,26 +471,24 @@ function RegistrationForm() {
                     Country
                   </label>
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                     <Select 
-                     
-                         inputId="country"
-                         options={options}
-                         value={country}
-                         onChange={setCountry}
-                        styles={selectStyles}
-                        placeholder="Select Country"
-                       formatOptionLabel={(option) => (
-    <div className="flex items-center gap-3 py-2.5">
-      {option.flag}
-      <span>{option.label}</span>
-    </div>
-  )}
-/>
+                    <Select
+                      inputId="country"
+                      options={options}
+                      value={country}
+                      onChange={setCountry}
+                      styles={selectStyles}
+                      placeholder="Select Country"
+                      formatOptionLabel={(option) => (
+                        <div className="flex items-center gap-3 py-2.5">
+                          {option.flag}
+                          <span>{option.label}</span>
+                        </div>
+                      )}
+                    />
                   </div>
                 </div>
 
-                
-                 <div className="flex flex-col gap-y-[8px]">
+                <div className="flex flex-col gap-y-[8px]">
                   <label
                     htmlFor="education"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
@@ -456,7 +503,6 @@ function RegistrationForm() {
                       id="education"
                       onChange={(e) => setEducation(e.target.value)}
                       required
-                      
                     >
                       <option value="high-school">High School</option>
                       <option value="ond">OND</option>
@@ -482,18 +528,18 @@ function RegistrationForm() {
                       For="experience"
                       className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
                     >
-                      Level of Experience
+                      Learning Track
                     </label>
 
                     <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                       <select
+                        value={interest}
                         name="experience"
                         className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
                         id="experience"
+                        onChange={(e) => setInterest(e.target.value)}
+                        required
                       >
-                        <option value="default selected">
-                          Select track of interest
-                        </option>
                         <option value="frontend">Frontend</option>
                         <option value="backend">Backend</option>
                         <option value="product-design">Product Design</option>
@@ -515,9 +561,12 @@ function RegistrationForm() {
 
                     <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                       <select
+                        required
+                        value={experience}
                         name="experience"
                         className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
                         id="experience"
+                        onChange={(e) => setExperience(e.target.value)}
                       >
                         <option value="beginner selected">Beginner</option>
                         <option value="intermediate">intermediate</option>
@@ -538,10 +587,13 @@ function RegistrationForm() {
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                     <textarea
                       name="motivation"
+                      value={motivation}
                       id="motivation"
                       placeholder="Type your text here"
                       className="rounded-[24px] block w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none"
                       rows={5}
+                      onChange={(e) => setMotivation(e.target.value)}
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -652,10 +704,6 @@ function RegistrationForm() {
                 <label className="flex items-center gap-3">
                   <input
                     type="checkbox"
-                    name=""
-                    id=""
-                    className="text-[#FFFFFF] lg:text-[16px] text-[14px ]  font-[400] leading-[155%] tracking-[0.2%]"
-                    type="checkbox"
                     checked={termsAccepted}
                     onChange={() => setTermsAccepted(!termsAccepted)}
                     className="hidden"
@@ -688,11 +736,7 @@ function RegistrationForm() {
                 <label className="flex items-center gap-3">
                   <input
                     type="checkbox"
-                    name=""
-                    id=""
-                    className="text-[#FFFFFF] lg:text-[16px] text-[14px ]  font-[400] leading-[155%] tracking-[0.2%]"
-                    type="checkbox"
-                    checked={termsAccepted}
+                    checked={privacyAccepted}
                     onChange={() => setPrivacyAccepted(!privacyAccepted)}
                     className="hidden"
                   />
@@ -724,9 +768,14 @@ function RegistrationForm() {
             </fieldset>
 
             <button
+            
               type="submit"
-              value="Submit"
-              className="text-[#737373] text-[16px] font-[700] leading-[100%] tracking[0.5%]  w-full bg-[#262626] py-[9px] rounded-[24px]"
+  disabled={!canSubmit}
+  className={`text-[16px] font-[700] w-full py-[9px] rounded-[24px] transition-all ${
+    canSubmit
+      ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white cursor-pointer"
+      : "bg-[#262626] text-[#737373] cursor-not-allowed"
+  }`}
             >
               Submit
             </button>

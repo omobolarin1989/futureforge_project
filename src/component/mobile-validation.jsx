@@ -29,13 +29,22 @@ export default function MobileValidator() {
      
    
      
-   
+   const [linkedin, setLinkedin] = useState("");
+  const [linkedinFocused, setLinkedinFocused] = useState(false);
+  const linkedinValid = linkedin === "" || /^https?:\/\/(www\.)?linkedin\.com\/.*$/i.test(linkedin);
 
 
   const [phone, setPhone] = useState("");
   const [country, setCountry] = useState(null)
   const [result, setResult] = useState(null);
   const [education, setEducation] = useState ("")
+  const [interest, setInterest] = useState("")
+  const [experience, setExperience] = useState("")
+  const [motivation, setMotivation] = useState("")
+const [paymentConsent, setPaymentConsent] = useState("");
+
+  const [termsAccepted, setTermsAccepted] = useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   
  const handleSubmit = (e) => {
@@ -49,7 +58,12 @@ export default function MobileValidator() {
     gender: gender,
     state: state,
     email: email,
-    education:education
+    education:education,
+    interest:interest,
+    experience:experience,
+    motivation:motivation,
+    linkedin:linkedin,
+    paymentConsent: paymentConsent
   };
 
    setResult(payload);
@@ -267,6 +281,181 @@ export default function MobileValidator() {
                     </select>
                   </div>
                 </div>
+
+                <div className="flex lg:flex-row flex-col gap-x-[20px] gap-y-[20px]  w-full">
+                  <div className="level of experience lg:w-[50%] w-full flex flex-col gap-y-[8px] ">
+                    <label
+                      For="experience"
+                      className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
+                    >
+                      Level of Experience
+                    </label>
+
+                    <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                      <select
+                      value={interest}
+                        name="experience"
+                        className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
+                        id="experience"
+                        onChange={(e) => setInterest(e.target.value)}
+                        required
+                      >
+                        
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="product-design">Product Design</option>
+                        <option value="product-design">Product management</option>
+                        <option value="qa">Quality Assurance</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div className="level of experience lg:w-[50%] w-full  flex flex-col gap-y-[8px] ">
+                    <label
+                      For="experience"
+                      className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
+                    >
+                      Level of Experience
+                    </label>
+
+                    <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                      <select
+                        required
+                        value={experience}
+                        name="experience"
+                        className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
+                        id="experience"
+                         onChange={(e) => setExperience(e.target.value)}
+
+                      >
+                        <option value="beginner selected">Beginner</option>
+                        <option value="intermediate">intermediate</option>
+                        <option value="expert">Expert</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-area">
+                  <p className="pb-2">
+                    <label
+                      htmlFor="motivation"
+                      className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
+                    >
+                      Why do you want to join Future Forge
+                    </label>
+                  </p>
+                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                    <textarea
+                      name="motivation"
+                      value={motivation}
+                      id="motivation"
+                      placeholder="Type your text here"
+                      className="rounded-[24px] block w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none"
+                      rows={5}
+                       onChange={(e) => setMotivation(e.target.value)}
+                       required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div>
+                                <legend className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]">
+                                  Linkedin Profile{" "}
+                                  <span className="text-[#A1A2A2]  text-[14px] font-[400] leading[150%] tracking[0.5%]">
+                                    (optional)
+                                  </span>
+                                </legend>
+                  
+                                <p className="pb-2">
+                                  <label
+                                    htmlFor="linkedin"
+                                    className=" text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
+                                  ></label>
+                                </p>
+                  
+                                <div
+                                  className={`relative w-full rounded-[24px] p-[2px] ${linkedinFocused ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]" : linkedin === "" ? "bg-[#3A3A3A]" : linkedinValid ? "bg-green-500" : "bg-red-500"}`}
+                                >
+                                  {linkedin !== "" &&
+                                    (linkedinValid ? (
+                                      <FaCheckCircle className="absolute right-4 top-1/2 -translate-y-1/2 text-green-500 z-10" />
+                                    ) : (
+                                      <MdError className="absolute right-4 top-1/2 -translate-y-1/2 text-red-500 z-10" />
+                                    ))}
+                                  <input
+                                    type="url"
+                                    id="linkedin"
+                                    value={linkedin}
+                                    onChange={(e) => setLinkedin(e.target.value)}
+                                    onFocus={() => setLinkedinFocused(true)}
+                                    onBlur={() => setLinkedinFocused(false)}
+                                    placeholder="https://linkedin.com/in/your-profile (optional)"
+                                    className="w-full bg-[#111111] rounded-[22px] px-4 py-3 pl-12 pr-12 text-white outline-none"
+                                  />
+                                </div>
+                </div>
+
+                               <fieldset className="flex flex-col">
+              <legend className="text-[#FFFFFF]  mb-[8px] text-[16px] font-[700] leading-[155%] tracking-[0.2%]  ">
+                Do you agree to pay a non-refundable administrative fee of ...
+              </legend>
+              <div className="flex items-center gap-8">
+                <label className="flex items-center par-3 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="payment-consent"
+                    value="yes"
+                    checked={paymentConsent === "yes"}
+                    onChange={(e) => setPaymentConsent(e.target.value)}
+                    className="hidden"
+                  />
+
+                  <div
+                    className={`w-[20px] h-[20px] rounded-full flex items-center justify-center transition-all ${
+                      paymentConsent === "yes"
+                        ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]"
+                        : "border-[4px] border-[#6B6B6B]"
+                    }`}
+                  >
+                    {paymentConsent === "yes" && (
+                      <div className="w-[12px] h-[12px] rounded-full bg-black"></div>
+                    )}
+                  </div>
+                  <span className="[#FFFFFF] ml-3 text-[16px] font-[700] leading-[155%] tracking-[0.2%]">
+                    Yes
+                  </span>
+                </label>
+
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="payment-consent"
+                    id=""
+                    value="no"
+                    checked={paymentConsent === "no"}
+                    onChange={(e) => setPaymentConsent(e.target.value)}
+                    className="hidden"
+                  />
+
+                  <div
+                    className={`w-[20px] h-[20px] rounded-full flex items-center justify-center transition-all ${
+                      paymentConsent === "no"
+                        ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]"
+                        : "border-[4px] border-[#6B6B6B]"
+                    }`}
+                  >
+                    {paymentConsent === "no" && (
+                      <div className="w-[10px] h-[10px] rounded-full bg-black"></div>
+                    )}
+                  </div>
+
+                  <span className="text-[#FFFFFF] ml-3 text-[16px] font-[700] leading-[155%] tracking-[0.2%]">
+                    No
+                  </span>
+                </label>
+              </div>
+            </fieldset>
 
     <button type="submit" onClick={handleSubmit}>Submit</button>
 

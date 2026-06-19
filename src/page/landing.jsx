@@ -62,7 +62,6 @@ function Landing() {
         <Facilitators />
       </section>
       <Community />
-      <Header />
       
       <Footer />
 
