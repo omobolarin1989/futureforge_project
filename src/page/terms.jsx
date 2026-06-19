@@ -5,14 +5,12 @@ import Community from "../component/community";
 import Footer from "../component/footer";
 
 
-
-
-
 function TermsCondition () {
 const [isOpen, setIsOpen] = useState(false);
    return (
       <section className="bg-[#000000] min-h-screen text-[white] flex flex-col items-center lg:gap-y-[100px] gap-y-[15px] w-full lg:px-[0] px-[14px]">
          
+
          <div className="nav flex justify-between items-center lg:py-7 pt-7 pb-15 w-full ">
                  <div>
                    <Link to="/" className="">

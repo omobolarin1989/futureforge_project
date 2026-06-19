@@ -1,11 +1,13 @@
-
+import MobileValidator from "../component/mobile-validation"
 
 function PrivacyData () {
 
 
 
    return (
-         <h1>Welcome to Privacy</h1>
+         <section>
+            <MobileValidator />
+         </section>
 
    )
 }

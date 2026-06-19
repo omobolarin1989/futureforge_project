@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const lmsPage = () => { window.open(
-    "https://future-forge-lms.vercel.app/",
-    "_blank",
-    "noopener,noreferrer",
-  )};
+  const lmsPage = () => {
+    window.open(
+      "https://future-forge-lms.vercel.app/",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
 
   return (
     <section>
@@ -118,18 +120,15 @@ function Header() {
 
         <div className="header-button text-white  lg:flex hidden gap-[16px] ">
           <button
-           type="button"
-              onClick={lmsPage}
+            type="button"
+            onClick={lmsPage}
             className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626]"
           >
             Access LMS
           </button>
 
           <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
-            <button
-              
-              className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center"
-            >
+            <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
               Join Next Cohort <CgArrowLongRight />
             </button>
           </Link>

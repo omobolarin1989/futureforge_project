@@ -1,7 +1,60 @@
 @import "tailwindcss";
 
 :root {
-    --primary-color: #F43F5E;
-    --secondary-color: #F59E0B;
+  --primary-color: #F43F5E;
+  --secondary-color: #F59E0B;
 }
 
+
+.react-international-phone-input-container {
+  width: 100% !important;
+  height: 44px !important;
+  background: #111111 !important;
+  border-radius: 22px !important;
+  overflow: visible !important;
+}
+
+
+/* Main input */
+.react-international-phone-input {
+  background: #111111 !important;
+  color: white !important;
+  width: 100% !important;
+  height: 44px !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 0 22px 22px 0 !important;
+  padding-left: 10px !important;
+}
+
+
+/* Flag section */
+.react-international-phone-country-selector {
+  height: 44px !important;
+  background: #111111 !important;
+  border: none !important;
+  border-radius: 22px 0 0 22px !important;
+}
+
+
+.react-international-phone-country-selector-button {
+  height: 44px !important;
+  width: 48px !important;
+  background: #111111 !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 22px 0 0 22px !important;
+}
+
+
+/* Dropdown */
+.react-international-phone-dropdown {
+  position: absolute !important;
+  z-index: 9999 !important;
+  background: #111111 !important;
+  color: white !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}

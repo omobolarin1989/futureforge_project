@@ -6,6 +6,11 @@ import { MdError } from "react-icons/md";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { PhoneInput } from "react-international-phone";
+import Select from "react-select";
+import { options } from "../page/country-flag";
+import "react-international-phone/style.css";
+
 
 
 import { CgArrowLongRight } from "react-icons/cg";
@@ -15,28 +20,77 @@ import { CgArrowLongRight } from "react-icons/cg";
 import Footer from "../component/footer";
 import { Link } from "react-router-dom";
 
-
 function RegistrationForm() {
   const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
+  const [fullName, setFullName] = useState("");
   const isValid = /\S+@\S+\.\S+/.test(email);
-  const textValid = text.trim().length >= 5;
+  const textValid = fullName.trim().length >= 5;
   const [focused, setFocused] = useState(false);
+  const [dateOfBirth, setDateOfBirth] = useState("");
+  const [gender, setGender] = useState("");
+  const [local, setLocal] = useState("")
+
 
   const [namefocused, setNameFocused] = useState(false);
   const [linkedin, setLinkedin] = useState("");
   const [linkedinFocused, setLinkedinFocused] = useState(false);
-  const linkedinValid =
-    linkedin === "" || /^https?:\/\/(www\.)?linkedin\.com\/.*$/i.test(linkedin);
+  const linkedinValid = linkedin === "" || /^https?:\/\/(www\.)?linkedin\.com\/.*$/i.test(linkedin);
   const [paymentConsent, setPaymentConsent] = useState("");
 
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
-  
+  const [country, setCountry] = useState(null)
+    const [phone, setPhone] = useState("");
 
+    const [education, setEducation] = useState("")
 
-const [isOpen, setIsOpen] = useState(false);
+   const selectStyles = {
+    control: (base, state) => ({
+    ...base,
+    backgroundColor: "#111111",
+    borderRadius: "22px",
+     height: "48px",
+    minHeight: "48px",
+
+    // remove react-select default blue
+    borderColor: state.isFocused 
+      ? "transparent" 
+      : "#3A3A3A",
+
+    boxShadow: "none",
+
+    "&:hover": {
+      borderColor: "transparent",
+    },
+
+    // your gradient will be handled by wrapper
+  }),
+
+  menu: (base) => ({
+    ...base,
+    backgroundColor: "#111111",
+  }),
+
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? "#333333" : "#111111",
+    color: "white",
+  }),
+
+  singleValue: (base) => ({
+    ...base,
+    color: "white",
+  }),
+
+  placeholder: (base) => ({
+    ...base,
+    color: "#888788",
+  }),
+
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
 
   //for smooth scroll and hash scrollon
   const location = useLocation();
@@ -52,15 +106,11 @@ const [isOpen, setIsOpen] = useState(false);
     }
   }, [location]);
 
+  
+
   return (
-    
-
-
-
-    <section className=" text-[#ffffff] form-action bg-[#000000] min-h-screen bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-[80px]">
-      
-      
-     <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
+    <section className="text-white form-action min-h-screen w-full bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-5 lg:px-[80px]">
+      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
         <div>
           <Link to="/" className="lg:w-[245px] w-[244px]">
             <img
@@ -72,16 +122,28 @@ const [isOpen, setIsOpen] = useState(false);
         </div>
 
         <nav className="">
+          <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between items-center  lg:w-[369px]">
+            <Link
+              to="/#about-us"
+              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+            >
+              About
+            </Link>
 
-           <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between items-center  lg:w-[369px]">
-          <Link to="/#about-us" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">About</Link>
+            <Link
+              to="/#cohort-tracks"
+              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+            >
+              Tracks
+            </Link>
 
-          <Link to="/#cohort-tracks" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Tracks</Link>
-
-          <Link to="/#futureforge-facilitators" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Facilitators</Link>
-        </div>
-          
-
+            <Link
+              to="/#futureforge-facilitators"
+              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+            >
+              Facilitators
+            </Link>
+          </div>
 
           <button
             type="button"
@@ -92,15 +154,15 @@ const [isOpen, setIsOpen] = useState(false);
               "✕"
             ) : (
               <img
-                src="/images/Frame 2147226499.png" 
+                src="/images/Frame 2147226499.png"
                 alt="Menu"
                 className="w-15 h-10 "
               />
             )}
           </button>
 
-          
-             <div className={`
+          <div
+            className={`
     ${isOpen ? "flex" : "hidden"}
     flex-col
     justify-center
@@ -114,29 +176,42 @@ const [isOpen, setIsOpen] = useState(false);
     bg-transparent
     w-[355px]
     border-4 border-amber-500
-  `}>
-          <Link to="/#about-us" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">About</Link>
+  `}
+          >
+            <Link
+              to="/#about-us"
+              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+            >
+              About
+            </Link>
 
-          <Link to="/#cohort-tracks" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Tracks</Link>
+            <Link
+              to="/#cohort-tracks"
+              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+            >
+              Tracks
+            </Link>
 
-          <Link to="/#futureforge-facilitators" className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]">Facilitators</Link>
+            <Link
+              to="/#futureforge-facilitators"
+              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+            >
+              Facilitators
+            </Link>
 
-           <Link><button className=" text-[16px]  next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
-            Join Next Cohort
-          </button></Link>
+            <Link>
+              <button className=" text-[16px]  next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
+                Join Next Cohort
+              </button>
+            </Link>
 
-           <Link to="/registration-form">
-            <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-              Access LMS
-            </button>
-          </Link>
-
-          
-        </div>
-         
-        </nav> 
-
-        
+            <Link to="/registration-form">
+              <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
+                Access LMS
+              </button>
+            </Link>
+          </div>
+        </nav>
       </div>
 
       <div className="form-container w-[100%] flex flex-col justify-center items-center lg:mt-50 mt-[144px] lg:gap-[64px] gap-[32px]">
@@ -159,7 +234,7 @@ const [isOpen, setIsOpen] = useState(false);
           <form
             action=""
             method="post"
-            _self
+            _blank
             className="flex flex-col gap-y-[38px] lg:gap-y-[32px]"
           >
             <fieldset className="flex flex-col lg:flex-row w-full lg:w-[full] gap-x-[16px] lg:gap-x-[20px]">
@@ -170,17 +245,17 @@ const [isOpen, setIsOpen] = useState(false);
               <div className="input-flex flex lg:flex-col flex-col w-full lg-w-[50%] gap-y-[20px]">
                 <div className="flex flex-col gap-y-[8px] ">
                   <label
-                    For="f-name"
+                    htmlFor="full-name"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     Full Name
                   </label>
 
                   <div
-                    className={`relative w-full rounded-[24px] p-[2px] ${namefocused ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]" : text === "" ? "bg-[#3A3A3A]" : textValid ? "bg-green-500" : "bg-red-500"}`}
+                    className={`relative w-full rounded-[24px] p-[2px] ${namefocused ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]" : fullName === "" ? "bg-[#3A3A3A]" : textValid ? "bg-green-500" : "bg-red-500"}`}
                   >
                     <FaRegUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 z-10" />
-                    {text !== "" &&
+                    {fullName !== "" &&
                       (textValid ? (
                         <FaCheckCircle className="absolute right-4 top-1/2 -translate-y-1/2 text-green-500 z-10" />
                       ) : (
@@ -189,37 +264,43 @@ const [isOpen, setIsOpen] = useState(false);
 
                     <input
                       type="text"
-                      onChange={(e) => setText(e.target.value)}
+                      onChange={(e) => setFullName(e.target.value)}
                       onFocus={() => setNameFocused(true)}
                       onBlur={() => setNameFocused(false)}
-                      value={text}
+                      value={fullName}
                       className="w-full bg-[#111111] rounded-[22px] px-4 py-3 pl-12 pr-12 text-white outline-none"
                       placeholder="Enter your Full name"
-                      id="f-name"
+                      id="full-name"
+                      required
                     />
                   </div>
                 </div>
 
+
+                 <div className="flex flex-col gap-y-[8px]">
+                                      <label
+                                        htmlFor="dob"
+                                        className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
+                                      >
+                                        Date of Birth
+                                      </label>
+                    
+                                      <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                                        <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                                        <input
+                                        required
+                                          type="date"
+                                          className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
+                                          id="dob" 
+                                          value={dateOfBirth}
+                                          onChange={(e) => setDateOfBirth(e.target.value)}
+                                        />
+                                      </div>
+                       </div>
+
                 <div className="flex flex-col gap-y-[8px]">
                   <label
-                    For=""
-                    className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
-                  >
-                    Date of Birth
-                  </label>
-
-                  <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                    <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                    <input
-                      type="date"
-                      className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-y-[8px]">
-                  <label
-                    For="gender"
+                    htmlFor="gender"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     Gender
@@ -227,27 +308,36 @@ const [isOpen, setIsOpen] = useState(false);
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                     <select
                       name="gender"
+                      value={gender}
                       className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
-                      id="experience"
+                      id="gender"
+                      onChange={(e) => setGender(e.target.value)}
+                      required
+                      
                     >
-                      <option value="beginner selected">Gender</option>
-                      <option value="intermediate">Male</option>
-                      <option value="expert">Female</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
                     </select>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-y-[8px]">
+                 <div className="flex flex-col gap-y-[8px]">
                   <label
-                    For=""
+                    htmlFor="state"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     State
                   </label>
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                     <input
-                      type="text"
+                    
+                    value = {local}
+                    id="state"
+                     type="text"
                       className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
+                      onChange={(e) => setLocal(e.target.value)}
+                      required
+                      
                     />
                   </div>
                 </div>
@@ -256,7 +346,7 @@ const [isOpen, setIsOpen] = useState(false);
               <div className="input-flex flex lg:flex-col flex-col  w-full lg-w-[50%] gap-y-[20px]">
                 <div className="flex flex-col gap-y-[8px]">
                   <label
-                    For=""
+                    hmlFor="email"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     Email
@@ -281,6 +371,8 @@ const [isOpen, setIsOpen] = useState(false);
                       ))}
 
                     <input
+                    required
+                    id="email"
                       type="text"
                       onChange={(e) => setEmail(e.target.value)}
                       onFocus={() => setFocused(true)}
@@ -294,47 +386,85 @@ const [isOpen, setIsOpen] = useState(false);
 
                 <div className="flex flex-col gap-y-[8px]">
                   <label
-                    For=""
+                    htmlFor="whatsapp"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
-                    Whatsapp
+                    Whatsapp Number
                   </label>
-                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                    <input
-                      type="tel"
-                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
-                      placeholder="0000 0000 0000"
-                    />
+                  <div className="relative z-50 w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
+
+                   
+                   <PhoneInput className="w-full"
+                           defaultCountry={country?.value?.toLowerCase() || "ng"}
+                           id = "phoneInput"
+                           value={phone}
+                           onChange={setPhone} 
+                          
+
+                           inputStyle={{
+    width: "100%",
+  }}
+
+   
+
+ 
+
+                         />
+                         
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-y-[8px] ">
                   <label
-                    For=""
+                    htmlFor="country"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     Country
                   </label>
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                    <input
-                      type="text"
-                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
-                    />
+                     <Select 
+                     
+                         inputId="country"
+                         options={options}
+                         value={country}
+                         onChange={setCountry}
+                        styles={selectStyles}
+                        placeholder="Select Country"
+                       formatOptionLabel={(option) => (
+    <div className="flex items-center gap-3 py-2.5">
+      {option.flag}
+      <span>{option.label}</span>
+    </div>
+  )}
+/>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-y-[8px]">
+                
+                 <div className="flex flex-col gap-y-[8px]">
                   <label
-                    For=""
+                    htmlFor="education"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     Highest Level of Education
                   </label>
                   <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                    <input
-                      type="text"
+                    <select
+                      name="education"
+                      value={education}
                       className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
-                    />
+                      id="education"
+                      onChange={(e) => setEducation(e.target.value)}
+                      required
+                      
+                    >
+                      <option value="high-school">High School</option>
+                      <option value="ond">OND</option>
+                      <option value="hnd">HND</option>
+                      <option value="bsc">Bsc</option>
+                      <option value="masters">Masters</option>
+                      <option value="phd">Phd</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -547,10 +677,10 @@ const [isOpen, setIsOpen] = useState(false);
 
                   <span>
                     I agree to the{" "}
-                     <Link to ="/terms">
-                    <a className="cursor-pointer">
-                      <u>Terms and Conditions</u>
-                    </a>
+                    <Link to="/terms">
+                      <a className="cursor-pointer">
+                        <u>Terms and Conditions</u>
+                      </a>
                     </Link>
                   </span>
                 </label>
@@ -583,18 +713,23 @@ const [isOpen, setIsOpen] = useState(false);
 
                   <span>
                     I agree to the{" "}
-                   <Link to="/privacy">
-                    <a className="cursor-pointer">
-                      <u>Privacy Policy and Data Protection</u>
-                    </a>
+                    <Link to="/privacy">
+                      <a className="cursor-pointer">
+                        <u>Privacy Policy and Data Protection</u>
+                      </a>
                     </Link>
                   </span>
                 </label>
-               
               </div>
             </fieldset>
 
-            <input type="submit" value="Submit" className="text-[#737373] text-[16px] font-[700] leading-[100%] tracking[0.5%]  w-full bg-[#262626] py-[9px] rounded-[24px]" />
+            <button
+              type="submit"
+              value="Submit"
+              className="text-[#737373] text-[16px] font-[700] leading-[100%] tracking[0.5%]  w-full bg-[#262626] py-[9px] rounded-[24px]"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
