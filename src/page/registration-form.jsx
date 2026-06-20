@@ -121,6 +121,15 @@ function RegistrationForm() {
   experience &&
   motivation;
 
+
+   const lmsPage = () => {
+    window.open(
+      "https://future-forge-lms.vercel.app/",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
     <section className="text-white form-action min-h-screen w-full bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-5 lg:px-[80px]">
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
@@ -178,50 +187,58 @@ function RegistrationForm() {
             className={`
     ${isOpen ? "flex" : "hidden"}
     flex-col
+    text-[20px]
     justify-center
     items-center
     md:hidden
     mt-4
+    py-5
+    px-3
     text-white
     font-[700]
     gap-6
-    bg-black
-    bg-transparent
+    bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943]
+    bg-[#F43F5E]
+    text-[#ffffff]
     w-[355px]
-    border-4 border-amber-500
+   
   `}
           >
             <Link
               to="/#about-us"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+              className="text-[18px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
             >
               About
             </Link>
 
             <Link
               to="/#cohort-tracks"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+              className="text-[18px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
             >
               Tracks
             </Link>
 
             <Link
               to="/#futureforge-facilitators"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+              className="text-[18px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
             >
               Facilitators
             </Link>
 
             <Link>
-              <button className=" text-[16px]  next-cohort  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
+              <button className=" text-[16px]  next-cohort lg:block hidden  border border-[#404040] lg-[178px] py-2.5 font-[700] rounded-3xl hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
                 Join Next Cohort
               </button>
             </Link>
 
-            <Link to="/registration-form">
-              <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-                Access LMS
-              </button>
+            <Link to="/registration-form" className="lg:w-full w-full">
+             <button
+            type="button"
+            onClick={lmsPage}
+            className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] w-full h-[50px] font-[700]  rounded-3xl active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626]"
+          >
+            Access LMS
+          </button>
             </Link>
           </div>
         </nav>
@@ -777,7 +794,7 @@ function RegistrationForm() {
       : "bg-[#262626] text-[#737373] cursor-not-allowed"
   }`}
             >
-              Submit
+              Proceed to payment
             </button>
           </form>
         </div>

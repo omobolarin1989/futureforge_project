@@ -14,14 +14,14 @@ function Header() {
   };
 
   return (
-    <section>
-      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
+    <section className="lg:mt-7 mt-3">
+      <div className="nav flex lg:grow grow justify-between items-center lg:py-1 pt-7 pb-15 ">
         <div>
           <Link to="/" className="lg:w-[245px] w-[244px]">
             <img
               src="images/image 8.png"
               alt="logo"
-              className="lg:w-[245%] w-[244px]"
+              className="lg:w-[245%] w-[200px]"
             />
           </Link>
         </div>
@@ -52,7 +52,7 @@ function Header() {
 
           <button
             type="button"
-            className="cursor-pointer block lg:hidden "
+            className="cursor-pointer block lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
@@ -70,51 +70,55 @@ function Header() {
             className={`
     ${isOpen ? "flex" : "hidden"}
     flex-col
+    text-[20px]
     justify-center
     items-center
     md:hidden
     mt-4
+    py-5
+    px-3
     text-white
     font-[700]
     gap-6
-    bg-black
-    bg-transparent
+    bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943]
+    bg-[#F43F5E]
+    text-[#ffffff]
     w-[355px]
-    border-4 border-amber-500
+   rounded-[24px]
   `}
           >
             <Link
               to="/#about-us"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+              className="text-[18px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
             >
               About
             </Link>
 
             <Link
               to="/#cohort-tracks"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+              className="text-[18px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
             >
               Tracks
             </Link>
 
             <Link
               to="/#futureforge-facilitators"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+              className="text-[18px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
             >
               Facilitators
             </Link>
 
-            <Link className="lg:w-[135px] w-[full]">
-              <button className=" text-[16px]  lg:w-[135px] w-full h-[50px] next-cohort  border border-[#404040] font-[700] rounded-[24px] bg-green-300 Lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626]">
+            
+              <button onClick={lmsPage} className="text-[16px]  lg:w-[135px] w-full h-[50px] next-cohort  border font-[700] rounded-[24px] bg-green-300  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer" >
                 Access LMS
               </button>
-            </Link>
+            
 
-            <Link to="/registration-form">
-              <button className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
-                Join Next Cohort
-              </button>
-            </Link>
+            <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
+            <button className="lg:w-[178px] w-full lg:h-[46px] rounded-3xl py-2 cursor-pointer text-[16px] font-bold border bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
+              Join Next Cohort <CgArrowLongRight />
+            </button>
+          </Link>
           </div>
         </nav>
 
@@ -122,13 +126,13 @@ function Header() {
           <button
             type="button"
             onClick={lmsPage}
-            className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626]"
+            className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] font-[700]  rounded-3xl bg-transparent active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626] cursor-pointer"
           >
             Access LMS
           </button>
 
           <Link to="/registration-form" className="w-[100%] lg:w-[50%]">
-            <button className="lg:w-[210px] w-full rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
+            <button className="lg:w-[178px] w-full lg:h-[46px] rounded-3xl py-2 cursor-pointer text-[16px] font-bold border  border-[#404040] bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943] flex items-center gap-[12px] justify-center">
               Join Next Cohort <CgArrowLongRight />
             </button>
           </Link>

@@ -13,7 +13,7 @@ const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text
     
   
   return (
-    <section className="h-fit w-full">
+    <section className="h-fit">
       <div className="footer flex flex-col gap-[30px] lg:gap-y-[20px] gap-[40px] ">
         <div className="flex lg:flex-row flex-col w-full justify-between lg:mt-[80px] mt-[80px] mb-[20px] gap-y-[32px] lg:h-[280px] gap-[10px] lg:gap-[64px]">
           <div className="futureforge-contact flex flex-col lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[32px] ">

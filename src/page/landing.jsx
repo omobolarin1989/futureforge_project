@@ -11,15 +11,10 @@ import NextCohort from "../component/next-cohort";
 import Header from "../component/header";
 
 
-import { CgArrowLongRight } from "react-icons/cg";
-
 import Community from "../component/community";
-import { Link } from "react-router-dom";
 
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function Landing() {
-  //For responsive navbar
-  const [isOpen, setIsOpen] = useState(false);
 
   //for smooth scroll and hash scrollon
    const location = useLocation();
@@ -37,7 +32,7 @@ function Landing() {
 
 
   return (
-    <section className=" text-white  lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(140%_25%_at_40%_0%,_rgba(39,15,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat lg:px-[120px] px-[8px] flex flex-col lg:gap-y-[80px] gap-y-[70px]">
+    <section className=" text-white grow lg:w-full lg:max-w-[1440px] md xl:max-w-[2560px] lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(140%_25%_at_40%_0%,_rgba(39,15,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat lg:px-[120px] px-[8px] flex flex-col lg:gap-y-[80px] gap-y-[70px] grow overflow-hidden">
    
 
       <Header />

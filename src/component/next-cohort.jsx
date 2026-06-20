@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function NextCohort() {
 
     return (
-       <section className="registration lg:w-full w-full text-center flex flex-col items-center ">
+       <section className="registration text-center flex flex-col items-center ">
              <p className="text-[20px] lg:text-[48px] text-[20px] lg:font-[350] font-[400] lg:w-[1280px] text-center lg:leading-[157%] lg:tracking-[-1%] lg:px-[10px] lg:pt-0 pt-[80px] lg:pb-[80px] pb-0">FutureForge is a free, community-first learning initiative helping graduates confidently 
                 transition into tech through mentorship, real-world learning, and collaborative growth.
              </p>
