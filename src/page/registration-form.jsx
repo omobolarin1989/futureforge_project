@@ -47,6 +47,8 @@ function RegistrationForm() {
   const [experience, setExperience] = useState("");
   const [motivation, setMotivation] = useState("");
 
+ const validDOB = /^\d{2}\/\d{2}\/\d{4}$/.test(dateOfBirth);
+
   const selectStyles = {
     control: (base, state) => ({
       ...base,
@@ -112,6 +114,7 @@ function RegistrationForm() {
   isValid &&
   textValid &&
   dateOfBirth &&
+  validDOB &&
   gender &&
   local &&
   phone &&
@@ -132,19 +135,21 @@ function RegistrationForm() {
 
   return (
     <section className="text-white form-action min-h-screen w-full bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-5 lg:px-[80px]">
-      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
+      <div className="nav flex justify-between items-center lg:py-10 pt-7  ">
         <div>
           <Link to="/" className="lg:w-[245px] w-[244px]">
             <img
               src="images/image 8.png"
               alt="logo"
-              className="lg:w-[245%] w-[244px]"
+              className="lg:w-[245%] w-[200px]"
             />
           </Link>
         </div>
 
-        <nav className="">
-          <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between items-center  lg:w-[369px]">
+        <nav className="lg:w-[60%]">
+          <div className="lg:[w-80%]">
+            <div className=" lg:w-[100%] flex justify-between">
+              <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between items-center lg:w-[55%] ">
             <Link
               to="/#about-us"
               className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
@@ -165,6 +170,13 @@ function RegistrationForm() {
             >
               Facilitators
             </Link>
+            </div>
+            <div className="">
+            <button onClick={lmsPage} className="next-cohort text-[16px] hidden lg:block lg:w-[190px] w-full h-[55px]   border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]">
+                Access LMS
+              </button>
+            </div>
+              </div>
           </div>
 
           <button
@@ -182,6 +194,8 @@ function RegistrationForm() {
               />
             )}
           </button>
+
+          
 
           <div
             className={`
@@ -201,6 +215,7 @@ function RegistrationForm() {
     bg-[#F43F5E]
     text-[#ffffff]
     w-[355px]
+    rounded-[24px]
    
   `}
           >
@@ -231,21 +246,17 @@ function RegistrationForm() {
               </button>
             </Link>
 
-            <Link to="/registration-form" className="lg:w-full w-full">
-             <button
-            type="button"
-            onClick={lmsPage}
-            className="lms border border-[#404040] lg:py-[9px] lg:w-[135px] w-full h-[50px] font-[700]  rounded-3xl active:bg-[#000000] hover:border-[#404040] hover:bg-[#171717] active:border-[#404040] bg-[#262626]"
-          >
-            Access LMS
-          </button>
-            </Link>
+            
+             <button onClick={lmsPage} className="next-cohort text-[16px]  lg:w-[135px] w-full h-[50px] border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]">
+                Access LMS
+              </button>
+           
           </div>
         </nav>
       </div>
 
-      <div className="form-container w-[100%] flex flex-col justify-center items-center lg:mt-50 mt-[144px] lg:gap-[64px] gap-[32px]">
-        <div className="form-section lg:w-[753px] flex flex-col gap-[8px] lg:gap-[16px] ">
+      <div className="form-container w-[100%] flex flex-col justify-center items-center lg:mt-30 mt-[144px] lg:gap-[64px] gap-[32px]">
+        <div className="form-section lg:w-[753px] flex flex-col gap-y-[15px] lg:gap-[16px] ">
           <div className="form-header w-100% text-center">
             <h1 className="text-[30px] lg:text-[48px] font-[700] leading-[125%] lg:leading-[120%] tracking-[-0.5%] lg:tracking-[-1%]  ">
               Register For the Next Cohort
@@ -365,6 +376,20 @@ function RegistrationForm() {
                   <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                     <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
                     <input
+                    maxLength={10}
+                     onChange={(e) => {
+    let value = e.target.value.replace(/\D/g, "");
+
+    if (value.length > 2) {
+      value = value.slice(0, 2) + "/" + value.slice(2);
+    }
+
+    if (value.length > 5) {
+      value = value.slice(0, 5) + "/" + value.slice(5, 9);
+    }
+
+    setDateOfBirth(value);
+  }}
                       required
                       type="date"
                       className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
@@ -521,6 +546,7 @@ function RegistrationForm() {
                       onChange={(e) => setEducation(e.target.value)}
                       required
                     >
+                      <option value="disabled">Select Level of Education</option>
                       <option value="high-school">High School</option>
                       <option value="ond">OND</option>
                       <option value="hnd">HND</option>
@@ -557,6 +583,7 @@ function RegistrationForm() {
                         onChange={(e) => setInterest(e.target.value)}
                         required
                       >
+                        <option value="disabled">Select track of interest</option>
                         <option value="frontend">Frontend</option>
                         <option value="backend">Backend</option>
                         <option value="product-design">Product Design</option>
@@ -585,9 +612,10 @@ function RegistrationForm() {
                         id="experience"
                         onChange={(e) => setExperience(e.target.value)}
                       >
+                        <option value="disabled">Select Level of Experience</option>
                         <option value="beginner selected">Beginner</option>
-                        <option value="intermediate">intermediate</option>
-                        <option value="expert">Expert</option>
+                        <option value="intermediate selected">intermediate</option>
+                        <option value="expert selected">Expert</option>
                       </select>
                     </div>
                   </div>
@@ -742,10 +770,10 @@ function RegistrationForm() {
 
                   <span>
                     I agree to the{" "}
-                    <Link to="/terms">
-                      <a className="cursor-pointer">
+                    <Link to="/terms" target="_blank" rel="noopener noreferrer">
+                      
                         <u>Terms and Conditions</u>
-                      </a>
+                      
                     </Link>
                   </span>
                 </label>
@@ -774,10 +802,10 @@ function RegistrationForm() {
 
                   <span>
                     I agree to the{" "}
-                    <Link to="/privacy">
-                      <a className="cursor-pointer">
+                    <Link to="/privacy" target="_blank" rel="noopener noreferrer">
+                      
                         <u>Privacy Policy and Data Protection</u>
-                      </a>
+                    
                     </Link>
                   </span>
                 </label>

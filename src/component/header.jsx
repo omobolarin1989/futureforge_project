@@ -14,8 +14,8 @@ function Header() {
   };
 
   return (
-    <section className="lg:mt-7 mt-3">
-      <div className="nav flex lg:grow grow justify-between items-center lg:py-1 pt-7 pb-15 ">
+    <section className="lg:mt-7 mt-3 ">
+      <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
         <div>
           <Link to="/" className="lg:w-[245px] w-[244px]">
             <img
@@ -52,7 +52,7 @@ function Header() {
 
           <button
             type="button"
-            className="cursor-pointer block lg:hidden"
+            className="cursor-pointer block md:block lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
@@ -73,7 +73,7 @@ function Header() {
     text-[20px]
     justify-center
     items-center
-    md:hidden
+    block
     mt-4
     py-5
     px-3
@@ -84,6 +84,7 @@ function Header() {
     bg-[#F43F5E]
     text-[#ffffff]
     w-[355px]
+    md:w-[800px]
    rounded-[24px]
   `}
           >
@@ -109,7 +110,7 @@ function Header() {
             </Link>
 
             
-              <button onClick={lmsPage} className="text-[16px]  lg:w-[135px] w-full h-[50px] next-cohort  border font-[700] rounded-[24px] bg-green-300  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer" >
+              <button onClick={lmsPage} className="text-[16px]  lg:w-[135px] w-full h-[50px] next-cohort  border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]">
                 Access LMS
               </button>
             

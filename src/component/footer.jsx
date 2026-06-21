@@ -10,10 +10,17 @@ const phoneNumber = "2349168095276"; // No plus sign here
 const textMessage = "Welcome to Futureforge, Please leave a message.";
 const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(textMessage)}`;
 
+const lmsPage = () => {
+    window.open(
+      "https://future-forge-lms.vercel.app/",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
     
   
   return (
-    <section className="h-fit">
+    <section className="flex flex-col lg:gap-y-20 gap-y-10">
       <div className="footer flex flex-col gap-[30px] lg:gap-y-[20px] gap-[40px] ">
         <div className="flex lg:flex-row flex-col w-full justify-between lg:mt-[80px] mt-[80px] mb-[20px] gap-y-[32px] lg:h-[280px] gap-[10px] lg:gap-[64px]">
           <div className="futureforge-contact flex flex-col lg:h-280px lg:w-[357px] lg:gap-y-[48px] gap-y-[32px] ">
@@ -105,9 +112,9 @@ const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text
                   </Link>
                 </li>
                 <li>
-                  
+                  <a href="" onClick={lmsPage}>
                   Access LMS
-                 
+                 </a>
                 </li>
                 <li>
                   <Link to="/cohort-story">
@@ -148,10 +155,10 @@ const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text
         </div>
       </div>
 
-      <div className="footer-logo w-full lg:pt-35">
+      <div className="footer-logo w-full">
         <img
           src="/images/image 9.png"
-          className="w-full lg:h-[209.11px] pt-8"
+          className="w-full lg:h-[209.11px]"
           alt=""
         />
       </div>

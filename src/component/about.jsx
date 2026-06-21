@@ -1,11 +1,11 @@
 function About() {
   return (
-    <section className="about-us   lg:gap-y-[60px] gap-y-[60px]">
-      <div className="about-intro text-center flex flex-col items-center lg:mb-3 gap-y-[4px]">
+    <section className="about-us lg:gap-y-[60px] md:gap-y-[100px] gap-y-[60px]">
+      <div className="about-intro text-center flex flex-col items-center">
         <p className=" text-center text-[14px] font-[700] leading-0[150%] tracking-[0.5%] bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
           About us
         </p>
-        <h3 className="lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[-1%] lg:w-[760px] text-center w-[400px]">
+        <h3 className="lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[-1%] lg:w-[760px] md:w-[550px] text-center w-[400px]">
           Helping graduates confidently grow into tech careers.
         </h3>
       </div>
@@ -28,7 +28,7 @@ function About() {
           <h3 className="text-[24px] font-[700] leading-[135%] mb-3">
             Our Mission
           </h3>
-          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-full w-full">
+          <article className="text-[#D4D4D4]lg:text-[16px] text-[16px] font-[400] lg:font-[400] font-[400] md:font-[600] leading-[155%] tracking-[0.2%] lg:w-full w-full">
             To make tech learning accessible, practical, and community-driven by
             helping graduates gain real-world skills, mentorship, and confidence
             to grow into successful tech careers.
@@ -37,7 +37,7 @@ function About() {
 
         <div className="vision lg:w-[380px] w-full gap-[8px]">
           <h3 className="text-[24px] font-[700] leading-[135%] mb-3">Vision</h3>
-          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-full w-[367px] text-left">
+          <article className="text-[#D4D4D4] lg:text-[16px] text-[16px] md:text-[18px] lg:font-[400] font-[400] md:font-[600] leading-[155%] tracking-[0.2%] lg:w-full w-[367px] md:w-full text-left">
             To build a future where ambitious African graduates can confidently
             access opportunities, mentorship, and thriving careers in technology
             regardless of their background.
@@ -48,7 +48,7 @@ function About() {
           <h3 className="text-[24px] font-[700] leading-[135%] mb-3">
             Our Values
           </h3>
-          <article className="text-[#D4D4D4] text-[16px] font-[400] leading-[155%] tracking-[0.2%] lg:w-[100%] w-[367px]">
+          <article className="text-[#D4D4D4] lg:text-[16px] text-[16px] md:text-[18px] text-[16px] lg:font-[400] font-[400] md:font-[600] leading-[155%] tracking-[0.2%] lg:w-[100%] w-[367px] md:w-full">
             We believe meaningful growth comes from accessible learning,
             supportive communities, practical experience, mentorship, and
             consistent effort.
