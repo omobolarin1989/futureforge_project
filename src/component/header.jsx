@@ -21,7 +21,7 @@ function Header() {
             <img
               src="images/image 8.png"
               alt="logo"
-              className="lg:w-[245%] w-[280px]"
+              className="lg:w-[245%] w-[180px] md:w-[260px]"
             />
           </Link>
         </div>

@@ -40,7 +40,7 @@ function CohortStory() {
             <h1 className="lg:w-[851px] w-[370px] md:w-[440px] lg:text[72px] md:text-[50px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
               Every Cohort Tells a Story.
             </h1>
-            <p className="text-[#ffffff] lg:w-[851px] w-[370px] text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center md:w-[90%] ">
+            <p className="text-[#ffffff] lg:w-[851px] w-[370px] md:w-[90%] text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center  ">
               Explore the journeys of FutureForge graduates across different
               cohorts. Browse past classes, discover graduate stories, and see
               how learners grew through mentorship, collaboration, and practical
@@ -87,7 +87,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 01
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 01 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -139,7 +139,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 02
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px]  lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 02 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -185,7 +185,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 03
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 03 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -231,7 +231,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 04
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 04 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -277,7 +277,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 05
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 05 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -323,7 +323,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 06
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 06 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -369,7 +369,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 07
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 07 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -415,7 +415,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 08
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 08 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -461,7 +461,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 09
                 </h3>
-                <p className="text-[#A3A3A3] w-[373px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 09 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
