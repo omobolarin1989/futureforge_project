@@ -109,14 +109,14 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
 
                 <Link to="/Cohort1">
                   <button>
-                    <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                    <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
                   </button>
                 </Link>
 
@@ -161,11 +161,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -207,11 +207,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -253,11 +253,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -299,11 +299,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -345,11 +345,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -391,11 +391,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -437,11 +437,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>
@@ -461,7 +461,7 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 09
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] md:w-[550px]  text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 09 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
@@ -483,11 +483,11 @@ function CohortStory() {
                 </p>
               </div>
                </div>
-              <div className="flex justify-between items-center pt-4">
+              <div className="flex justify-between items-center lg:pt-6 pt-2 md:pt-4.5">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight className="rounded-[50%] text-[40px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
               </div>
             </div>
           </div>

@@ -10,8 +10,7 @@ import { PhoneInput } from "react-international-phone";
 import Select from "react-select";
 import { options } from "../page/country-flag";
 import "react-international-phone/style.css";
-
-import { CgArrowLongRight } from "react-icons/cg";
+import { useRef } from "react";
 
 // import RegistrationForm from "./registration-form";
 // import Header from "../component/header";
@@ -40,6 +39,7 @@ function RegistrationForm() {
 
   const [country, setCountry] = useState(null);
   const [phone, setPhone] = useState("");
+  const phoneRef = useRef(null);
 
   const [education, setEducation] = useState("");
 
@@ -106,6 +106,16 @@ function RegistrationForm() {
       }
     }
   }, [location]);
+
+  useEffect(() => {
+  if (phoneRef.current) {
+    const input = phoneRef.current.querySelector("input");
+
+    if (input) {
+      input.placeholder = "Enter Whatsapp Number";
+    }
+  }
+}, []);
 
  const canSubmit =
   paymentConsent === "yes" &&
@@ -411,12 +421,12 @@ function RegistrationForm() {
                     <select
                       name="gender"
                       value={gender}
-                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
+                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
                       id="gender"
                       onChange={(e) => setGender(e.target.value)}
                       required
                     >
-                      <option value="disabled">Select Gender</option>
+                      <option value="disabled" className="]">Select Gender</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                     </select>
@@ -435,8 +445,9 @@ function RegistrationForm() {
                       value={local}
                       id="state"
                       type="text"
-                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none "
+                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 outline-none "
                       onChange={(e) => setLocal(e.target.value)}
+                      placeholder="Please Enter your State"
                       required
                     />
                   </div>
@@ -493,15 +504,14 @@ function RegistrationForm() {
                   </label>
                   <div className="relative z-50 w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
                     <PhoneInput
-                      className="w-full"
-                      defaultCountry={country?.value?.toLowerCase() || "ng"}
-                      id="phoneInput"
-                      value={phone}
-                      onChange={setPhone}
-                      inputStyle={{
-                        width: "100%",
-                      }}
-                    />
+  className="w-full"
+  defaultCountry={country?.value?.toLowerCase() || "ng"}
+  value={phone === "+234 " ? "" : phone}
+  onChange={setPhone}
+  inputProps={{
+    placeholder: "Enter Whatsapp Number",
+  }}
+/>
                   </div>
                 </div>
 

@@ -25,7 +25,9 @@
   outline: none !important;
   border-radius: 0 22px 22px 0 !important;
   padding-left: 10px !important;
+ 
 }
+
 
 
 /* Flag section */
@@ -59,6 +61,16 @@
   overflow: hidden !important;
 }
 
+.react-international-phone-input-container input {
+  background: #111111 !important;
+  color: white !important;
+}
+
+.react-international-phone-input-container input::placeholder {
+  color: #888788 !important;
+  opacity: 1 !important;
+}
+
 @font-face{
 
   font-family: gadugi;
@@ -74,14 +86,6 @@
 
   --animate-scroll: scroll 30s linear infinite;
 
-}
-
-
-@import "tailwindcss";
-
-:root {
-  --primary-color: #F43F5E;
-  --secondary-color: #F59E0B;
 }
 
 /* your phone input styles stay unchanged... */
