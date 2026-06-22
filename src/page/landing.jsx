@@ -32,7 +32,7 @@ function Landing() {
 
 
   return (
-    <section className="font-gadugi text-white grow xl:w-full lg:max-w-[1440px] md:px-[50px] md:flex-col xl:max-w-[2560px] lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat lg:px-[120px] px-[8px] flex flex-col lg:gap-y-[80px] gap-y-[70px] overflow-hidden">
+    <section className="font-gadugi text-white grow xl:w-full lg:max-w-[1440px] md:px-[50px] md:flex-col xl:max-w-[2560px] lg:min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat lg:px-[120px] px-5 flex flex-col lg:gap-y-[80px] gap-y-[70px] overflow-hidden">
    
 
       <Header />
