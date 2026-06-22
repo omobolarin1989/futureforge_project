@@ -1,3 +1,13 @@
+@font-face{
+
+  font-family: gadugi;
+  src:url("./assets/fonts/gadugi-normal.ttf")
+}
+
+@theme{
+--font-gadugi: gadugi, "san-serif";
+}
+
 
 :root {
     --primary-color: #F43F5E;

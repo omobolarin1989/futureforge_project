@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // border rounded-2xl border- text-center text-[12px] w-55 bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent
 function Hero() {
   return (
-    <section className="hero-section grow md:flex-col gap-7 md:gap-y-10 lg:h-screen min-h-screen flex flex-col lg:flex-row justify-between">
+    <section className="font-gadugi hero-section grow md:flex-col gap-7 md:gap-y-10 lg:h-screen min-h-screen flex flex-col lg:flex-row justify-between">
       <div className="hero-text flex flex-col justify-center w-full lg:w-[40%]">
         <div className="text-content flex flex-col  lg:items-start items-center w-full">
           <div className="lg:full  lg:max-w-[40%] w-[75%] rounded-2xl p-px bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] mb-5">
             <p className="rounded-2xl bg-black px-4 py-2 text-center   lg:font-[700] font-[400] tracking-[1%] leading-[145%] flex justify-center grow">
-              <span className=" inline-block text-[12px] text-base bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent ">
+              <span className="font-[700] inline-block text-[12px] text-base bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent ">
                 COMMUNITY-FIRST TECH LEARNING
               </span>
             </p>

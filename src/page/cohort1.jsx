@@ -100,7 +100,7 @@ function Cohort1() {
     `text-white px-4 py-2 rounded-xl text-[16px] font-[400] tracking-wide ${isActive ? "bg-gradient-to-r from-[#F43F5E] to-[#F59E0B] text-white font-[700]" : "bg-[#171717] text-gray-600 border border-[#262626] hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] "}`;
 
   return (
-    <section className="min-h-screen text-[white] py-[20px] lg:px-[150px] px-[16px] flex flex-col gap-20px lg:gap-y-[80px] bg-[#0A0705] bg-[radial-gradient(140%_45%_at_50%_0%,_rgba(245,158,11,0.25)_2%,_rgba(146,64,14,0.15)_23%,_transparent_50%)] bg-local bg-no-repeat">
+    <section className="font-gadugi min-h-screen text-[white] py-[20px] lg:px-[150px] px-[16px] flex flex-col gap-20px lg:gap-y-[110px] bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_25%,_transparent_60%)] bg-no-repeat bg-local bg-no-repeat">
       
       <Header />
 

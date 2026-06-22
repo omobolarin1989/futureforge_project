@@ -58,3 +58,51 @@
   border-radius: 12px !important;
   overflow: hidden !important;
 }
+
+@font-face{
+
+  font-family: gadugi;
+  src:url("./assets/fonts/gadugi-grass.ttf")
+}
+
+@theme{
+--font-gadugi: gadugi, "san-serif";
+}
+
+
+@theme {
+
+  --animate-scroll: scroll 30s linear infinite;
+
+}
+
+
+@import "tailwindcss";
+
+:root {
+  --primary-color: #F43F5E;
+  --secondary-color: #F59E0B;
+}
+
+/* your phone input styles stay unchanged... */
+
+/* font */
+
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.group:hover .animate-scroll {
+  animation-play-state: paused;
+}

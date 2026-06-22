@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 function Tracks() {
   return (
     <section className="track-list justify-between flex lg:flex-row flex-col md:flex-col lg:gap-y-[32px] gap-y-[32px] md:gap-y-20 w-full ">
-      <div className="track-intros flex flex-col lg:w-[50%] w-full lg:gap-y-[32px] gap-y-[24px] items-center lg:bg-[radial-gradient(circle_at_left_center,rgba(190,60,15,0.50),transparent_50%)]">
+      <div className="track-intros flex flex-col lg:w-[50%] w-full lg:gap-y-[32px] gap-y-[24px] lg:items-left bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(40%_30%_at_25%_55%,_rgba(60,22,11,0.90)_30%,_rgba(146,64,14,0.15)_100%,_transparent_190%)]">
         <p className="text-[#F43F5D] lg:text-[14px] text-16px font-[700] leading-[150%] tracking-[0.5%]">
           Tracks
         </p>
-        <h3 className="lg:text-[60px] text-[38px] md:text-center font-[700] lg:w-[80%] w-full leading-[120%] tracking-[-1%]">
+        <h3 className="lg:text-[60px] text-[38px] lg:text-left md:text-center font-[700] lg:w-[80%] w-full leading-[120%] tracking-[-1%]">
           Explore career paths designed for real-world tech growth.
         </h3>
-        <p className="lg:text-[#D4D4D4] text-[16px] md:text-center lg:w-[65%] w-full md:w-[80%] font-[400] leading-[155%] leading-[0.2%] w-full">
+        <p className="lg:text-[#D4D4D4] text-[16px] lg:text-left md:text-center lg:w-[65%] w-full md:w-[80%] font-[400] leading-[155%] leading-[0.2%] w-full">
           Choose from beginner-friendly tracks built around practical learning,
           mentorship, and collaborative growth.
         </p>

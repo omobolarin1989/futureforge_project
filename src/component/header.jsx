@@ -17,11 +17,11 @@ function Header() {
     <section className="lg:mt-7 mt-3 ">
       <div className="nav flex justify-between items-center lg:py-1 pt-7 pb-15 ">
         <div>
-          <Link to="/" className="lg:w-[245px] w-[244px]">
+          <Link to="/" className="lg:w-[245px] w-[244px] md:w-[260px]">
             <img
               src="images/image 8.png"
               alt="logo"
-              className="lg:w-[245%] w-[200px]"
+              className="lg:w-[245%] w-[280px]"
             />
           </Link>
         </div>

@@ -134,14 +134,14 @@ function RegistrationForm() {
   };
 
   return (
-    <section className="text-white form-action min-h-screen w-full bg-gradient-to-b from-[#221008] via-[#0c0604] to-[#040201] px-5 lg:px-[80px]">
+    <section className="font-gadugi text-white form-action min-h-screen w-full bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat px-5 lg:px-[80px]">
       <div className="nav flex justify-between items-center lg:py-10 pt-7  ">
         <div>
-          <Link to="/" className="lg:w-[245px] w-[244px]">
+          <Link to="/" className="lg:w-[245px] w-[244px] md-[280px]">
             <img
               src="images/image 8.png"
               alt="logo"
-              className="lg:w-[245%] w-[200px]"
+              className="lg:w-[245%] w-[180px]"
             />
           </Link>
         </div>

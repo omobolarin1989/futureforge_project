@@ -144,7 +144,7 @@ const lmsPage = () => {
           </div>
         </div>
 
-        <div className="copyright-pricacy flex lg:flex-row flex-col lg:justify-between">
+        <div className="copyright-pricacy flex lg:flex-row md:flex-col flex-col lg:justify-between gap-y-2 md:gap-y-4">
           <p className="text-[#A3A3A3] lg:text-[14px] font-[400] leading-[150%]  tracking-[0.5%] ">
             © 2026 FutureForge. All rights reserved.
           </p>

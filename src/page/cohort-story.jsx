@@ -31,16 +31,16 @@ function CohortStory() {
   return (
 
     
-    <section className="bg-[#000000] min-h-screen text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] ">
+    <section className="font-Gadugi bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] md:px-[30px]">
       <Header />
 
       <div className="main w-full lg:gap-y-[150px] gap-y-[70px] flex flex-col">
         <div className="w-full flex justify-center">
           <div className="story-header flex flex-col justify-center items-center lg:w-[851px] w-full gap-y-[16px]">
-            <h1 className="lg:w-[851px] w-[370px] lg:text[72px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
+            <h1 className="lg:w-[851px] w-[370px] md:w-[440px] lg:text[72px] md:text-[50px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
               Every Cohort Tells a Story.
             </h1>
-            <p className="text-[#ffffff] lg:w-[851px] w-[370px] text-[18px] text-[16px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center lg:px-[8px]">
+            <p className="text-[#ffffff] lg:w-[851px] w-[370px] text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center md:w-[90%] ">
               Explore the journeys of FutureForge graduates across different
               cohorts. Browse past classes, discover graduate stories, and see
               how learners grew through mentorship, collaboration, and practical
