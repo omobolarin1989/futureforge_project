@@ -8,6 +8,9 @@ import Cohort1 from "./page/cohort1";
 import TermsCondition from "./page/terms";
 import PrivacyData from "./page/privacy";
 import RegistrationForm from "./page/registration-form";
+import ErrorPage from "./page/error";
+import SuccessPage from "./page/success-page";
+
 import "./App.css";
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
         <Route path="/cohort1/track/:trackId" element={<Cohort1 />} />
         <Route path="/terms" element={<TermsCondition />} />
         <Route path="/privacy" element={<PrivacyData />} />
+        <Route path="*" element={<ErrorPage />} />
+        <Route path="/success-page" element={<SuccessPage />} />
+
       </Routes>
     </BrowserRouter>
   );

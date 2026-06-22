@@ -39,28 +39,28 @@ const lmsPage = () => {
             </div>
 
             <div className="socials flex justify-between lg:w-[188px] w-[220px]">
-              <a href="https://www.facebook.com/share/18zk7hX5Zr/">
+              <a target="_blank" href="https://www.facebook.com/share/18zk7hX5Zr/">
                 <img
                   src="/images/facebook.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="facebook icon"
                 />
               </a>
-              <a href="https://x.com/FutureforgeL">
+              <a target="_blank" href="https://x.com/FutureforgeL">
                 <img
                   src="/images/twitter.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="twitter icon"
                 />
               </a>
-              <a href="https://www.instagram.com/futureforgelearning?igsh=MXdiMWxjMW80bTgwbw==">
+              <a target="_blank" href="https://www.instagram.com/futureforgelearning?igsh=MXdiMWxjMW80bTgwbw==">
                 <img
                   src="/images/instagram.png"
                   className="lg:w-[16px] w-[20px]"
                   alt="instagram icon"
                 />
               </a>
-              <a href="https://www.linkedin.com/company/futureforge-learning-initiative/">
+              <a target="_blank" href="https://www.linkedin.com/company/futureforge-learning-initiative/">
                 <img
                   src="/images/linkedin.png"
                   className="lg:w-[16px] w-[20px]"

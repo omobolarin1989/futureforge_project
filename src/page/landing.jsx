@@ -11,6 +11,7 @@ import NextCohort from "../component/next-cohort";
 import Header from "../component/header";
 
 
+
 import Community from "../component/community";
 
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
