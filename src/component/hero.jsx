@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // border rounded-2xl border- text-center text-[12px] w-55 bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent
 function Hero() {
   return (
-    <section className="font-gadugi hero-section grow md:flex-col gap-7 md:gap-y-10 lg:h-screen min-h-screen flex flex-col lg:flex-row justify-between">
+    <section className="font-gadugi hero-section grow md:flex-col gap-7 md:gap-y-10 flex flex-col lg:flex-row justify-between">
       <div className="hero-text flex flex-col justify-center w-full lg:w-[40%]">
         <div className="text-content flex flex-col  lg:items-start items-center w-full">
           <div className="lg:full  lg:max-w-[40%] w-[75%] rounded-2xl p-px bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] mb-5">
@@ -54,7 +54,7 @@ function Hero() {
       <div className="hero-image lg:w-[48%] md:w-full w-full lg:relative">
         <img
           src="images/Group 1.png"
-          className="lg:w-[100%] md-[600px] lg:block hidden"
+          className="lg:w-[100%] md:w-[600px] lg:block hidden"
           alt=""
         />
         <img

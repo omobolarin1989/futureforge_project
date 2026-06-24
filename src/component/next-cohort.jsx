@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function NextCohort() {
   return (
-    <section className="registration text-center flex flex-col items-center lg:gap-y-30 gap-y-15">
-      <div>
-        <p className="text-[20px] lg:text-[48px] md:text-[27px] text-[20px] font-[400] lg:w-[1280px] text-center lg:leading-[157%] lg:tracking-[-1%]">
+    <section className="registration text-center flex flex-col items-center lg:py-10">
+      <div className="">
+        <p className="text-[20px] lg:text-[48px] md:text-[27px] text-[20px] font-[400] lg:pb-[220px] lg:pt-[100px] flex flex-col lg:w-[1280px] text-center lg:leading-[157%] lg:tracking-[-1%]">
           FutureForge is a free, community-first learning initiative helping
           graduates confidently transition into tech through mentorship,
           real-world learning, and collaborative growth.

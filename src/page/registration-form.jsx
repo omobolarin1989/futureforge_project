@@ -47,7 +47,9 @@ function RegistrationForm() {
   const [experience, setExperience] = useState("");
   const [motivation, setMotivation] = useState("");
 
- const validDOB = /^\d{2}\/\d{2}\/\d{4}$/.test(dateOfBirth);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validDOB = dateOfBirth !== "";
 
   const selectStyles = {
     control: (base, state) => ({
@@ -108,39 +110,122 @@ function RegistrationForm() {
   }, [location]);
 
   useEffect(() => {
-  if (phoneRef.current) {
-    const input = phoneRef.current.querySelector("input");
+    if (phoneRef.current) {
+      const input = phoneRef.current.querySelector("input");
 
-    if (input) {
-      input.placeholder = "Enter Whatsapp Number";
+      if (input) {
+        input.placeholder = "Enter Whatsapp Number";
+      }
     }
-  }
-}, []);
+  }, []);
 
- const canSubmit =
-  paymentConsent === "yes" &&
-  termsAccepted &&
-  privacyAccepted &&
-  isValid &&
-  textValid &&
-  dateOfBirth &&
-  validDOB &&
-  gender &&
-  local &&
-  phone &&
-  country &&
-  education &&
-  interest &&
-  experience &&
-  motivation;
+  const canSubmit =
+    paymentConsent === "yes" &&
+    termsAccepted &&
+    privacyAccepted &&
+    isValid &&
+    textValid &&
+    dateOfBirth &&
+    validDOB &&
+    gender &&
+    local &&
+    phone.length > 5 &&
+    country &&
+    education &&
+    interest &&
+    experience &&
+    motivation;
 
-
-   const lmsPage = () => {
+  const lmsPage = () => {
     window.open(
       "https://future-forge-lms.vercel.app/",
       "_blank",
       "noopener,noreferrer",
     );
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!canSubmit) {
+      alert("Please fill in all required fields correctly.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const formData = {
+      fullName,
+      email,
+      dateOfBirth,
+
+      whatsappNumber: phone,
+
+      gender,
+
+      country: country?.label,
+
+      state: local,
+
+      highestEducation: education,
+
+      areaOfInterest: interest,
+
+      levelOfExperience: experience,
+
+      reasonForJoining: motivation,
+
+      agreedToFee: paymentConsent === "yes",
+
+      agreedToTerms: termsAccepted,
+
+      consentedToPrivacy: privacyAccepted,
+
+      cohortId: "507f1f77bcf86cd799439011",
+    };
+
+    console.log("Sending Payload:", formData);
+
+    try {
+      const response = await fetch(
+        "https://futureforge-api-wsre.onrender.com/api/applicants/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        },
+      );
+
+      const text = await response.text();
+
+      console.log("STATUS:", response.status);
+      console.log("RAW RESPONSE:", text);
+
+      let data;
+
+      try {
+        data = JSON.parse(text);
+      } catch {
+        data = {};
+      }
+
+      if (!response.ok) {
+        throw new Error(data.message || text || "Registration failed");
+      }
+
+      console.log("SUCCESS:", data);
+
+      if (data.paymentLink) {
+        window.location.href = data.paymentLink;
+      }
+    } catch (error) {
+      console.error("ERROR:", error);
+
+      alert(error.message);
+    } // Re-enable the button if something failed
+    setIsSubmitting(false);
   };
 
   return (
@@ -160,33 +245,36 @@ function RegistrationForm() {
           <div className="lg:[w-80%]">
             <div className=" lg:w-[100%] flex justify-between">
               <div className="nav-bar lg:flex hidden lg:flex-row lg:justify-between items-center lg:w-[55%] ">
-            <Link
-              to="/#about-us"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-            >
-              About
-            </Link>
+                <Link
+                  to="/#about-us"
+                  className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  About
+                </Link>
 
-            <Link
-              to="/#cohort-tracks"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-            >
-              Tracks
-            </Link>
+                <Link
+                  to="/#cohort-tracks"
+                  className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  Tracks
+                </Link>
 
-            <Link
-              to="/#futureforge-facilitators"
-              className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
-            >
-              Facilitators
-            </Link>
-            </div>
-            <div className="">
-            <button onClick={lmsPage} className="next-cohort text-[16px] hidden lg:block lg:w-[190px] w-full h-[55px]   border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]">
-                Access LMS
-              </button>
-            </div>
+                <Link
+                  to="/#futureforge-facilitators"
+                  className="text-[15px] font-[400] leading-[100%] tracking-[1%] hover:font-[700]"
+                >
+                  Facilitators
+                </Link>
               </div>
+              <div className="">
+                <button
+                  onClick={lmsPage}
+                  className="next-cohort text-[16px] hidden lg:block lg:w-[190px] w-full h-[55px]   border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]"
+                >
+                  Access LMS
+                </button>
+              </div>
+            </div>
           </div>
 
           <button
@@ -204,8 +292,6 @@ function RegistrationForm() {
               />
             )}
           </button>
-
-          
 
           <div
             className={`
@@ -256,11 +342,12 @@ function RegistrationForm() {
               </button>
             </Link>
 
-            
-             <button onClick={lmsPage} className="next-cohort text-[16px]  lg:w-[135px] w-full h-[50px] border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]">
-                Access LMS
-              </button>
-           
+            <button
+              onClick={lmsPage}
+              className="next-cohort text-[16px]  lg:w-[135px] w-full h-[50px] border font-[700] rounded-[24px  bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] lg:hover:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-[#262626] cursor-pointer rounded-[24px]"
+            >
+              Access LMS
+            </button>
           </div>
         </nav>
       </div>
@@ -283,57 +370,203 @@ function RegistrationForm() {
 
         <div className="main-form w-[100%] lg:w-[753px] ">
           <form
-  action=""
-  method="post"
-  onSubmit={async (e) => {
-    e.preventDefault();
+            onSubmit={handleSubmit}
+            // //            onSubmit={async (e) => {
+            // //   e.preventDefault();
 
-    if (!canSubmit) {
-      alert("Please complete the form correctly.");
-      return;
-    }
+            // //   if (!canSubmit) {
+            // //     alert("Please complete the form correctly.");
+            // //     return;
+            // //   }
 
-    const formData = {
-      fullName,
-      email,
-      dateOfBirth,
-      gender,
-      state: local,
-      phone,
-      country: country?.label,
-      education,
-      learningTrack: interest,
-      experience,
-      motivation,
-      linkedin,
-      paymentConsent,
-    };
+            // //               const formData = {
+            // //     fullName,
+            // //     email,
+            // //     dateOfBirth,
 
-    try {
-      const response = await fetch(
-        "api/applicants/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+            // //     // CHANGE THIS
+            // //     whatsappNumber: phone,
 
-      const data = await response.json();
+            // //     gender,
 
-      if (data.paymentLink) {
-        window.location.href = response.data.paymentLink
-      } else {
-        alert("Payment link was not generated.");
-      }
+            // //     country: country?.label,
 
-    } catch (error) {
-      console.log(error);
-      alert("Something went wrong.");
-    }
-  }}
+            // //     state: local,
+
+            // //     // CHANGE THESE NAMES
+            // //     highestEducation: education,
+
+            // //     areaOfInterest: interest,
+
+            // //     levelOfExperience: experience,
+
+            // //     reasonForJoining: motivation,
+
+            // //     // CHANGE THESE TO BOOLEAN
+            // //     agreedToFee: paymentConsent === "yes",
+
+            // //     agreedToTerms: termsAccepted,
+
+            // //     consentedToPrivacy: privacyAccepted,
+
+            // //   };
+
+            // //   try {
+
+            // //     const response = await fetch(
+            // //       "https://futureforge-api-wsre.onrender.com/api/applicants/register",
+            // //       {
+            // //         method: "POST",
+
+            // //         headers:{
+            // //           "Content-Type":"application/json"
+            // //         },
+
+            // //         body:JSON.stringify(formData)
+            // //       }
+            // //     );
+
+            // //    const text = await response.text();
+
+            // // console.log("Status:", response.status);
+            // // console.log("Backend raw:", text);
+
+            // // let data;
+
+            // // try {
+            // //   data = JSON.parse(text);
+            // // } catch {
+            // //   data = {};
+            // // }
+
+            // //     if(data.paymentLink){
+
+            // //       window.location.href = data.paymentLink;
+
+            // //     }
+            // //     else{
+
+            // //       alert(
+            // //         data.message ||
+            // //         "Payment link was not generated"
+            // //       );
+
+            // //     }
+
+            // //   } catch(error){
+
+            // //     console.log(error);
+
+            // //     alert("Something went wrong");
+
+            // //   }
+
+            // // }}
+
+            // onSubmit={async(e)=>{
+
+            // e.preventDefault();
+
+            // if(!canSubmit){
+            //  alert("Please complete the form correctly.");
+            //  return;
+            // }
+
+            // const formData = {
+
+            // fullName,
+            // email,
+            // dateOfBirth,
+
+            // whatsappNumber: phone,
+
+            // gender,
+
+            // country: country?.label,
+
+            // state: local,
+
+            // highestEducation: education,
+
+            // areaOfInterest: interest,
+
+            // levelOfExperience: experience,
+
+            // reasonForJoining: motivation,
+
+            // agreedToFee: paymentConsent === "yes",
+
+            // agreedToTerms: termsAccepted,
+
+            // consentedToPrivacy: privacyAccepted,
+
+            // };
+
+            // console.log("Sending:",formData);
+
+            // try{
+
+            // const response = await fetch(
+            // "https://futureforge-api-wsre.onrender.com/api/applicants/register",
+            // {
+
+            // method:"POST",
+
+            // headers:{
+            // "Content-Type":"application/json"
+            // },
+
+            // body:JSON.stringify(formData)
+
+            // });
+
+            // const text = await response.text();
+
+            // console.log(
+            // "Backend raw:",
+            // text
+            // );
+
+            // let data;
+
+            // try{
+
+            // data = JSON.parse(text);
+
+            // }
+
+            // catch{
+
+            // alert(text);
+
+            // return;
+
+            // }
+
+            // if(data.paymentLink){
+
+            // window.location.href=data.paymentLink;
+
+            // }
+
+            // else{
+
+            // alert(
+            // data.message || "No payment link returned"
+            // );
+
+            // }
+
+            // }catch(error){
+
+            // console.log(error);
+
+            // alert("Request failed");
+
+            // }
+
+            // }}
+
             className="flex flex-col gap-y-[38px] lg:gap-y-[32px]"
           >
             <fieldset className="flex flex-col lg:flex-row w-full lg:w-[full] gap-x-[16px] lg:gap-x-[20px]">
@@ -386,20 +619,6 @@ function RegistrationForm() {
                   <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
                     <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
                     <input
-                    maxLength={10}
-                     onChange={(e) => {
-    let value = e.target.value.replace(/\D/g, "");
-
-    if (value.length > 2) {
-      value = value.slice(0, 2) + "/" + value.slice(2);
-    }
-
-    if (value.length > 5) {
-      value = value.slice(0, 5) + "/" + value.slice(5, 9);
-    }
-
-    setDateOfBirth(value);
-  }}
                       required
                       type="date"
                       className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
@@ -426,7 +645,9 @@ function RegistrationForm() {
                       onChange={(e) => setGender(e.target.value)}
                       required
                     >
-                      <option value="disabled" className="]">Select Gender</option>
+                      <option value="" className="]">
+                        Select Gender
+                      </option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                     </select>
@@ -457,7 +678,7 @@ function RegistrationForm() {
               <div className="input-flex flex lg:flex-col flex-col  w-full lg-w-[50%] gap-y-[20px]">
                 <div className="flex flex-col gap-y-[8px]">
                   <label
-                    hmlFor="email"
+                    htmlFor="email"
                     className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%]"
                   >
                     Email
@@ -504,14 +725,14 @@ function RegistrationForm() {
                   </label>
                   <div className="relative z-50 w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
                     <PhoneInput
-  className="w-full"
-  defaultCountry={country?.value?.toLowerCase() || "ng"}
-  value={phone === "+234 " ? "" : phone}
-  onChange={setPhone}
-  inputProps={{
-    placeholder: "Enter Whatsapp Number",
-  }}
-/>
+                      className="w-full"
+                      defaultCountry={country?.value?.toLowerCase() || "ng"}
+                      value={phone === "+234 " ? "" : phone}
+                      onChange={setPhone}
+                      inputProps={{
+                        placeholder: "Enter Whatsapp Number",
+                      }}
+                    />
                   </div>
                 </div>
 
@@ -556,13 +777,13 @@ function RegistrationForm() {
                       onChange={(e) => setEducation(e.target.value)}
                       required
                     >
-                      <option value="disabled">Select Level of Education</option>
-                      <option value="high-school">High School</option>
-                      <option value="ond">OND</option>
-                      <option value="hnd">HND</option>
-                      <option value="bsc">Bsc</option>
-                      <option value="masters">Masters</option>
-                      <option value="phd">Phd</option>
+                      <option value="">Select Level of Education</option>
+                      <option value="High School">High School</option>
+                      <option value="OND">OND</option>
+                      <option value="HND">HND</option>
+                      <option value="BSc">Bsc</option>
+                      <option value="Masters">Masters</option>
+                      <option value="PhD">Phd</option>
                     </select>
                   </div>
                 </div>
@@ -578,7 +799,7 @@ function RegistrationForm() {
                 <div className="flex lg:flex-row flex-col gap-x-[20px] gap-y-[20px]  w-full">
                   <div className="level of experience lg:w-[50%] w-full flex flex-col gap-y-[8px] ">
                     <label
-                      For="experience"
+                      htmlFor="experience"
                       className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
                     >
                       Learning Track
@@ -593,21 +814,23 @@ function RegistrationForm() {
                         onChange={(e) => setInterest(e.target.value)}
                         required
                       >
-                        <option value="disabled">Select track of interest</option>
-                        <option value="frontend">Frontend</option>
-                        <option value="backend">Backend</option>
-                        <option value="product-design">Product Design</option>
-                        <option value="product-design">
+                        <option value="disabled">
+                          Select track of interest
+                        </option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                        <option value="Product-design">Product Design</option>
+                        <option value="Product-design">
                           Product management
                         </option>
-                        <option value="qa">Quality Assurance</option>
+                        <option value="Qa">Quality Assurance</option>
                       </select>
                     </div>
                   </div>
 
                   <div className="level of experience lg:w-[50%] w-full  flex flex-col gap-y-[8px] ">
                     <label
-                      For="experience"
+                      htmlFor="experience"
                       className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
                     >
                       Level of Experience
@@ -622,10 +845,10 @@ function RegistrationForm() {
                         id="experience"
                         onChange={(e) => setExperience(e.target.value)}
                       >
-                        <option value="disabled">Select Level of Experience</option>
-                        <option value="beginner selected">Beginner</option>
-                        <option value="intermediate selected">intermediate</option>
-                        <option value="expert selected">Expert</option>
+                        <option value="">Level of Experience</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">intermediate</option>
+                        <option value="Expert">Expert</option>
                       </select>
                     </div>
                   </div>
@@ -781,9 +1004,7 @@ function RegistrationForm() {
                   <span>
                     I agree to the{" "}
                     <Link to="/terms" target="_blank" rel="noopener noreferrer">
-                      
-                        <u>Terms and Conditions</u>
-                      
+                      <u>Terms and Conditions</u>
                     </Link>
                   </span>
                 </label>
@@ -812,10 +1033,12 @@ function RegistrationForm() {
 
                   <span>
                     I agree to the{" "}
-                    <Link to="/privacy" target="_blank" rel="noopener noreferrer">
-                      
-                        <u>Privacy Policy and Data Protection</u>
-                    
+                    <Link
+                      to="/privacy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <u>Privacy Policy and Data Protection</u>
                     </Link>
                   </span>
                 </label>
@@ -823,15 +1046,16 @@ function RegistrationForm() {
             </fieldset>
 
             <button
-            
               type="submit"
-  disabled={!canSubmit}
-  className={`text-[16px] font-[700] w-full py-[9px] rounded-[24px] transition-all ${
-    canSubmit
-      ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white cursor-pointer"
-      : "bg-[#262626] text-[#737373] cursor-not-allowed"
-  }`}
+              disabled={!canSubmit || isSubmitting}
+              disabled={!canSubmit}
+              className={`text-[16px] font-[700] w-full py-[9px] rounded-[24px] transition-all ${
+                canSubmit
+                  ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white cursor-pointer"
+                  : "bg-[#262626] text-[#737373] cursor-not-allowed"
+              }`}
             >
+              {isSubmitting ? "Processing..." : "Proceed to payment"}
               Proceed to payment
             </button>
           </form>

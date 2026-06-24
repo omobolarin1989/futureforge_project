@@ -59,7 +59,7 @@ function Tracks() {
           />
           <p className="text-[24px] font-[700]">Quality Assurance</p>
         </div>
-        <div className="rounded-[24px] bg-[#171717] lg:px-4 lg:py-5 pt-10 pl-3 bg-[#171717 border border-[#404040] lg:w-[294px] w-full h-[176px]">
+        <div className="rounded-[24px] bg-[#171717] lg:px-4 lg:py-5 pt-10 pl-3 border border-[#404040] lg:w-[294px] w-full h-[176px]">
           <img
             src="images/Frame 2147226501 (5).png"
             className="mb-5"
