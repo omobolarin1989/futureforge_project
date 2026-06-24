@@ -819,8 +819,8 @@ function RegistrationForm() {
                         </option>
                         <option value="Frontend">Frontend</option>
                         <option value="Backend">Backend</option>
-                        <option value="Product-design">Product Design</option>
-                        <option value="Product-design">
+                        <option value="ProductDesign">Product Design</option>
+                        <option value="ProductManagement">
                           Product management
                         </option>
                         <option value="Qa">Quality Assurance</option>
@@ -1056,7 +1056,7 @@ function RegistrationForm() {
               }`}
             >
               {isSubmitting ? "Processing..." : "Proceed to payment"}
-              Proceed to payment
+              
             </button>
           </form>
         </div>
