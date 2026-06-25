@@ -34,14 +34,14 @@ function CohortStory() {
     <div className="font-Gadugi bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] md:px-[30px]">
       <Header />
 
-      <main>
+      <main className="flex flex-col lg:gap-y-[120px] gap-y-[80px]">
       <div className="main w-full lg:gap-y-[150px] gap-y-[70px] flex flex-col">
         <div className="w-full flex justify-center">
           <div className="story-header flex flex-col justify-center items-center lg:w-[851px] w-full gap-y-[16px]">
             <h1 className="lg:w-[851px] w-[370px] md:w-[440px] lg:text-[72px] md:text-[50px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
               Every Cohort Tells a Story.
             </h1>
-            <p className="text-[#ffffff] lg:w-[851px] w-[370px] md:w-[90%] text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center  ">
+            <p className="text-[#ffffff] lg:w-[851px] w-[400px] md:w-[90%] text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center  ">
               Explore the journeys of FutureForge graduates across different
               cohorts. Browse past classes, discover graduate stories, and see
               how learners grew through mentorship, collaboration, and practical
@@ -56,7 +56,7 @@ function CohortStory() {
                 </span>
                 
               </strong>
-              <div aria-label="268 graduates" className="flex justify-between lg:w-[60%]">
+              <div aria-label="268 graduates" className="flex justify-between w-[60%]">
               <strong className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
                 268+
                 <span className="text-[#D4D4D4] text-[18px] font-[400] leading-[100%] tracking-[0%]">

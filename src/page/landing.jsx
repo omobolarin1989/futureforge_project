@@ -37,7 +37,7 @@ function Landing() {
    
 
       <Header />
-<main>
+<main className="flex flex-col gap-y-[120px] gap-y-[60px]">
       <Hero />
       <NextCohort />
 

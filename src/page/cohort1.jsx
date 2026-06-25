@@ -187,7 +187,7 @@ function Cohort1() {
             {filteredGraduates.map((grad) => (
               <div
                 key={grad.id}
-                className="bg-[#171717] rounded-2xl overflow-hidden border border-[#262626] flex flex-col h-auto lg:w-[330px] w-full p-3"
+                className="bg-[#171717] rounded-2xl overflow-hidden border border-[#262626] flex flex-col h-auto lg:w-[370px] w-full p-3"
               >
                 {/* Profile Image (Top Half) */}
                 <div className="h-[238px] w-full bg-slate-200 overflow-hidden flex-shrink-0 relative rounded-[20px]">
@@ -207,7 +207,7 @@ function Cohort1() {
                     <h3 className="text-base font-bold text-slate-900 mb-1 truncate">
                       {grad.name}
                     </h3>
-                    <p className="text-slate-600 text-xs leading-relaxed italic line-clamp-none">
+                    <p className="text-[#d4d4d4] text-xs leading-relaxed italic line-clamp-none">
                       “{grad.testimony}”
                     </p>
                   </div>
@@ -291,7 +291,7 @@ function Cohort1() {
                       {selectedGrad.designation}
                     </p>
 
-                    <p className="pt-4 lg:text-[16px] text-[13px] font-[400] leading-[160%]">
+                    <p className=" pt-4 lg:text-[16px] text-[13px] font-[400] leading-[160%]">
                       {selectedGrad.testimony}
                     </p>
                   </div>
