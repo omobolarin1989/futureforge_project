@@ -37,7 +37,7 @@ function Landing() {
    
 
       <Header />
-
+<main>
       <Hero />
       <NextCohort />
 
@@ -58,7 +58,7 @@ function Landing() {
         <Facilitators />
       </section>
       <Community />
-      
+      </main>
       <Footer />
 
       

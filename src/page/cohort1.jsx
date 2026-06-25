@@ -109,9 +109,9 @@ function Cohort1() {
           <p className="text-[#D4D4D4] cohort-period text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
             Feb - Jun 2026
           </p>
-          <h1 className="Period-header text-[44px] lg:text-[72px] font-[700] lg:leading-[110%] leading-[114.99999999px] tracking-[.1,5%] tracking-[-2%]">
+          <h2 className="Period-header text-[44px] lg:text-[72px] font-[700] lg:leading-[110%] leading-[114.99999999px] tracking-[.1,5%] tracking-[-2%]">
             Cohort 01
-          </h1>
+          </h2>
           <p className="text-[#D4D4D4] cohort-period lg:text-[18px] font-[400] leading-[160%] tracking-[0.5%] ">
             Cohort 01 was the year FutureForge stopped teaching tools and
             started teaching taste. The class shipped fewer things, but each one
@@ -218,6 +218,7 @@ function Cohort1() {
                       Read Story
                     </p>
                     <button
+                    aria-label="Open Amara Obi full profile"
                       onClick={() => setSelectedGrad(grad)}
                       className="cursor-pointer p-1  rounded-full bg-slate-100 text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] transition-colors duration-200 shadow-sm"
                       title="Open Full Profile"

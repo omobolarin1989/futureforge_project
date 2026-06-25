@@ -10,7 +10,7 @@ function TermsCondition () {
 
         <div className="terms-section lg:w-[882px] w-full flex flex-col lg:gap-[70px]">
                <div className="terms-header mb-[100px]">
-                  <h2 className="text-center text-[24px] lg:text-[72px] font-[700] lg:leading-[110%] leading-[130%] tracking-[0..2%] lg:tracking-[-2%]">Terms & Condition</h2>
+                  <h2 className="text-center text-[24px] lg:text-[72px] font-[700] lg:leading-[110%] leading-[130%] tracking-[0.2%] lg:tracking-[-2%]">Terms & Condition</h2>
                </div>
                <div className="terms-content flex flex-col">
                   <ol className="flex flex-col lg:ml-1  lg:space-y-[64px] space-y-[20px] lg:marker:text-[24px] marker:font-[700] marker:text-[24px]">
@@ -23,7 +23,7 @@ function TermsCondition () {
                         <h2 className="text-[24px] lg:text-[32px] font-[700]  leading-[130%] tracking-[-0.25%]">2. Commitment & Participation Policy</h2>
                         <div className="part-policy flex flex-col gap-y-[20px]">
                            <div className="focus flex flex-col gap-y-2.5">
-                              <h3 className="text-[18px]  lg:text-[22px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%]">Program Focus</h3>
+                              <h3 className="text-[18px]  lg:text-[22px] font-[700] leading-[135%] tracking-[-0.25] lg:tracking-[0%]">Program Focus</h3>
                               <p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">The FutureForge program runs on commitment. Your dedication is the required contribution for your continued participation.</p>
                            </div>
                            <div className="requirements flex flex-col gap-y-2.5">

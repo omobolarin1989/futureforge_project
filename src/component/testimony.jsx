@@ -8,7 +8,7 @@ function Testimonials() {
     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -17,14 +17,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -36,7 +36,7 @@ function Testimonials() {
     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -45,14 +45,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -64,7 +64,7 @@ function Testimonials() {
     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -73,14 +73,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -92,7 +92,7 @@ function Testimonials() {
     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
         <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -101,14 +101,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -120,7 +120,7 @@ function Testimonials() {
     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -129,14 +129,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -148,7 +148,7 @@ function Testimonials() {
      <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -157,14 +157,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -176,7 +176,7 @@ function Testimonials() {
      <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -185,14 +185,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -204,7 +204,7 @@ function Testimonials() {
      <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -213,14 +213,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -232,7 +232,7 @@ function Testimonials() {
      <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -241,14 +241,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font[500]">
+                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] md:text-[17px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -307,6 +307,7 @@ function Testimonials() {
             border-[#404040]
             p-3
             "
+            aria-label="Previous testimonial"
           >
             <FaArrowLeft />
           </button>
@@ -320,6 +321,7 @@ function Testimonials() {
             border-[#404040]
             p-3
             "
+            aria-label="next testimonial"
           >
             <FaArrowRight />
           </button>
@@ -328,7 +330,7 @@ function Testimonials() {
 
       <div className="hidden lg:block relative overflow-hidden group">
         <div
-          className=" a absolute inset-0 z-10 pointer-events-none
+          className=" absolute inset-0 z-10 pointer-events-none
     bg-[radial-gradient(ellipse_at_bottom_left,rgba(0,0,0,.8),transparent_60%),radial-gradient(ellipse_at_bottom_right,rgba(0,0,0,.8),transparent_60%)]"
         ></div>{" "}
         {/* left shadow overlay */}
@@ -337,7 +339,7 @@ function Testimonials() {
             <div className=" lg:flex lg:flex-col lg:gap-y-2 lg:h-[434px]">
               <div className="bg-[#141414] lg:w-[362px] lg:h-[218px] border border-[#404040] rounded-[24px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -346,14 +348,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -362,7 +364,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -371,14 +373,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -389,7 +391,7 @@ function Testimonials() {
             <div className=" lg:h-[434px] flex lg:flex-col lg:gap-2">
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[240px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -398,14 +400,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -414,7 +416,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -423,14 +425,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -441,7 +443,7 @@ function Testimonials() {
             <div className=" lg:h-[434px] flex lg:flex-col lg:gap-y-2">
               <div className="bg-[#141414] border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] border lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -450,14 +452,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -466,7 +468,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -475,14 +477,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -493,7 +495,7 @@ function Testimonials() {
             <div className=" lg:h-[434px] flex lg:flex-col lg:gap-y-2">
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[218px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -502,14 +504,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -518,7 +520,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[218px] border lg:px-[16px] lg:py-[20px] ">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -527,14 +529,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -548,7 +550,7 @@ function Testimonials() {
             <div className=" lg:flex lg:flex-col lg:gap-y-2 lg:h-[434px]">
               <div className="bg-[#141414] lg:w-[362px] lg:h-[218px] border border-[#404040] rounded-[24px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -557,14 +559,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -573,7 +575,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -582,14 +584,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -600,7 +602,7 @@ function Testimonials() {
             <div className=" lg:h-[434px] flex lg:flex-col lg:gap-2">
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[240px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -609,14 +611,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -625,7 +627,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -634,14 +636,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -652,7 +654,7 @@ function Testimonials() {
             <div className=" lg:h-[434px] flex lg:flex-col lg:gap-y-2">
               <div className="bg-[#141414] border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] border lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -661,14 +663,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -677,7 +679,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -686,14 +688,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -704,7 +706,7 @@ function Testimonials() {
             <div className=" lg:h-[434px] flex lg:flex-col lg:gap-y-2">
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[218px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -713,14 +715,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>
@@ -729,7 +731,7 @@ function Testimonials() {
               </div>
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[218px] border lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] font-[400] leading[155%] tracking-[0.5%] text-[#D4D4D4]">
+                  <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
                     “Before FutureForge, I was learning design alone without
                     structure. The mentorship and community helped me build
                     confidence, improve my thinking, and grow faster than I
@@ -738,14 +740,14 @@ function Testimonials() {
                   <div className="flex gap-x-7 ">
                     <img
                       src="images/Avatar.png"
-                      alt="testimony Image"
+                      alt="Annet Black image"
                       className=""
                     />
                     <div>
-                      <p className="text-[white] text-[16px] font[500]">
+                      <p className="text-[white] text-[16px] font-[500]">
                         Annet Black
                       </p>
-                      <p className="text-[14px] font[400] text-[#D4D4D4]">
+                      <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
                       </p>
                     </div>

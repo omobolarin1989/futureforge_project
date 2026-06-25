@@ -31,13 +31,14 @@ function CohortStory() {
   return (
 
     
-    <section className="font-Gadugi bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] md:px-[30px]">
+    <div className="font-Gadugi bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat text-white py-[16px] flex flex-col gap-y-[80px] lg:gap-y-[120px] lg:px-[80px] px-[10px] md:px-[30px]">
       <Header />
 
+      <main>
       <div className="main w-full lg:gap-y-[150px] gap-y-[70px] flex flex-col">
         <div className="w-full flex justify-center">
           <div className="story-header flex flex-col justify-center items-center lg:w-[851px] w-full gap-y-[16px]">
-            <h1 className="lg:w-[851px] w-[370px] md:w-[440px] lg:text[72px] md:text-[50px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
+            <h1 className="lg:w-[851px] w-[370px] md:w-[440px] lg:text-[72px] md:text-[50px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
               Every Cohort Tells a Story.
             </h1>
             <p className="text-[#ffffff] lg:w-[851px] w-[370px] md:w-[90%] text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center  ">
@@ -48,31 +49,34 @@ function CohortStory() {
             </p>
 
             <div className="counter flex lg:w-[492px] w-full justify-between px-[2px]">
-              <p className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
+              <strong aria-label="cohort 1" className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
                 1{" "}
                 <span className="text-[#D4D4D4] text-[18px] font-[400] leading-[100%] tracking-[0%]">
                   Cohorts
                 </span>
-              </p>
-              <p className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
+                
+              </strong>
+              <div aria-label="268 graduates" className="flex justify-between lg:w-[60%]">
+              <strong className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
                 268+
                 <span className="text-[#D4D4D4] text-[18px] font-[400] leading-[100%] tracking-[0%]">
                   Graduates
                 </span>
-              </p>
+              </strong>
               <p className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
                 5{" "}
                 <span className="text-[#D4D4D4] text-[18px] font-[400] leading-[100%] tracking-[0%]">
                   Tracks
                 </span>
               </p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-center lg:grid-rows-3 lg:w-full lg:gap-y-[20px] gap-y-[20px]">
          
-          <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+          <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -84,9 +88,9 @@ function CohortStory() {
                 </p>
               </div>
               <div className="flex flex-col lg:gap-[20px] gap-[8px]">
-                <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
+                <h2 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 01
-                </h3>
+                </h2>
                 <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 01 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
@@ -94,13 +98,13 @@ function CohortStory() {
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -114,17 +118,19 @@ function CohortStory() {
                   explore
                 </p>
 
-                <Link to="/Cohort1">
-                  <button>
-                    <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
-                  </button>
+                <Link to="/Cohort1" aria-label="View Cohort 01 details" className="focus:outline-none
+focus:ring-2
+focus:ring-white">
+                  
+                    <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true"/>
+                  
                 </Link>
 
               </div>
             </div>
-          </div>
+          </article>
 
-          <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
+          <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -139,20 +145,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 02
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px]  lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3]  w-[330px] md:w-[550px] text-[14px] md:text-[16px]  lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 02 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -165,12 +171,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -185,20 +191,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 03
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] lg:w-[100%] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 03 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -211,12 +217,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -231,20 +237,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 04
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] lg:w-[100%] w-[330px] md:w-[550px] text-[14px] md:text-[16px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 04 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -257,12 +263,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -277,20 +283,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 05
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] lg:w-[100%] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 05 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -303,12 +309,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -323,20 +329,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 06
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] lg:w-[100%] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 06 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -349,12 +355,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -369,20 +375,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 07
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] lg:w-[100%] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 07 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -395,12 +401,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -415,20 +421,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 08
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] w-[330px] lg:w-[100%] md:w-[550px] md:text-[16px] text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 08 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -441,12 +447,12 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
 
-           <div className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-[500px] lg:h-[336px] h-[335px] w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -461,20 +467,20 @@ function CohortStory() {
                 <h3 className="text-[24px] lg:text-[32px] font-[700] leading-[130%] tracking-[0.25%] ">
                   Cohort 09
                 </h3>
-                <p className="text-[#A3A3A3] w-[330px] md:w-[550px]  text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
+                <p className="text-[#A3A3A3] lg:w-[100%] w-[330px] md:w-[550px]  text-[14px] lg:text-[14px] font-[400] leading-[155%] lg:tracking-[0.2%] tracking-[0.5%]">
                   Cohort 09 was the year FutureForge stopped teaching tools and
                   started teaching taste. The class shipped fewer things, but
                   each one had a point of view.
                 </p>
               </div>
               <div className="flex justify-between w-[50%]">
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   268+{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     Graduates
                   </span>
                 </p>
-                <p class="text-[14px] font-[700] ">
+                <p className="text-[14px] font-[700] ">
                   7{" "}
                   <span className="text-[#A3A3A3] text-[14px] font-[400] leading-[150%] tracking-[0.5%]">
                     {" "}
@@ -487,19 +493,20 @@ function CohortStory() {
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
-          </div>
+          </article>
           
         </div>
       </div>
 
       <Community />
+      </main>
 
       <Footer />
 
-    </section>
+    </div>
   );
 }
 export default CohortStory;

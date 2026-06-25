@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NextCohort() {
   return (
-    <section className="registration text-center flex flex-col items-center lg:py-10">
+    <section className="registration text-center flex flex-col items-center lg:py-10" aria-labelledby="cohort-title">
       <div className="">
         <p className="text-[20px] lg:text-[48px] md:text-[27px] text-[20px] font-[400] lg:pb-[220px] lg:pt-[100px] flex flex-col lg:w-[1280px] text-center lg:leading-[157%] lg:tracking-[-1%]">
           FutureForge is a free, community-first learning initiative helping
@@ -21,14 +21,15 @@ function NextCohort() {
           />
           <img
             src="images/Rectangle 8 (1).png"
-            className="lg:hidden w-full"
-            block
-            alt="student learning with laptop"
+            className="lg:hidden w-full block"
+            
+            alt=""
+            aria-hidden="true"
           />
         </div>
 
         <div className="reg-pub lg:w-[50%] w-full flex flex-col gap-y-[24px]">
-          <h2 className="text-left lg:text-[60px] text-[32px] font-[700] lg:w-[83%] lg:text-left md:text-center text-left lg:leading-[119.9999%] leading-[130%] lg:tracking-[-1.5%] tracking-[-0.25]">
+          <h2 id="cohort-title" className= " text-left lg:text-[60px] text-[32px] font-[700] lg:w-[83%] lg:text-left md:text-center text-left lg:leading-[119.9999%] leading-[130%] lg:tracking-[-1.5%] tracking-[-0.25]">
             Cohort 2 registration is{" "}
             <span className="bg-gradient-to-r from-[#F4405E] to-[#F56A39] bg-clip-text text-transparent">
               now open!
@@ -42,11 +43,13 @@ function NextCohort() {
           </p>
 
           <div className="waitlist-button justify-items-start flex lg:w-[100%] w-[100%]">
-            <Link to="/registration-form" className="w-[100%]">
-              <button className="lg:w-[207px] w-full lg:h-[50px] h-[46px] rounded-3xl lg:text-[16px] h-[50px] text-[18px] font-[700] tracking-[0.5%] leading-[100%] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer flex items-center gap-[12px] justify-center">
+            <Link to="/registration-form" className="lg:w-[207px] w-full lg:h-[50px] h-[46px] rounded-3xl lg:text-[16px] h-[50px] text-[18px] font-[700] tracking-[0.5%] leading-[100%] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer flex items-center gap-[12px] justify-center focus:outline-none
+focus:ring-2
+focus:ring-[#f68936]">
+              
                 Join the Waitlist
-                <CgArrowLongRight className="lg:block hidden" />
-              </button>
+                <CgArrowLongRight className="lg:block hidden" aria-hidden="true" />
+              
             </Link>
           </div>
         </div>
