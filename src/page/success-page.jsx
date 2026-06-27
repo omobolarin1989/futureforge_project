@@ -7,7 +7,7 @@ function SuccessPage () {
 
    return (
       <section className="bg-[#000000] min-h-screen gap-y-8 flex flex-col justify-center items-center bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_45%_2%,_rgba(60,22,11,0.90)_45%,_rgba(146,64,14,0.15)_60%,_transparent_90%)]">
-         <div className="success-container lg:w-[450px] w-[350px] lg:h-[550px] h-[450px] bg-white flex flex-col justify-center items-center gap-y-8 lg:px-5 px-4">
+         <div className=" success-container lg:w-[450px] w-[350px] lg:h-[550px] h-[450px] bg-[#111111] text-white flex flex-col justify-center items-center gap-y-8 lg:px-5 px-4">
          <div className="flex flex-col items-center">
             
             <BsFillPatchCheckFill className="lg:text-[150px] text-[80px] bg-white text-green-400"/>

@@ -229,10 +229,10 @@ function RegistrationForm() {
   };
 
   return (
-    <section className="font-gadugi text-white form-action min-h-screen w-full bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat px-5 lg:px-[80px]">
+    <section className="overflow-x-hidden grow xl:w-full lg:max-w-[1440px] font-gadugi w-full md:w-full xl:max-w-[2560px] text-white form-action min-h-screen bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_20%,_transparent_90%)] bg-no-repeat px-5 lg:px-[80px]">
       <div className="nav flex justify-between items-center lg:py-10 pt-7  ">
         <div>
-          <Link to="/" className="lg:w-[245px] w-[244px] md-[280px]">
+          <Link to="/" className="w-auto">
             <img
               src="images/image 8.png"
               alt="logo"
@@ -288,7 +288,7 @@ function RegistrationForm() {
               <img
                 src="/images/Frame 2147226499.png"
                 alt="Menu"
-                className="w-15 h-10 "
+                className="w-12 h-10 "
               />
             )}
           </button>
@@ -310,7 +310,7 @@ function RegistrationForm() {
     bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943]
     bg-[#F43F5E]
     text-[#ffffff]
-    w-[355px]
+    max-w-[355px]
     rounded-[24px]
    
   `}
@@ -361,14 +361,14 @@ function RegistrationForm() {
           </div>
 
           <div className="form-para w-[100%] text-center flex flex-col items-center">
-            <p className=" w-[370px] lg:w-[575px] lg:text-center text-[#D4D4D4] text-[16px] leading-[155%] tracking-[0.2%] font-[400]">
+            <p className=" w-full max-w-[370px] lg:w-[575px] lg:text-center text-[#D4D4D4] text-[16px] leading-[155%] tracking-[0.2%] font-[400]">
               Choose from beginner-friendly tracks built around practical
               learning, mentorship, and collaborative growth.
             </p>
           </div>
         </div>
 
-        <div className="main-form w-[100%] lg:w-[753px] ">
+        <div className="main-form w-full lg:w-[753px] ">
           <form
             onSubmit={handleSubmit}
             // //            onSubmit={async (e) => {
@@ -569,7 +569,7 @@ function RegistrationForm() {
 
             className="flex flex-col gap-y-[38px] lg:gap-y-[32px]"
           >
-            <fieldset className="flex flex-col lg:flex-row w-full lg:w-[full] gap-x-[16px] lg:gap-x-[20px]">
+            <fieldset className="flex flex-col lg:flex-row w-full lg:w-full gap-x-[16px] lg:gap-x-[20px]">
               <legend className="p-info text-[20px] lg:text-[24px] font-[700] leading-[135%] mb-[10px] lg:mb-[20px]">
                 Personal Information
               </legend>
