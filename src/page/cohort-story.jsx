@@ -79,7 +79,7 @@ function CohortStory() {
           </div>
         </div>
 
-        <div className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-center lg:grid-rows-3 lg:w-full w-full lg:gap-y-[20px] gap-y-[20px]">
+        <div className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-evenly lg:grid-rows-3 lg:w-full w-full lg:gap-y-[20px] gap-y-[20px] lg:gap-x-[20px]">
          
           <article className="bg-[#171717] content-grid lg:w-full w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
