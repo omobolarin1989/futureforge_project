@@ -10,7 +10,7 @@ import { PhoneInput } from "react-international-phone";
 import Select from "react-select";
 import { options } from "../page/country-flag";
 import "react-international-phone/style.css";
-import { useRef } from "react";
+import { useRef } from "react"; //import useRef
 
 // import RegistrationForm from "./registration-form";
 // import Header from "../component/header";
@@ -157,7 +157,7 @@ function RegistrationForm() {
     const formData = {
       fullName,
       email,
-      dateOfBirth,
+      dateOfBirth, 
 
       whatsappNumber: phone,
 
