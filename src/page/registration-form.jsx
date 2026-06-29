@@ -294,13 +294,13 @@ function RegistrationForm() {
           </button>
 
           <div
-            className={`
+           className={`
     ${isOpen ? "flex" : "hidden"}
     flex-col
     text-[20px]
     justify-center
     items-center
-    md:hidden
+    block
     mt-4
     py-5
     px-3
@@ -310,9 +310,9 @@ function RegistrationForm() {
     bg-gradient-to-r from-[#FF2147] to-[#FFB943] hover:bg-gradient-to-r from-[#F59E0B] to-[#FFB943]
     bg-[#F43F5E]
     text-[#ffffff]
-    max-w-[355px]
-    rounded-[24px]
-   
+    w-[355px]
+    md:max-w-[800px]
+   rounded-[24px]
   `}
           >
             <Link
