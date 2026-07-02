@@ -323,6 +323,15 @@ function TermsCondition () {
                               </div>
                      </li>
 
+                      <li className="space-y-[24px]">
+                        <div>
+                         <h2 className="text-[24px] lg:text-[32px] font-[700]  leading-[130%] tracking-[-0.25%]">12. Non-refundable payment</h2>
+                         </div>
+
+                         <div>
+                           <p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0] lg:w-[75%] w-full">Kindly note that there is a nin-refundable payment of 50,000 naira to be paid to have access to our learning platform</p>
+                         </div>
+                      </li>
                   </ol>
                </div>
         </div>
