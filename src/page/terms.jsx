@@ -325,7 +325,7 @@ function TermsCondition () {
 
                       <li className="space-y-[24px]">
                         <div>
-                         <h2 className="text-[24px] lg:text-[32px] font-[700]  leading-[130%] tracking-[-0.25%]">12. Non-refundable payment</h2>
+                         <h2 className="text-[24px] lg:text-[32px] font-[700]  leading-[130%] tracking-[-0.25%]">13. Non-refundable payment</h2>
                          </div>
 
                          <div>
