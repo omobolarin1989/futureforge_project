@@ -12,6 +12,9 @@ import { options } from "../page/country-flag";
 import "react-international-phone/style.css";
 import { useRef } from "react"; //import useRef
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 // import RegistrationForm from "./registration-form";
 // import Header from "../component/header";
 import Footer from "../component/footer";
@@ -26,6 +29,7 @@ function RegistrationForm() {
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [gender, setGender] = useState("");
   const [local, setLocal] = useState("");
+  const [stateFocused, setStateFocused] = useState(false);
 
   const [namefocused, setNameFocused] = useState(false);
   const [linkedin, setLinkedin] = useState("");
@@ -33,7 +37,7 @@ function RegistrationForm() {
   const linkedinValid =
     linkedin === "" || /^https?:\/\/(www\.)?linkedin\.com\/.*$/i.test(linkedin);
 
-  const [paymentConsent, setPaymentConsent] = useState(null);
+  // const [paymentConsent, setPaymentConsent] = useState(null);
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
@@ -47,9 +51,13 @@ function RegistrationForm() {
   const [experience, setExperience] = useState("");
   const [motivation, setMotivation] = useState("");
 
+  const motivationValid = motivation.trim().length > 20;
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validDOB = dateOfBirth !== "";
+  const dateRef = useRef(null);
+  const [dateError, setDateError] = useState("");
 
   const selectStyles = {
     control: (base, state) => ({
@@ -120,7 +128,7 @@ function RegistrationForm() {
   }, []);
 
   const canSubmit =
-    paymentConsent === "yes" &&
+    // paymentConsent === "yes" &&
     termsAccepted &&
     privacyAccepted &&
     isValid &&
@@ -134,7 +142,7 @@ function RegistrationForm() {
     education &&
     interest &&
     experience &&
-    motivation;
+    motivationValid;
 
   const lmsPage = () => {
     window.open(
@@ -175,7 +183,7 @@ function RegistrationForm() {
 
       reasonForJoining: motivation,
 
-      agreedToFee: paymentConsent === "yes",
+      // agreedToFee: paymentConsent === "yes",
 
       agreedToTerms: termsAccepted,
 
@@ -360,8 +368,8 @@ function RegistrationForm() {
             </h1>
           </div>
 
-          <div className="form-para w-[100%] text-center flex flex-col items-center">
-            <p className=" w-full max-w-[370px] lg:w-[575px] lg:text-center text-[#D4D4D4] text-[16px] leading-[155%] tracking-[0.2%] font-[400]">
+          <div className="form-para w-full text-center flex flex-col items-center">
+            <p className="w-full max-w-[370px] lg:max-w-[580px] lg:text-center text-[#D4D4D4] text-[16px] leading-[155%] tracking-[0.2%] font-[400]">
               Choose from beginner-friendly tracks built around practical
               learning, mentorship, and collaborative growth.
             </p>
@@ -371,201 +379,7 @@ function RegistrationForm() {
         <div className="main-form w-full lg:w-[753px] ">
           <form
             onSubmit={handleSubmit}
-            // //            onSubmit={async (e) => {
-            // //   e.preventDefault();
-
-            // //   if (!canSubmit) {
-            // //     alert("Please complete the form correctly.");
-            // //     return;
-            // //   }
-
-            // //               const formData = {
-            // //     fullName,
-            // //     email,
-            // //     dateOfBirth,
-
-            // //     // CHANGE THIS
-            // //     whatsappNumber: phone,
-
-            // //     gender,
-
-            // //     country: country?.label,
-
-            // //     state: local,
-
-            // //     // CHANGE THESE NAMES
-            // //     highestEducation: education,
-
-            // //     areaOfInterest: interest,
-
-            // //     levelOfExperience: experience,
-
-            // //     reasonForJoining: motivation,
-
-            // //     // CHANGE THESE TO BOOLEAN
-            // //     agreedToFee: paymentConsent === "yes",
-
-            // //     agreedToTerms: termsAccepted,
-
-            // //     consentedToPrivacy: privacyAccepted,
-
-            // //   };
-
-            // //   try {
-
-            // //     const response = await fetch(
-            // //       "https://futureforge-api-wsre.onrender.com/api/applicants/register",
-            // //       {
-            // //         method: "POST",
-
-            // //         headers:{
-            // //           "Content-Type":"application/json"
-            // //         },
-
-            // //         body:JSON.stringify(formData)
-            // //       }
-            // //     );
-
-            // //    const text = await response.text();
-
-            // // console.log("Status:", response.status);
-            // // console.log("Backend raw:", text);
-
-            // // let data;
-
-            // // try {
-            // //   data = JSON.parse(text);
-            // // } catch {
-            // //   data = {};
-            // // }
-
-            // //     if(data.paymentLink){
-
-            // //       window.location.href = data.paymentLink;
-
-            // //     }
-            // //     else{
-
-            // //       alert(
-            // //         data.message ||
-            // //         "Payment link was not generated"
-            // //       );
-
-            // //     }
-
-            // //   } catch(error){
-
-            // //     console.log(error);
-
-            // //     alert("Something went wrong");
-
-            // //   }
-
-            // // }}
-
-            // onSubmit={async(e)=>{
-
-            // e.preventDefault();
-
-            // if(!canSubmit){
-            //  alert("Please complete the form correctly.");
-            //  return;
-            // }
-
-            // const formData = {
-
-            // fullName,
-            // email,
-            // dateOfBirth,
-
-            // whatsappNumber: phone,
-
-            // gender,
-
-            // country: country?.label,
-
-            // state: local,
-
-            // highestEducation: education,
-
-            // areaOfInterest: interest,
-
-            // levelOfExperience: experience,
-
-            // reasonForJoining: motivation,
-
-            // agreedToFee: paymentConsent === "yes",
-
-            // agreedToTerms: termsAccepted,
-
-            // consentedToPrivacy: privacyAccepted,
-
-            // };
-
-            // console.log("Sending:",formData);
-
-            // try{
-
-            // const response = await fetch(
-            // "https://futureforge-api-wsre.onrender.com/api/applicants/register",
-            // {
-
-            // method:"POST",
-
-            // headers:{
-            // "Content-Type":"application/json"
-            // },
-
-            // body:JSON.stringify(formData)
-
-            // });
-
-            // const text = await response.text();
-
-            // console.log(
-            // "Backend raw:",
-            // text
-            // );
-
-            // let data;
-
-            // try{
-
-            // data = JSON.parse(text);
-
-            // }
-
-            // catch{
-
-            // alert(text);
-
-            // return;
-
-            // }
-
-            // if(data.paymentLink){
-
-            // window.location.href=data.paymentLink;
-
-            // }
-
-            // else{
-
-            // alert(
-            // data.message || "No payment link returned"
-            // );
-
-            // }
-
-            // }catch(error){
-
-            // console.log(error);
-
-            // alert("Request failed");
-
-            // }
-
-            // }}
+           
 
             className="flex flex-col gap-y-[38px] lg:gap-y-[32px]"
           >
@@ -616,17 +430,64 @@ function RegistrationForm() {
                     Date of Birth
                   </label>
 
-                  <div className="relative w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                    <MdOutlineCalendarMonth className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                    <input
-                      required
-                      type="date"
-                      className=" pl-12 pr-8 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none "
-                      id="dob"
-                      value={dateOfBirth}
-                      onChange={(e) => setDateOfBirth(e.target.value)}
-                    />
+               <div
+    className={`relative w-full rounded-[24px] p-[2px] ${
+    dateError
+      ? "bg-red-500"
+      : dateOfBirth
+        ? "bg-green-500"
+        : "bg-[#3A3A3A]"
+  }`}
+
+  
+>
+  <MdOutlineCalendarMonth
+    onClick={() => dateRef.current.showPicker()}
+    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer z-10"
+  />
+
+  <input
+     ref={dateRef}
+    required
+    type="date"
+    min={`${new Date().getFullYear() - 35}-01-01`}
+    max={`${new Date().getFullYear() - 22}-12-31`}
+    value={dateOfBirth}
+    onChange={(e) => {
+      const value = e.target.value;
+      setDateOfBirth(value);
+
+      if (!value) {
+        setDateError("");
+        return;
+      }
+
+      const selectedDate = new Date(value);
+
+      const minDate = new Date(new Date().getFullYear() - 35, 0, 1);
+      const maxDate = new Date(new Date().getFullYear() - 22, 11, 31);
+
+      if (selectedDate < minDate) {
+        setDateError("You must be 35 years old or younger.");
+      } 
+      else if (selectedDate > maxDate) {
+        setDateError("You must be at least 22 years old.");
+      } 
+      else {
+        setDateError("");
+      }
+    }}
+
+    className="pl-12 pr-4 w-full bg-[#111111] rounded-[22px] px-4 py-3 text-[#888788] outline-none"
+  />
+
+  
                   </div>
+                  {dateError && (
+  <p className="text-red-500 text-sm mt-2">
+    {dateError}
+  </p>
+)}
                 </div>
 
                 <div className="flex flex-col gap-y-[8px]">
@@ -636,7 +497,13 @@ function RegistrationForm() {
                   >
                     Gender
                   </label>
-                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                 <div
+  className={`w-full rounded-[24px] p-[2px] ${
+    gender
+      ? "bg-green-500"
+      : "bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]"
+  }`}
+>
                     <select
                       name="gender"
                       value={gender}
@@ -661,18 +528,43 @@ function RegistrationForm() {
                   >
                     State
                   </label>
-                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                  <div   className={`relative w-full rounded-[24px] p-[2px] ${
+      stateFocused
+        ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]"
+        : local === ""
+          ? "bg-[#3A3A3A]"
+          : "bg-green-500"
+    }`}>
+
+        {local !== "" && (
+      <FaCheckCircle className="absolute right-4 top-1/2 -translate-y-1/2 text-green-500 z-10" />
+    )}
                     <input
-                      value={local}
-                      id="state"
-                      type="text"
-                      className=" w-full bg-[#111111] rounded-[22px] px-4 py-3 outline-none "
-                      onChange={(e) => setLocal(e.target.value)}
-                      placeholder="Please Enter your State"
-                      required
+                     value={local}
+      id="state"
+      type="text"
+
+      onChange={(e) => {
+    const value = e.target.value;
+
+    if (/^[A-Za-z\s]*$/.test(value)) {
+      setLocal(value);
+    }
+  }}
+
+      onFocus={() => setStateFocused(true)}
+
+      onBlur={() => setStateFocused(false)}
+
+      placeholder="Please Enter your State"
+
+      className="w-full bg-[#111111] rounded-[22px] px-4 py-3 pr-12 text-white outline-none"
+
+      required
                     />
                   </div>
                 </div>
+
               </div>
 
               <div className="input-flex flex lg:flex-col flex-col  w-full lg-w-[50%] gap-y-[20px]">
@@ -723,7 +615,13 @@ function RegistrationForm() {
                   >
                     Whatsapp Number
                   </label>
-                  <div className="relative z-50 w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]">
+                 <div
+  className={`relative z-50 w-full rounded-[24px] p-[2px] ${
+    phone.length > 5
+      ? "bg-green-500"
+      : "bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]"
+  }`}
+>
                     <PhoneInput
                       className="w-full"
                       defaultCountry={country?.value?.toLowerCase() || "ng"}
@@ -743,7 +641,11 @@ function RegistrationForm() {
                   >
                     Country
                   </label>
-                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                  <div className={`w-full rounded-[24px] p-[2px] ${
+    country
+      ? "bg-green-500"
+      : "bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]"
+  }`}>
                     <Select
                       inputId="country"
                       options={options}
@@ -768,7 +670,11 @@ function RegistrationForm() {
                   >
                     Highest Level of Education
                   </label>
-                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                  <div  className={`w-full rounded-[24px] p-[2px] ${
+    education
+      ? "bg-green-500"
+      : "bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]"
+  }`}>
                     <select
                       name="education"
                       value={education}
@@ -805,7 +711,11 @@ function RegistrationForm() {
                       Learning Track
                     </label>
 
-                    <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                    <div  className={`w-full rounded-[24px] p-[2px] ${
+    interest
+      ? "bg-green-500"
+      : "bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]"
+  }`}>
                       <select
                         value={interest}
                         name="experience"
@@ -836,7 +746,11 @@ function RegistrationForm() {
                       Level of Experience
                     </label>
 
-                    <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
+                    <div  className={`w-full rounded-[24px] p-[2px] ${
+    experience
+      ? "bg-green-500"
+      : "bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]"
+  }`}>
                       <select
                         required
                         value={experience}
@@ -853,28 +767,46 @@ function RegistrationForm() {
                     </div>
                   </div>
                 </div>
+
+
                 <div className="text-area">
-                  <p className="pb-2">
-                    <label
-                      htmlFor="motivation"
-                      className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
-                    >
-                      Why do you want to join Future Forge
-                    </label>
-                  </p>
-                  <div className=" w-full rounded-[24px] p-[2px] bg-[#3A3A3A] focus-within:bg-gradient-to-r focus-within:from-[var(--primary-color)] focus-within:to-[var(--secondary-color)]">
-                    <textarea
-                      name="motivation"
-                      value={motivation}
-                      id="motivation"
-                      placeholder="Type your text here"
-                      className="rounded-[24px] block w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none"
-                      rows={5}
-                      onChange={(e) => setMotivation(e.target.value)}
-                      required
-                    ></textarea>
-                  </div>
-                </div>
+  <p className="pb-2">
+    <label
+      htmlFor="motivation"
+      className="text-[#d4d4d4] text-[14px] font-[700] leading-[150%] tracking-[0.5%] mb-[8px]"
+    >
+      Why do you want to join Future Forge
+    </label>
+  </p>
+
+  <div
+    className={`relative w-full rounded-[24px] p-[2px] ${
+      motivation === ""
+        ? "bg-[#3A3A3A]"
+        : motivationValid
+          ? "bg-green-500"
+          : "bg-red-500"
+    }`}
+  >
+    <textarea
+      name="motivation"
+      value={motivation}
+      id="motivation"
+      placeholder="Type your text here"
+      className="block w-full h-[120px] bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none resize-none"
+      onChange={(e) => setMotivation(e.target.value)}
+      required
+    />
+  </div>
+
+  {motivation !== "" && !motivationValid && (
+    <p className="text-red-500 text-sm mt-2">
+      Your response must be at least 20 characters.
+    </p>
+  )}
+</div>
+
+
               </div>
             </fieldset>
 
@@ -894,7 +826,15 @@ function RegistrationForm() {
               </p>
 
               <div
-                className={`relative w-full rounded-[24px] p-[2px] ${linkedinFocused ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]" : linkedin === "" ? "bg-[#3A3A3A]" : linkedinValid ? "bg-green-500" : "bg-red-500"}`}
+                className={`relative w-full rounded-[24px] p-[2px] ${
+    linkedinFocused
+      ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]"
+      : linkedin === ""
+        ? "bg-[#3A3A3A]"
+        : linkedinValid
+          ? "bg-green-500"
+          : "bg-red-500"
+  }`}
               >
                 {linkedin !== "" &&
                   (linkedinValid ? (
@@ -915,7 +855,7 @@ function RegistrationForm() {
               </div>
             </fieldset>
 
-            <fieldset className="flex flex-col">
+            {/* <fieldset className="flex flex-col">
               <legend className="text-[#FFFFFF]  mb-[8px] text-[16px] font-[700] leading-[155%] tracking-[0.2%]  ">
                 Do you agree to pay a non-refundable administrative fee of ...
               </legend>
@@ -974,7 +914,7 @@ function RegistrationForm() {
                   </span>
                 </label>
               </div>
-            </fieldset>
+            </fieldset> */}
 
             <fieldset>
               <div className="flex flex-col lg:gap-y-[20px] gap-[16px]">
@@ -1058,6 +998,7 @@ function RegistrationForm() {
               {isSubmitting ? "Processing..." : "Proceed to payment"}
               
             </button>
+
           </form>
         </div>
       </div>
