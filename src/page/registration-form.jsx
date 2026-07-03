@@ -973,13 +973,13 @@ function RegistrationForm() {
 
                   <span>
                     I agree to the{" "}
-                    <Link
-                      to="/privacy"
+                    {/* <Link
+                      to="/"
                       target="_blank"
                       rel="noopener noreferrer"
-                    >
+                    > */}
                       <u>Privacy Policy and Data Protection</u>
-                    </Link>
+                    {/* </Link> */}
                   </span>
                 </label>
               </div>
