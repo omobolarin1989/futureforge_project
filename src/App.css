@@ -48,6 +48,7 @@
   align-items: center !important;
   justify-content: center !important;
   border-radius: 22px 0 0 22px !important;
+   
 }
 
 
@@ -67,9 +68,12 @@
 }
 
 .react-international-phone-input-container input::placeholder {
-  color: #888788 !important;
+  color: gray !important;
   opacity: 1 !important;
+  font-size: 16px;
 }
+
+
 
 @font-face{
 
@@ -119,3 +123,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+.react-international-phone-input {
+  border-left: none !important;
+}
