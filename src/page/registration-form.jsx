@@ -590,12 +590,12 @@ function RegistrationForm() {
                     <select
                       name="education"
                       value={education}
-                      className="appearance-none w-full bg-[#111111] rounded-[22px] px-4 py-3 text-white outline-none"
-                      id="education"
+                       className={`appearance-none w-full bg-[#111111] rounded-[22px] pl-4 pr-10 py-3 outline-none ${
+  education ? "text-white" : "text-[#888788]"
+}`}
                       onChange={(e) => setEducation(e.target.value)}
                       required
                     >
-                      <option value="">Select Level of Education</option>
                       <option value="High School">High School</option>
                       <option value="OND">OND</option>
                       <option value="HND">HND</option>
@@ -635,9 +635,7 @@ function RegistrationForm() {
                         onChange={(e) => setInterest(e.target.value)}
                         required
                       >
-                        <option value="">
-                          Select track of interest
-                        </option>
+                        
                         <option value="Frontend">Frontend</option>
                         <option value="Backend">Backend</option>
                         <option value="ProductDesign">Product Design</option>
@@ -670,7 +668,7 @@ function RegistrationForm() {
 }`}
                         onChange={(e) => setExperience(e.target.value)}
                       >
-                        <option value="">Level of Experience</option>
+                        
                         <option value="Beginner">Beginner</option>
                         <option value="Intermediate">Intermediate</option>
                         <option value="Expert">Expert</option>
