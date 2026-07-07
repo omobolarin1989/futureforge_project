@@ -29,6 +29,7 @@ function RegistrationForm() {
   const [gender, setGender] = useState("");
   const [local, setLocal] = useState("");
   const [stateFocused, setStateFocused] = useState(false);
+  const stateValid = local.trim().length >= 3;
 
   const [namefocused, setNameFocused] = useState(false);
   const [linkedin, setLinkedin] = useState("");
@@ -109,6 +110,7 @@ function RegistrationForm() {
     dateOfBirth &&
     validDOB &&
     gender &&
+    stateValid &&
     local &&
     phone.length > 5 &&
     country &&
@@ -432,11 +434,22 @@ function RegistrationForm() {
                     State
                   </label>
                   <div
-                    className={`relative w-full rounded-[24px] p-[2px] ${stateFocused ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]" : local === "" ? "bg-[#3A3A3A]" : "bg-green-500"}`}
+                    className={`relative w-full rounded-[24px] p-[2px] ${
+  stateFocused
+    ? "bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]"
+    : local === ""
+      ? "bg-[#3A3A3A]"
+      : stateValid
+        ? "bg-green-500"
+        : "bg-red-500"
+}`}
                   >
-                    {local !== "" && (
-                      <FaCheckCircle className="absolute right-4 top-1/2 -translate-y-1/2 text-green-500 z-10" />
-                    )}
+                    {local !== "" &&
+  (stateValid ? (
+    <FaCheckCircle className="absolute right-4 top-1/2 -translate-y-1/2 text-green-500 z-10" />
+  ) : (
+    <MdError className="absolute right-4 top-1/2 -translate-y-1/2 text-red-500 z-10" />
+  ))}
                     <input
                       value={local}
                       id="state"
@@ -451,7 +464,14 @@ function RegistrationForm() {
                       className="w-full bg-[#111111] rounded-[22px] px-4 py-3 pr-12 text-white outline-none"
                       required
                     />
+
+                   
                   </div>
+                   {local !== "" && !stateValid && (
+  <p className="text-red-500 text-sm mt-2">
+    State must contain at least 3 letters.
+  </p>
+)}
                 </div>
               </div>
 
