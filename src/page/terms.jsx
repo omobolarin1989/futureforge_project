@@ -203,10 +203,16 @@ function TermsCondition () {
                            <div className="requirements">
                                <h3 className="text-[18px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%] mb-[8px]">Special Week 1 (After Week 7)</h3>
                               
-                              <ul>
+                              <ul className="hidden lg:block">
                                  <li><p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Quiz on Monday. Missing the Quiz ------------------------------------------------------------- 4 strikes</p></li>
                                  <li><p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Practice Task from Tuesday to Monday. Missing the Practice Task----------------------------- 4 strikes</p></li>
                                  <li><p> Soft skills Session 1. Missing Soft skills Session -------------------------------------------------2 strikes</p></li>
+                              </ul>
+
+                               <ul className="lg:hidden block">
+                                 <li><p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Quiz on Monday. Missing the Quiz ---------------------------------------------------------------------- 4 strikes</p></li>
+                                 <li><p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]"> Practice Task from Tuesday to Monday. Missing the Practice Task----------------------------- 4 strikes</p></li>
+                                 <li><p> Soft skills Session 1. Missing Soft skills Session -------------------------------------------------------- 2 strikes</p></li>
                               </ul>
 
                            </div>
@@ -214,10 +220,16 @@ function TermsCondition () {
 
                            <div className="requirements">
                                <h3 className="text-[18px]  lg:text-[24px] font-[700] leading-[135%] tracking-[-0.25] lg: tracking-[0%] mb-[8px]">Special Week 2 (After Week 12)</h3>
-                              <ul>
+                              <ul className="lg:block hidden">
                                  
                                  <li><p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Soft skills Session 2. Missing Soft skills Session -------------------------------------------------2 strikes</p></li>
                                  <li><p className="lg:text-[20px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">re-project Sprint (Monday to Monday). Missing or not participating in the Sprint -----------4 strikes</p></li>
+                              </ul>
+
+                               <ul className="block lg:hidde">
+                                 
+                                 <li><p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">Soft skills Session 2. Missing Soft skills Session --------------------------------------------------------------  2 strikes</p></li>
+                                 <li><p className="lg:text-[20px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0]">re-project Sprint (Monday to Monday). Missing or not participating in the Sprint ---------------------  4 strikes</p></li>
                               </ul>
 
                            </div>
@@ -329,7 +341,7 @@ function TermsCondition () {
                          </div>
 
                          <div>
-                           <p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0] lg:w-[75%] w-full">Kindly note that there is a nin-refundable payment of 50,000 naira to be paid to have access to our learning platform</p>
+                           <p className="lg:text-[18px] text-[16px] font-[400] leading-[160%] lg:leading-[165%] tracking-[0.2%] lg:tracking-[0] lg:w-[75%] w-full">Kindly note that there is a non-refundable payment of 50,000 naira to be paid to have access to our learning platform</p>
                          </div>
                       </li>
                   </ol>
