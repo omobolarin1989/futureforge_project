@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-function Footer() {
+function StoriesFooter() {
 
   
 const phoneNumber = "2349168095276"; // No plus sign here
@@ -149,13 +149,6 @@ const lmsPage = () => {
                   Access LMS
                  </button>
                 </li>
-                <li>
-                  <Link to="/cohort-story"
-                    className="focus:outline-none focus:ring-2 focus:ring-[#A3A3A3]"                  
-                  >
-                  Graduate stories
-                   </Link>
-                </li>
               </ul>
             </div>
           </div>
@@ -204,4 +197,4 @@ const lmsPage = () => {
   );
 }
 
-export default Footer;
+export default StoriesFooter;

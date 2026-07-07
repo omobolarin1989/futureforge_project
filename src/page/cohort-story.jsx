@@ -9,8 +9,9 @@ import Header from "../component/header";
 // import RegistrationForm from "./registration-form";
 // import Header from "../component/header";
 import Community from "../component/community";
-import Footer from "../component/footer";
+import StoriesFooter from "../component/footer copy";
 import { Link } from "react-router-dom";
+
 
 function CohortStory() {
 
@@ -509,7 +510,7 @@ focus:ring-white">
       <Community />
       </main>
 
-      <Footer />
+      <StoriesFooter />
 
     </div>
   );

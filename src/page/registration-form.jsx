@@ -16,7 +16,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-import Footer from "../component/footer";
+import FormFooter from "../component/form-footer";
 import { Link } from "react-router-dom";
 
 function RegistrationForm() {
@@ -798,7 +798,7 @@ function RegistrationForm() {
           </form>
         </div>
       </div>
-      <Footer />
+     <FormFooter />
     </section>
   );
 }

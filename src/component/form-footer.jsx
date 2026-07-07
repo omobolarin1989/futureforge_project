@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-function Footer() {
+function FormFooter() {
 
   
 const phoneNumber = "2349168095276"; // No plus sign here
@@ -136,13 +136,7 @@ const lmsPage = () => {
                 Community
               </h3>
               <ul className="flex flex-col gap-4 text-[16px] font-[400] leading-[155%] tracking-[0.2%] text-[#A3A3A3]">
-                <li>
-                  <Link to="/registration-form"
-                  className="focus:outline-none focus:ring-2 focus:ring-[#A3A3A3]"
-                  >
-                  Join the next cohort
-                  </Link>
-                </li>
+               
                 <li>
                   <button type="button" href="" onClick={lmsPage}  aria-label="Open FutureForge LMS in a new tab"
                   className="focus:outline-none focus:ring-2 focus:ring-[#A3A3A3]">
@@ -204,4 +198,4 @@ const lmsPage = () => {
   );
 }
 
-export default Footer;
+export default FormFooter;
