@@ -101,7 +101,6 @@ function Cohort1() {
 
   return (
     <section className="font-gadugi min-h-screen text-[white] py-[20px] lg:px-[150px] px-[16px] flex flex-col gap-20px lg:gap-y-[110px] bg-gradient-to-b bg-[#0A0705] bg-[radial-gradient(150%_35%_at_35%_2%,_rgba(60,22,11,0.90)_5%,_rgba(146,64,14,0.15)_25%,_transparent_60%)] bg-no-repeat bg-local bg-no-repeat">
-      
       <Header />
 
       <div className="story lg:mt-[20px] flex flex-col gap-[40px] ">
@@ -148,7 +147,6 @@ function Cohort1() {
             <h1 className="lg:text-[40px] text-[30px] font-[700] leading-[125%] tracking-[-0.5%]">
               Graduation Yearbook
             </h1>
-           
           </header>
 
           {/* Navigation Track Filters */}
@@ -218,7 +216,7 @@ function Cohort1() {
                       Read Story
                     </p>
                     <button
-                    aria-label="Open Amara Obi full profile"
+                      aria-label="Open Amara Obi full profile"
                       onClick={() => setSelectedGrad(grad)}
                       className="cursor-pointer p-1  rounded-full bg-slate-100 text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-[#F43F5E] hover:to-[#F59E0B] transition-colors duration-200 shadow-sm"
                       title="Open Full Profile"
@@ -303,7 +301,7 @@ function Cohort1() {
       </div>
 
       <div>
-         <Community />
+        <Community />
       </div>
 
       <div className="">
