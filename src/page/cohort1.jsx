@@ -150,7 +150,7 @@ function Cohort1() {
           {/* Header */}
           <header className="mb-12">
             <h1 className="lg:text-[40px] text-[30px] font-[700] leading-[125%] tracking-[-0.5%]">
-              Graduation Yearbook
+              The graduates
             </h1>
            
           </header>
