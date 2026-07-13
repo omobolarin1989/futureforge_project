@@ -16,13 +16,13 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
+                      src="public\images\Olaniyi(Frontend).jpeg"
+                      alt="Olaniyi image"
                       className=""
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        Olaniyi Olatunbosun
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
