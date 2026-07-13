@@ -10,7 +10,7 @@ import Header from "../component/header";
 const graduatesData = [
   {
     id: 1,
-    name: "Olaniyi",
+    name: "Olaniyi Olatunbosun",
     trackId: "frontend",
     designation: "Frontend Developer",
     trackName: "Frontend Development",
@@ -30,7 +30,7 @@ const graduatesData = [
   },
   {
     id: 3,
-    name: "Bryce",
+    name: "David Bryce",
     trackId: "backend",
     designation: "Backend Developer",
     trackName: "Backend Development",
@@ -40,7 +40,7 @@ const graduatesData = [
   },
   {
     id: 4,
-    name: "Oma",
+    name: "Omagbemi Esigbone",
     trackId: "backend",
     designation: "Backend Developer",
     trackName: "Backend Development",
@@ -50,7 +50,7 @@ const graduatesData = [
   },
   {
     id: 5,
-    name: "OluwaKemi",
+    name: "Omojugbagbe Omolabake",
     trackId: "product-design",
     designation: "Product Designer",
     trackName: "Product Design",
@@ -60,7 +60,7 @@ const graduatesData = [
   },
   {
     id: 6,
-    name: "Ashabi",
+    name: "Tijani Mariam Ashabi",
     trackId: "product-management",
     designation: "Product Manager",
     trackName: "Product Management",
@@ -70,7 +70,7 @@ const graduatesData = [
   },
   {
     id: 7,
-    name: "Karl",
+    name: "Karl Cyril Sampson",
     trackId: "product-management",
     designation: "Product Manager",
     trackName: "Product Management",
@@ -80,7 +80,7 @@ const graduatesData = [
   },
   {
     id: 8,
-    name: "Liam Wilson",
+    name: "Adefala Esther",
     trackId: "quality-assurance",
     designation: "Quality Assurance",
     trackName: "Quality Assurance",

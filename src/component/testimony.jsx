@@ -18,7 +18,7 @@ function Testimonials() {
                     <img
                       src="public\images\Olaniyi(Frontend).jpeg"
                       alt="Olaniyi image"
-                      className=""
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
@@ -347,13 +347,13 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Olaniyi(Frontend).jpeg"
+                      alt="Olaniyi image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Olaniyi Olatunbosun
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
@@ -372,16 +372,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Ashabi (pm).jpg"
+                      alt="Ashabi's image"
+                      className="w-[30px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Tijani Mariam Ashabi
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Program Manager
                       </p>
                     </div>
                   </div>
@@ -399,16 +399,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
+                      src="/images/David Bryce (backend).jpg"
                       alt="Annet Black image"
-                      className=""
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        David Bryce
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Backend Developer
                       </p>
                     </div>
                   </div>
@@ -424,16 +424,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Esther (tester).jpg"
+                      alt="Esther's image"
+                      className="w-[30px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Esther Adefala
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Software tester
                       </p>
                     </div>
                   </div>
@@ -451,16 +451,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Karl(PM).jpeg"
+                      alt="Karl image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Karl Cyril
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Project Manager
                       </p>
                     </div>
                   </div>
@@ -476,16 +476,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/OluwaKemi(Product Design).jpeg"
+                      alt="OluwaKemi image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        OluwaKemi Keziah
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Product Designer
                       </p>
                     </div>
                   </div>
@@ -503,16 +503,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Oma … backend track .jpg"
+                      alt="Oma image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Omagbemi Esigbone
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Backend Developer
                       </p>
                     </div>
                   </div>
@@ -558,13 +558,13 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Olaniyi(Frontend).jpeg"
+                      alt="Olaniyi image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Olaniyi Olatunbosun
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
                         Frontend Developer
@@ -583,16 +583,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Ashabi (pm).jpg"
+                      alt="Ashabi's image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                       Tijani Mariam Ashabi
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Project Manager
                       </p>
                     </div>
                   </div>
@@ -610,16 +610,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/David Bryce (backend).jpg"
+                      alt="Bryce's image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        David Bryce 
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Backend Developer
                       </p>
                     </div>
                   </div>
@@ -635,16 +635,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Esther (tester).jpg"
+                      alt="Esther image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Esther Adefala
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Software Tester
                       </p>
                     </div>
                   </div>
@@ -662,16 +662,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Karl(PM).jpeg"
+                      alt="Karl image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Karl Cyril
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Project Manager
                       </p>
                     </div>
                   </div>
@@ -687,16 +687,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
+                      src="/images/OluwaKemi(Product Design).jpeg"
                       alt="Annet Black image"
-                      className=""
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        OluwaKemi Keziah
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Product Designer
                       </p>
                     </div>
                   </div>
@@ -714,16 +714,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="public\images\Oma … backend track .jpg"
+                      alt="Oma's image"
+                      className="w-[35px]"
                     />
                     <div>
                       <p className="text-[white] text-[16px] font-[500]">
-                        Annet Black
+                        Omagbemi Esigbone
                       </p>
                       <p className="text-[14px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Backend Developer
                       </p>
                     </div>
                   </div>

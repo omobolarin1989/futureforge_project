@@ -38,18 +38,18 @@ function CohortStory() {
       <main className="flex flex-col lg:w-full w-full lg:gap-y-[120px] gap-y-[80px]">
       <div className="main w-full lg:gap-y-[150px] gap-y-[70px] flex flex-col">
         <div className="w-full flex justify-center">
-          <div className="story-header flex flex-col justify-center items-center w-full lg:w-[851px] w-full gap-y-[16px]">
-            <h1 className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-evenly lg:grid-rows-3 lg:w-full w-full lg:gap-y-[40px] gap-y-[20px] lg:gap-x-[20px]">
+          <div className="story-header flex flex-col justify-center items-center w-full lg:w w-full gap-y-[16px]">
+            <h1 className="text-center text-[44px] lg:text-[72px] font-[700] cohort-grid flex flex-col lg:justify-evenly lg:grid-rows-3 lg:w-full w-full lg:gap-y-[40px] gap-y-[20px] lg:gap-x-[20px] leading-[110%] tracking-[-2%]">
               Every Cohort Tells a Story.
             </h1>
-            <p className="text-[#ffffff] lg:w-full lg:max-w-[851px] w-full max-w-[320px] md:w-[90%] lg:text-[16px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center">
+            <p className="text-[#ffffff] lg:w-full lg:max-w-[820px] w-full max-w-[320px] md:w-[90%] lg:text-[18px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center">
               Explore the journeys of FutureForge graduates across different
               cohorts. Browse past classes, discover graduate stories, and see
               how learners grew through mentorship, collaboration, and practical
               learning.
             </p>
 
-            <div className="counter flex lg:w- w-full justify-between px-[2px]">
+            <div className="counter flex lg:w-[30%] w-full justify-between px-[2px]">
               <div>
               <strong aria-label="cohort 1" className="flex flex-col items-center lg:text-[48px] text-[36px] font-[700] leading-[120%] tracking-[1%]">
                 1{" "}
