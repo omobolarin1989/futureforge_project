@@ -22,6 +22,15 @@ function App() {
         <Route path="/registration-form" element={<RegistrationForm />} />
         <Route path="/cohort-story" element={<CohortStory />} />
         <Route path="/cohort1" element={<Cohort1 />} />
+        <Route path="/cohort1" element={<Cohort1 />} />
+        <Route path="/cohort2" element={<Cohort1 />} />
+        <Route path="/cohort3" element={<Cohort1 />} />
+        <Route path="/cohort4" element={<Cohort1 />} />
+        <Route path="/cohort5" element={<Cohort1 />} />
+        <Route path="/cohort6" element={<Cohort1 />} />
+        <Route path="/cohort7" element={<Cohort1 />} />
+        <Route path="/cohort8" element={<Cohort1 />} />
+        <Route path="/cohort9" element={<Cohort1 />} />
         <Route path="/cohort1/track/:trackId" element={<Cohort1 />} />
         <Route path="/terms" element={<TermsCondition />} />
         <Route path="/privacy" element={<PrivacyData />} />

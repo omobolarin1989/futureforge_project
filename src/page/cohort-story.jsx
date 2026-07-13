@@ -39,7 +39,7 @@ function CohortStory() {
       <div className="main w-full lg:gap-y-[150px] gap-y-[70px] flex flex-col">
         <div className="w-full flex justify-center">
           <div className="story-header flex flex-col justify-center items-center w-full lg:w-[851px] w-full gap-y-[16px]">
-            <h1 className="lg:w-[851px] w-full max-w-full md:w-[440px] lg:text-[72px] md:text-[50px] text-[44px] font-[700] lg:leading-[110%] leading-[114.999999999%] tracking-[-1.5%] lg:tracking-[-2%] text-center">
+            <h1 className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-evenly lg:grid-rows-3 lg:w-full w-full lg:gap-y-[40px] gap-y-[20px] lg:gap-x-[20px]">
               Every Cohort Tells a Story.
             </h1>
             <p className="text-[#ffffff] lg:w-full lg:max-w-[851px] w-full max-w-[320px] md:w-[90%] lg:text-[16px] text-[16px] md:text-[18px] font-[400] leading-[160%] tracking-[0.2%] lg:tracking-[0%] text-center">
@@ -177,7 +177,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort2" aria-label="View Cohort 02 details">
+                <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -223,7 +225,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort3" aria-label="View Cohort 03 details">
+                <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -269,7 +273,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort4" aria-label="View Cohort 04 details">
+                  <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -315,7 +321,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort5" aria-label="View Cohort 05 details">
+                  <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -361,7 +369,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort6" aria-label="View Cohort 06 details">
+                  <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -407,7 +417,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort7" aria-label="View Cohort 07 details">
+                  <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -453,7 +465,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort8" aria-label="View Cohort 08 details">
+                  <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>
@@ -499,7 +513,9 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <Link to="/Cohort9" aria-label="View Cohort 09 details">
+                  <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                </Link>
               </div>
             </div>
           </article>

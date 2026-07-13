@@ -191,7 +191,7 @@ function Cohort1() {
             {filteredGraduates.map((grad) => (
               <div 
                 key={grad.id}
-                className="bg-[#171717] rounded-2xl overflow-hidden border border-[#262626] flex flex-col h-[100%] lg:w-[370px] w-full p-3 "
+                className="bg-[#171717] rounded-2xl overflow-hidden border border-[#262626] flex flex-col h-[100%] w-full p-3 "
               >
                 {/* Profile Image (Top Half) */}
                 <div className="h-[75%] w-full bg-slate-200 overflow-hidden flex-shrink-0 relative rounded-[20px]">
