@@ -4,17 +4,19 @@ import { useParams, NavLink } from "react-router-dom";
 import Community from "../component/community";
 import Header from "../component/header";
 
+
+
 // 1. DATA ARRAY (8 Graduates)
 const graduatesData = [
   {
     id: 1,
-    name: "Amara Obi",
+    name: "Olaniyi",
     trackId: "frontend",
     designation: "Frontend Developer",
     trackName: "Frontend Development",
-    image: "/images/Rectangle 2324.png",
+    image: "/images/Olaniyi(Frontend).jpeg",
     testimony:
-      "The coding boot camp reshaped how I think. Building responsive UIs with React feels like second nature now! I learned to love every pixel and state change.",
+      "The coding boot camp reshaped how I think even when I have tried few before. Building responsive UIs with React feels like second nature now! I learned to love every pixel and state change. Its a process and this is a big eye opener.",
   },
   {
     id: 2,
@@ -28,51 +30,51 @@ const graduatesData = [
   },
   {
     id: 3,
-    name: "Chioma Nnaji",
+    name: "Bryce",
     trackId: "backend",
     designation: "Backend Developer",
     trackName: "Backend Development",
-    image: "/images/Rectangle 2324 (2).png",
+    image: "/images/David Bryce (backend).jpg",
     testimony:
       "Designing REST APIs and handling database systems gave me deep problem-solving skills. Back-end is pure magic and logic combined.",
   },
   {
     id: 4,
-    name: "David Johnson",
+    name: "Oma",
     trackId: "backend",
     designation: "Backend Developer",
     trackName: "Backend Development",
-    image: "/images/Rectangle 2324 (8).png",
+    image: "/images/Oma … backend track .jpg",
     testimony:
       "Optimizing server speed and authentication scripts was tough but rewarding. Loved every single deployment challenge we faced!",
   },
   {
     id: 5,
-    name: "Elena Rostova",
+    name: "OluwaKemi",
     trackId: "product-design",
     designation: "Product Designer",
     trackName: "Product Design",
-    image: "/images/Rectangle 2324 (3).png",
+    image: "/images/OluwaKemi(Product Design).jpeg",
     testimony:
       "Wireframing and user research taught me that true style must follow utility. Figma is my new creative playground for solving problems.",
   },
   {
     id: 6,
-    name: "Sarah Connor",
+    name: "Ashabi",
     trackId: "product-management",
     designation: "Product Manager",
     trackName: "Product Management",
-    image: "/images/Rectangle 2324 (6).png",
+    image: "/images/Ashabi (pm).jpg",
     testimony:
       "Steering roadmaps and practicing agile project methods changed my career path completely. Product delivery and launch strategy rule!",
   },
   {
     id: 7,
-    name: "Ahmed Musa",
+    name: "Karl",
     trackId: "product-management",
     designation: "Product Manager",
     trackName: "Product Management",
-    image: "/images/Rectangle 2324 (8).png",
+    image: "/images/Karl(PM).jpeg",
     testimony:
       "Balancing engineering needs with clear stakeholder targets gave me supreme confidence to manage real, complex software builds.",
   },
@@ -82,11 +84,13 @@ const graduatesData = [
     trackId: "quality-assurance",
     designation: "Quality Assurance",
     trackName: "Quality Assurance",
-    image: "/images/Rectangle 2324 (9).png",
+    image: "/images/Esther (tester).jpg",
     testimony:
-      "Writing robust automation scripts and breaking builds systematically ensures clients only receive flawless production code.",
+      "Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead",
   },
 ];
+
+
 
 function Cohort1() {
   const { trackId } = useParams();
@@ -146,7 +150,7 @@ function Cohort1() {
           {/* Header */}
           <header className="mb-12">
             <h1 className="lg:text-[40px] text-[30px] font-[700] leading-[125%] tracking-[-0.5%]">
-              Graduation Yearbook
+              The graduates
             </h1>
            
           </header>
@@ -183,14 +187,14 @@ function Cohort1() {
           </nav>
 
           {/* 4 Columns and 2 Rows Layout Grid */}
-          <main className="grid grid-col-1  md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-6">
+          <main className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-6">
             {filteredGraduates.map((grad) => (
-              <div
+              <div 
                 key={grad.id}
-                className="bg-[#171717] rounded-2xl overflow-hidden border border-[#262626] flex flex-col h-auto lg:w-[370px] w-full p-3"
+                className="bg-[#171717] rounded-2xl overflow-hidden border border-[#262626] flex flex-col h-[100%] lg:w-[370px] w-full p-3 "
               >
                 {/* Profile Image (Top Half) */}
-                <div className="h-[238px] w-full bg-slate-200 overflow-hidden flex-shrink-0 relative rounded-[20px]">
+                <div className="h-[75%] w-full bg-slate-200 overflow-hidden flex-shrink-0 relative rounded-[20px]">
                   <img
                     className="w-full h-full object-cover object-center"
                     src={grad.image}
@@ -204,7 +208,7 @@ function Cohort1() {
                 {/* Profile Card Body (Bottom Half) */}
                 <div className="p-4 flex-grow flex flex-col justify-between min-h-0 ">
                   <div className="overflow-hidden">
-                    <h3 className="text-base font-bold text-slate-900 mb-1 truncate">
+                    <h3 className="text-base font-bold text-[#d4d4d4] mb-1 truncate">
                       {grad.name}
                     </h3>
                     <p className="text-[#d4d4d4] text-xs leading-relaxed italic line-clamp-none">
@@ -250,7 +254,7 @@ function Cohort1() {
           {selectedGrad && (
             <div className=" fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md bg-slate-900/40 transition-all duration-300 animate-fadeIn">
               {/* Modal Focus Card */}
-              <div className="bg-[#171717] rounded-[24px] justify-between overflow-hidden flex 2-full p-2 lg:max-w-[600px] lg:h-[288px] h-[270px] w-full border border-[#262626] text-[white]">
+              <div className="bg-[#171717] rounded-[24px] justify-between overflow-hidden flex 2-full p-2 lg:max-w-[600px] lg:h-[400px] h-[270px] w-full border border-[#262626] text-[white]">
                 {/* Close Button Top Right */}
                 <button
                   onClick={() => setSelectedGrad(null)}
@@ -273,9 +277,9 @@ function Cohort1() {
                 </button>
 
                 {/* Large View Profile Image */}
-                <div className=" bg-[#171717] lg:h-[100%] h-[100%] w-[49%] lg:flex lg:flex-col justify-center items-center">
+                <div className=" bg-[#171717] lg:h-full h-[100%] w-[49%] lg:flex lg:flex-col justify-center items-center">
                   <img
-                    className=" lg:h-screen h-[80%] h-[100%] w-full bg-[#171717] flex flex-col justify-center items-center"
+                    className=" lg:h-screen h-[100%] w-full bg-[#171717] flex flex-col justify-center items-center"
                     src={selectedGrad.image}
                     alt={selectedGrad.name}
                   />

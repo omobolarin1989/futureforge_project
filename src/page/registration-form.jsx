@@ -23,7 +23,9 @@ function RegistrationForm() {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const isValid = /\S+@\S+\.\S+/.test(email);
-  const textValid = fullName.trim().length >= 5;
+    const textValid =
+  /^[A-Za-z\s'-]+$/.test(fullName.trim()) &&
+  fullName.trim().length >= 3;
   const [focused, setFocused] = useState(false);
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [gender, setGender] = useState("");

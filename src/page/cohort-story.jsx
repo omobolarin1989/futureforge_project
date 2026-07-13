@@ -82,7 +82,7 @@ function CohortStory() {
 
         <div className="cohort-grid lg:grid flex flex-col lg:grid-cols-3 lg:justify-evenly lg:grid-rows-3 lg:w-full w-full lg:gap-y-[20px] gap-y-[20px] lg:gap-x-[20px]">
          
-          <article className="bg-[#171717] content-grid lg:w-full w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+          <article className="bg-[#171717] content-grid lg:w-full w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -128,7 +128,7 @@ function CohortStory() {
 focus:ring-2
 focus:ring-white">
                   
-                    <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true"/>
+                    <TbArrowRight className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true"/>
                   
                 </Link>
 
@@ -136,7 +136,7 @@ focus:ring-white">
             </div>
           </article>
 
-          <article className="bg-[#171717] content-grid lg:w-full w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
+          <article className="bg-[#171717] content-grid lg:w-full w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -177,12 +177,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid llg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid llg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -223,12 +223,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid lg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -269,12 +269,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid lg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -315,12 +315,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid lg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -361,12 +361,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid lg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
+           <article className="bg-[#171717] content-grid lg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0 ">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -407,12 +407,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid lg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid lg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -453,12 +453,12 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>
 
-           <article className="bg-[#171717] content-grid llg:w-full lg:h-[336px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
+           <article className="bg-[#171717] content-grid llg:w-full lg:h-[310px] h-auto w-full flex flex-col gap-y-20px rounded-[24px] lg-gap-x-0">
             <div className="content-container flex flex-col lg:p-[24px] p-[24px]">
                <div className="content-container flex flex-col lg:gap-y-[16px] gap-y-[36px] border-b border-[#262626] pb-4">
                <div className="flex justify-between lg:gap-y-20px gap-y-[8px]">
@@ -499,7 +499,7 @@ focus:ring-white">
                 <p className="text-[14px] font-[400] leading-[150%] tracking[0.5%]">
                   explore
                 </p>
-                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[40px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
+                <TbArrowRight  className="lg:rounded-[50%] rounded-[80%] lg:text-[30px] text-[30px] p- bg-linear-to-r from-[var(--primary-color)] to-[var(--secondary-color)] cursor-pointer" aria-hidden="true" />
               </div>
             </div>
           </article>

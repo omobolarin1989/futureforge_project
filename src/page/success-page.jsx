@@ -16,7 +16,7 @@ function SuccessPage () {
          </div>
 
          <div className="confirmation-text text-[16px] text-justify font-[400]">
-            <p>Welcome to FurtureForge. Your #50,000 registration fee is confirmed and you are officially enrolled in your cohort. Our team will contact you shortly with your next step</p>
+            <p>Welcome to FurtureForge. Your #2,000 registration fee is confirmed and you are officially enrolled in your cohort. Our team will contact you shortly with your next step</p>
          </div>
 
          <div className="homepage-button w-full">
