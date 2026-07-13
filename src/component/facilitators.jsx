@@ -89,7 +89,7 @@ function Facilitators() {
               <div className="flex justify-center mt-8">
                 <button
                   onClick={() => setShowAll(!showAll)}
-                  className="px-8 py-3 rounded-[24px] text-[16px] font-[700] border border-[#F43F5D] text-[#F43F5D] hover:bg-[#F43F5D] hover:text-white transition-all duration-300"
+                  className="px-8 py-3 rounded-[24px] text-[16px] font-[700] text-white bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] hover:opacity-90 transition-all duration-300"
                 >
                   {showAll ? "See Less" : "See More"}
                 </button>
