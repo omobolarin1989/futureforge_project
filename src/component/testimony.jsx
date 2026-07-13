@@ -5,7 +5,7 @@ function Testimonials() {
   const [current, setCurrent] = useState(0);
 
   const cards = [
-    <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+    <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -16,9 +16,9 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="public\images\Olaniyi(Frontend).jpeg"
+                      src="/images/Olaniyi(Frontend).jpeg"
                       alt="Olaniyi image"
-                      className="w-[35px]"
+                      className="w-[30px] rounded-full "
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
@@ -33,7 +33,7 @@ function Testimonials() {
        </div>
     </div>,
 
-    <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+    <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -44,16 +44,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Ashabi (pm).jpg"
+                      alt="Ashabi's image"
+                      className="w-[30px] rounded-full"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        Tijani Mariam Ashabi
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Project Manager
                       </p>
                     </div>
                   </div>
@@ -61,7 +61,7 @@ function Testimonials() {
        </div>
     </div>,
 
-    <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+    <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -72,16 +72,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/David Bryce (backend).jpg"
+                      alt="Bryce's image"
+                      className="w-[30px] rounded-full"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        David Bryce
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Backend Developer
                       </p>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ function Testimonials() {
        </div>
     </div>,
 
-    <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+    <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
         <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -100,16 +100,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Esther (tester).jpg"
+                      alt="Esther's image"
+                      className="w-[30px] rounded-full"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        Adefala Esther
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Software Tester
                       </p>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ function Testimonials() {
        </div>
     </div>,
 
-    <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+    <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -128,16 +128,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="public\images\Karl(PM).jpeg"
+                      alt="Karl's image"
+                      className="w-[30px] rounded-full"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        Karl Cyril
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Project Manager
                       </p>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ function Testimonials() {
        </div>
     </div>,
 
-     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+     <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -156,16 +156,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Kemi( product design).jpg"
+                      alt="Omolabake's image"
+                      className="w-[30px] rounded-full"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        Omojugbagbe Omolabake
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Product Designer
                       </p>
                     </div>
                   </div>
@@ -173,7 +173,7 @@ function Testimonials() {
        </div>
     </div>,
 
-     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+     <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -184,16 +184,16 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
+                      src="/images/Oma … backend track .jpg"
+                      alt="Omagbemi's image"
+                      className="w-[30px] rounded-full"
                     />
                     <div>
                       <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
+                        Omagbemi Esigbone
                       </p>
                       <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
+                        Backend Developer
                       </p>
                     </div>
                   </div>
@@ -201,7 +201,7 @@ function Testimonials() {
        </div>
     </div>,
 
-     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
+     <div className="bg-[#141414] h-[250px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
@@ -229,33 +229,7 @@ function Testimonials() {
        </div>
     </div>,
 
-     <div className="bg-[#141414] h-[218px] md:h-[270px] md:w-[450px] m-auto flex items-center justify-center w-full border border-[#404040] rounded-[24px]">
-       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
-                <figure className="flex flex-col gap-y-8">
-                  <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
-                  </blockquote>
-                  <div className="flex gap-x-7 ">
-                    <img
-                      src="images/Avatar.png"
-                      alt="Annet Black image"
-                      className=""
-                    />
-                    <div>
-                      <p className="text-[white] text-[16px] md:text-[17px] font-[500]">
-                        Annet Black
-                      </p>
-                      <p className="text-[14px] md:text-[17px] font-[400] text-[#D4D4D4]">
-                        Frontend Developer
-                      </p>
-                    </div>
-                  </div>
-                </figure>
-       </div>
-    </div>,
+   
   ];
 
   const nextCard = () => {
