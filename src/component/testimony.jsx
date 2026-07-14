@@ -560,7 +560,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.”
+                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
