@@ -37,10 +37,7 @@ function Testimonials() {
       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Steering roadmaps and practicing agile project methods changed my career path completely. Product delivery and launch strategy rule!”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -65,10 +62,7 @@ function Testimonials() {
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Designing REST APIs and handling database systems gave me deep problem-solving skills. Back-end is pure magic and logic combined.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -93,10 +87,7 @@ function Testimonials() {
         <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -121,10 +112,7 @@ function Testimonials() {
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Balancing engineering needs with clear stakeholder targets gave me supreme confidence to manage real, complex software builds.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -149,10 +137,7 @@ function Testimonials() {
        <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Wireframing and user research taught me that true style must follow utility. Figma is my new creative playground for solving problems.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -177,10 +162,7 @@ function Testimonials() {
       <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “ptimizing server speed and authentication scripts was tough but rewarding. Loved every single deployment challenge we faced!”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -314,10 +296,7 @@ function Testimonials() {
               <div className="bg-[#141414] lg:w-[362px] lg:h-[218px] border border-[#404040] rounded-[24px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “"The coding boot camp reshaped how I think even when I have tried few before. Building responsive UIs with React feels like second nature now! I learned to love every pixel and state change. Its a process and this is a big eye opener.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -339,10 +318,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    Steering roadmaps and practicing agile project methods changed my career path completely. Product delivery and launch strategy rule!”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -391,10 +367,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -418,10 +391,7 @@ function Testimonials() {
               <div className="bg-[#141414] border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] border lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Balancing engineering needs with clear stakeholder targets gave me supreme confidence to manage real, complex software builds.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -443,10 +413,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Wireframing and user research taught me that true style must follow utility. Figma is my new creative playground for solving problems.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -470,10 +437,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[218px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Optimizing server speed and authentication scripts was tough but rewarding. Loved every single deployment challenge we faced!”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -550,10 +514,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Steering roadmaps and practicing agile project methods changed my career path completely. Product delivery and launch strategy rule!”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -577,10 +538,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[240px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Designing REST APIs and handling database systems gave me deep problem-solving skills. Back-end is pure magic and logic combined.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -602,10 +560,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -629,10 +584,7 @@ function Testimonials() {
               <div className="bg-[#141414] border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] border lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Balancing engineering needs with clear stakeholder targets gave me supreme confidence to manage real, complex software builds.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -654,10 +606,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Wireframing and user research taught me that true style must follow utility. Figma is my new creative playground for solving problems.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -681,10 +630,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[218px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Before FutureForge, I was learning design alone without
-                    structure. The mentorship and community helped me build
-                    confidence, improve my thinking, and grow faster than I
-                    expected.”
+                    “Optimizing server speed and authentication scripts was tough but rewarding. Loved every single deployment challenge we faced!”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img

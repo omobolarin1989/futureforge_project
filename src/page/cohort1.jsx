@@ -86,7 +86,7 @@ const graduatesData = [
     trackName: "Quality Assurance",
     image: "/images/Esther (tester).jpg",
     testimony:
-      "Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead",
+      "Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.",
   },
 ];
 
