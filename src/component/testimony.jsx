@@ -87,7 +87,7 @@ function Testimonials() {
         <div className="bg-[#141414] rounded-[24px] w-[362px] md:w-[450px] h-[196px] px-[16px] py-[20px] m-auto">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] md:text-[16px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.”
+                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -367,7 +367,7 @@ function Testimonials() {
               <div className="bg-[#141414] border border-[#404040] rounded-[24px] lg:w-[362px] lg:h-[196px] lg:px-[16px] lg:py-[20px]">
                 <figure className="flex flex-col gap-y-8">
                   <blockquote className="text-[14px] font-[400] leading-[155%] tracking-[0.5%] text-[#D4D4D4]">
-                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience. This is just the beginning, better days ahead.”
+                    “Transitioning from medicine to tech has been both challenging. Thanks to FutureForge, I gained valuable software testing (QA) skills and grew through an incredible learning experience.”
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
@@ -634,7 +634,7 @@ function Testimonials() {
                   </blockquote>
                   <div className="flex gap-x-7 ">
                     <img
-                      src="public\images\Oma … backend track .jpg"
+                      src="/images/Oma … backend track .jpg"
                       alt="Oma's image"
                       className="w-[35px]"
                     />
